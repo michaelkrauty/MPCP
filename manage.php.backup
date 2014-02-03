@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <?php include 'mpcp.php'; $serverId = 'mpcp_0'; ?>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content=''>
+    <meta name='author' content'Michael Krautkramer'>
+    <link rel='shortcut icon' href='./bootstrap/assets/ico/favicon.ico'>
+    
+    <title>OGCP - Online Game Control Panel</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href='./bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <!-- Bootstrap theme -->
+    <link href='./bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+      <script src='https://oss.maxcdn.com/libs/respond.js/1.5.2/respond.min.js'></script>
+    <![endif]-->
+  </head>
+  
+  <body role='document'>
+  
+    <!-- Fixed navbar -->
+    <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          <a class='navbar-brand' href='#'>DominationVPS</a>
+        </div>
+        <div class='navbar-collapse'>
+          <ul class='nav navbar-nav'>
+            <li><a href='index.php'>Home</a></li>
+            <li class='active'><a href='manage.php'>Manage</a></li>
+            <li><a href='account.php'>My Account</a></li>
+            <li><a href='logout.php'>Log Out</a></li>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+  </div>
+  
+  <div class='container theme-showcase' role='main'>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class='jumbotron'>
+    <br>
+      <?php
+        if(online($serverId)){
+          echo '
+          <div class="alert alert-success">
+          <center><strong>Server Status: Server is Online!</strong></center>
+          </div>';
+        }else{
+          echo '
+          <div class="alert alert-danger">
+          <center><strong>Server Status: Server is Offline!</strong></center>
+          </div>';
+        }
+      ?>
+      <br>
+      <center>
+        <!--
+        <button onclick='startServer()' class='btn btn-lg btn-success'>Start</button>
+        <button onclick='stopServer()' class='btn btn-lg btn-warning'>Stop</button>
+        -->
+        <button type='SUBMIT' class='btn btn-lg btn-danger'>Force Stop</button>
+        <button type='SUBMIT' class='btn btn-lg btn-info'>Restart</button>
+      </center>
+    </div>    
+    
+    
+      <div class="page-header">
+        <h1>Alerts</h1>
+      </div>
+      <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+
+
+
+      <div class="page-header">
+        <h1>Progress bars</h1>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+      </div>
+      <br><br>
+      
+    </div> <!-- /container -->
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/assets/js/docs.min.js"></script>
+  </body>
+    <script>
+      function startServer(){
+        alert("Server will now start" + "<?php startServer($serverId); ?>");
+      }
+      function stopServer(){
+        alert("Server will now stop" + "<?php stopServer($serverId); ?>");
+      }
+    </script>
+</html>
