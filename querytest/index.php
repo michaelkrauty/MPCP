@@ -6,7 +6,10 @@
 	if(!$response) {
 		echo "The Server is Offline!";
 	} else {
-		echo "The Server is Online!"
+		echo"<img width=\"64\" height=\"64\" src=\"".$response['favicon']."\" /> <br>
+		The Server ".$response['hostname']." is running on ".$response['version']." and is online,
+		currently are ".$response['players']." players online
+		of a maximum of ".$response['maxplayers'].". The motd of the server is '".$response['motd']."'. 
+		The server has a ping of ".$response['ping']." milliseconds.";
 	}
-
 ?>
