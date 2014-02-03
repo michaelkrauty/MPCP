@@ -18,6 +18,10 @@
     }
     return $online;
   }
+  
+  function serverOnline($serverId){
+    
+  }
     
   function startServer($serverId){
     if(!online($serverId)){
