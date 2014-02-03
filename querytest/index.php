@@ -5,9 +5,9 @@
     $status = new MinecraftServerStatus();
     $response = $status->getStatus($serverIp);
     if(!$response){
-      echo "false";
+      echo "offline";
     }else{
-      echo "true";
+      echo "online";
     }
   }
 ?>
