@@ -24,7 +24,7 @@
   }
     
   function startServer($serverId){
-    if(!online($serverId)){
+    if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
     }else{
       
