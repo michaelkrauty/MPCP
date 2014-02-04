@@ -53,21 +53,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <script>
-              active = false;
-              funciton toggleMenu(){
-              var active = new Boolean();
-                if(!active){
-                  document.write("<li class='dropdown open'>");
-                  active = true;
-                }else{
-                  document.write("<li class='dropdown'>");
-                  active = false;
-                }
-              }
-            </script>
-            <li class='dropdown'>
-              <a href="" class="dropdown-toggle" data-toggle"dropdown" onclick="toggleMenu()">User's email here <b class="caret"></b></a>
+              <a href="" class="dropdown-toggle" data-toggle"dropdown">User's email here <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="">Settings</a></li>
                 <li><a href="">Sub Users</a></li>
