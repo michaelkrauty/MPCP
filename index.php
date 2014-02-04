@@ -68,6 +68,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
+          <img src="http://s3.amazonaws.com/MinecraftSkins/mi16.png" height="42" width="42">
         </center>
       </div>
     </div>
