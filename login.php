@@ -14,7 +14,9 @@
     <!-- Custom styles for this template -->
     <link href="webroot/css/login.css" rel="stylesheet">
   </head>
-  <pagetitle><center>Log into MPCP</center></pagetitle>
+  <div class="strokeme">
+  	<pagetitle><center>Log into MPCP</center></pagetitle>
+  </div>
   <br>
   <body>
     	<div class="container">
