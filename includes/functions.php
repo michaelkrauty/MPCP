@@ -101,8 +101,7 @@ function login ($email, $password, $mysqli) {
 			 $mysqli->query("INSERT INTO login_attempts(user_id, time) VALUES ('$user_id', '$now')");
 			return false;
 		}
-}
-	} else {
+	 else {
 		return false; // No user exists.
 	}
 }
