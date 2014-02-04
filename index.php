@@ -30,11 +30,15 @@
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
     ?>
+    <?php
+      $pageName = "index";
+    ?>
   </head>
   
   <body role='document'>
     
-    <?php include_once "header.inc.php"; ?>
+  <?php include_once "header.inc.php"; ?>
+  
   </div>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
