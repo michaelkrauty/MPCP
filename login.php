@@ -32,13 +32,13 @@
 	      		<input type="checkbox" value="remember-me">Remember me</label>
 	      		<input class= "btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);" />
 					</form>
+			    <p>If you don't have a login, please <a href="register.php">register</a></p>
+	  		  <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
+	    		<p>You are currently logged <?php echo $logged ?>.</p>
 				</div>
 			</div>
-	    <p>If you don't have a login, please <a href="register.php">register</a></p>
-	    <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-	    <p>You are currently logged <?php echo $logged ?>.</p>
 		</center>
-</body>
+	</body>
 </html>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script> 
