@@ -26,8 +26,12 @@
 */
 define ("HOST", "localhost");
 define ("USER", "MPCP");
-define ("PASSWORD", "Temp");
+define ("PASSWORD", "7hMuHLaxxaAPy3P6");
 define ("DATABASE", "MPCP");
+define("CAN_REGISTER", "any");
+define("DEFAULT_ROLE", "member");
+define("SECURE", FALSE);    // FOR DEVELOPMENT ONLY!!!
+
 /*
 * --------------------------
 */
