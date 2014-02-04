@@ -25,13 +25,12 @@ if (login_check($mysqli) == true) {
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="webroot/css/login.css" rel="stylesheet">
-    <script type="text/JavaScript" src="js/sha512.js"></script> 
   </head>
   <pagetitle><center>Multiplayer Controle Panel | Login</center></pagetitle>
   <body>
     <br>
     <div class="container">
-      <form actuib="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
+      <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
       <center><h2 class="form-signin-heading">Sign in:</h2></center>
       <?php
         if (isset($_GET['error'])) {
@@ -56,3 +55,4 @@ if (login_check($mysqli) == true) {
 </body>
 </html>
 
+<script type="text/JavaScript" src="js/sha512.js"></script> 
