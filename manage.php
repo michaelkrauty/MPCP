@@ -61,7 +61,7 @@
                 <li><a href="forum/">Forum</a></li>
                 <li><a href="">Access Log</a></li>
                 <li class="divider"></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="includes/logout.php">Logout</a></li>
               </ul>
             </li>
           </ul>
