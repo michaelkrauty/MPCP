@@ -30,10 +30,10 @@
     <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
       <div class='container'>
         <div class='navbar-header'>
-            <span class='sr-only'>Toggle navigation</span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
           <a class='navbar-brand' href='index.php'>DominationVPS</a>
         </div>
         <div class='navbar-collapse'>
@@ -42,10 +42,10 @@
             <li><a href='manage.php'>Manage</a></li>
             <li><a href='account.php'>My Account</a></li>
             <li><a href='logout.php'>Log Out</a></li>
-            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+    </div>
   </div>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
