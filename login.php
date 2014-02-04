@@ -21,6 +21,7 @@
 	  	  <div class="well">
 	  	    <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
 	  	    	<logintitle>Sign in:</logintitle>
+	  	    	<br>
 		      	<?php
 	  	    	  if (isset($_GET['error'])) {
 	        	  	echo '<p class="error">Error Logging In!</p>';
