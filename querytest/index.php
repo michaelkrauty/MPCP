@@ -2,7 +2,7 @@
   include_once "../mpcp.php";
 	include_once 'MinecraftServerStatus/status.class.php';
 	$status = new MinecraftServerStatus();
-	$response = $status->getStatus('pvp24.com');
+	$response = $status->getStatus('carbon.mc.gl');
 	if(!$response){
 		echo "The Server is Offline!";
 	}else{
