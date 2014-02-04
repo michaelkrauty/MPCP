@@ -27,7 +27,7 @@
 /*
 * 1) Includes
 */
-include_once 'MPCP-config.php';
+include_once 'mpcp-config.php';
 /*
 * --------------------------
 */
