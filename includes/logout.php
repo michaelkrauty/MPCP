@@ -1,38 +1,7 @@
 <?php
-/**
- *
- * ############################################
- * Logout Processor
- * ############################################
- *
- * DESCRIPTION
- *
- * Processes Logout Request
- *
- * TABLE OF CONTENTS
- *
- * 1) Includes
- * 2) Tear Down Session
- *
- * @ Copyright (c) MPCP
- * @ Version
- * @ Author - Michael Krautkramer
- * @ Author - Daniel Oxenbury (http://Daniel.oxituk.co.uk)
-*/
-
-
-/*
-* 1) Includes
-*/
 include_once 'includes/functions.php';
-/*
-* --------------------------
-*/
-
-
-/*
-* 2) Tear Down Session
-*/
+sec_session_start();
+ 
 // Unset all session values 
 $_SESSION = array();
  
@@ -49,8 +18,4 @@ setcookie(session_name(),
  
 // Destroy session 
 session_destroy();
-header('Location: ../index.php');
-/*
-* --------------------------
-*/
-
+header('Location: ../ index.php');
