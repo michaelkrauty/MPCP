@@ -36,7 +36,7 @@ include_once 'MPCP-config.php';
 * 2) Secure Session Function
 */
 function sec_session_start(){
-	$session_name = 'sec_session_id' // Session Name.
+	$session_name = 'sec_session_id'; // Session Name.
 	$secure = SECURE; // Stops JS from accessing session id.
 	$httponly = true;
 
