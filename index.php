@@ -51,7 +51,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">User's email here <b class="caret"></b></a>
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">$userEmail <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="settings/">Settings</a></li>
                 <li><a href="">Sub Users</a></li>
@@ -75,7 +75,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
-          <img src="http://signaturecraft.us/avatars/30/face/mi16.png" height="100" width="100">
+          <img src="http://signaturecraft.us/avatars/30/face/" . <?php echo $userName; ?> . ".png" height="100" width="100">
         </center>
       </div>
     </div>
