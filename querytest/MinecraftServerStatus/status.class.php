@@ -15,8 +15,6 @@
         }
 
         public function getStatus($host = '127.0.0.1', $version = '1.7.*' , $port = 25565) {
-            
-            ini_set('default_socket_timeout', 5);
 
             if (substr_count($host , '.') != 4) $host = gethostbyname($host);
 
