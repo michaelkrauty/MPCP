@@ -28,7 +28,6 @@ if (login_check($mysqli) == true) {
   </head>
   <pagetitle><center>Log into MPCP</center></pagetitle>
   <body>
-    <br>
     <center>
     <div class="container">
 	    <div class="well">
