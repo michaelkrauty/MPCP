@@ -13,7 +13,7 @@
               if($pageName = "index"){
                 echo "<li class='active'>";
               }else{
-                echo "</li>";
+                echo "<li>";
               }
             ?>
             <a href='index.php'>Home</a></li>
@@ -21,7 +21,7 @@
               if($pageName = "manage"){
                 echo "<li class='active'>";
               }else{
-                echo "</li>";
+                echo "<li>";
               }
             ?>
             <a href='manage.php'>Manage</a></li>
