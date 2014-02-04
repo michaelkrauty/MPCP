@@ -20,7 +20,6 @@
     	<div class="container">
 	  	  <div class="well">
 	  	    <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
-	  	    	<logintitle>Sign In</logintitle>
 	  	    	<center><logintitle>Sign In</logintitle></center>
 		      	<?php
 	  	    	  if (isset($_GET['error'])) {
