@@ -26,6 +26,10 @@
       <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
       <script src='https://oss.maxcdn.com/libs/respond.js/1.5.2/respond.min.js'></script>
     <![endif]-->
+    <?php
+      $userEmail = echo htmlentities($_SESSION['email']);
+      $userName = echo htmlentities($_SESSION['username']);
+    ?>
   </head>
   
   <body role='document'>
