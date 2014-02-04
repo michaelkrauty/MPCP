@@ -65,7 +65,21 @@ function sec_session_start(){
 /*
 * 3) Login Function
 */
-// hash the password with the unique salt.
+function login($email, $password, $mysqli) {
+    // Using prepared statements means that SQL injection is not possible. 
+    if ($stmt = $mysqli->prepare("SELECT id, username, password, salt 
+        FROM members
+       WHERE email = ?
+        LIMIT 1")) {
+        $stmt->bind_param('s', $email);  // Bind "$email" to parameter.
+        $stmt->execute();    // Execute the prepared query.
+        $stmt->store_result();
+ 
+        // get variables from result.
+        $stmt->bind_result($user_id, $username, $db_password, $salt);
+        $stmt->fetch();
+ 
+        // hash the password with the unique salt.
         $password = hash('sha512', $password . $salt);
         if ($stmt->num_rows == 1) {
             // If the user exists we check if the account is locked
@@ -107,6 +121,10 @@ function sec_session_start(){
             // No user exists.
             return false;
         }
+    }
+}
+
+
 /*
 * --------------------------
 */
