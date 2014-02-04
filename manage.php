@@ -148,7 +148,7 @@
           </div>
           <form>
             <div class="col-xs-10">
-              <input name="command" type="text" class="form-control" method="post" placeholder="Enter a command here..." autofocus>
+              <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here..." autofocus>
             </div>
             <div class="col-xs-2">
               <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
@@ -156,8 +156,8 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                if($_GET['command']){
-                  $cmd = $_GET['command'];
+                if($_GET['cmd']){
+                  $cmd = $_GET['cmd'];
                   echo test($serverId, $cmd);
                 }else{}
               }else{
