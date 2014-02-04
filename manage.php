@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="./bootstrap/assets/ico/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>MPCP Dashboard</title>
     
     <!-- Bootstrap theme -->
     <link href='./bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
