@@ -153,7 +153,7 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                if($_GET["command"] != "null"){
+                if($_GET["command"] != null){
                   $cmd = $_GET['command'];
                   echo test($serverId, $cmd);
                 }else{
