@@ -77,7 +77,6 @@
           <h1>Welcome!</h1>
           <h2><?php echo $userName; echo $userEmail; ?></h2>
           <img src="http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png" height="100" width="100">
-          <img src="http://signaturecraft.us/avatars/30/face/MI16.png" height="100" width="100">
         </center>
       </div>
     </div>
