@@ -29,6 +29,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <?php
+      $userEmail = $_SESSION['email'];
+      $userName = $_SESSION['username'];
+    ?>
+    <?php
       $pageName = "manage";
     ?>
   </head>
