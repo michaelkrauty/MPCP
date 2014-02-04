@@ -74,7 +74,7 @@
     <div class='jumbotron'>
       <div class='page-header'>
         <center>
-          <h1>Welcome, <php? echo $userName; ?>!</h1>
+          <h1>Welcome, <?php echo $userName; ?>!</h1>
           <h2><?php echo $userName; echo $userEmail; ?></h2>
           <?php
           $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
