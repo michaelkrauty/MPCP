@@ -4,7 +4,7 @@
   <?php include_once "includes/db_connect.php"; include_once "includes/functions.php";
     sec_session_start();
     if(login_check($mysqli) == true){
-      ?>
+    ?>
     <?php include_once 'mpcp.php'; $serverId = 'mpcp_0'; ?>
 
     <meta charset='utf-8'>
