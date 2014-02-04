@@ -41,6 +41,7 @@
 	      		<br><input type="password" name="password" class="form-control" placeholder="Password" required>
 			<br><input type="passwordconf" name="passwordcomf" class="form-control" placeholder="Confirmation Password" required>
 	      		<br><input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="">
+			<br><input class="btn btn-lg btn-primary btn-block" type="button" value="Back to login" onClick="onclick="parent.location='login.php'">
 					</form>
 				</div>
 			</div>
