@@ -34,7 +34,7 @@
   <body>
     	<div class="container">
 	  	  <div class="well">
-	  	    <form action="includes/process_registration.php" class="form-signin" role="form" method="post" name="login_form">
+			<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
 	  	    	<center><logintitle>Register</logintitle></center>
 			<br><input type="text" name = "username" class="form-control" placeholder="Username" required autofocus>
 			<br><input type="email" name= "email" class="form-control" placeholder="Email address" required>
