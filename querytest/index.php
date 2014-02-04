@@ -4,7 +4,7 @@
 	$status = new MinecraftServerStatus();
 	$response = $status->getStatus('carbon.mc.gl');
 	if(!$response){
-		echo "The Server is Offline!";
+		echo "OFFLINE";
 	}else{
 		echo"<img width=\"64\" height=\"64\" src=\"".$response['favicon']."\" /> <br>
 		ONLINE
