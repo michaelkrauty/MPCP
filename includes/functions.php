@@ -171,7 +171,7 @@ function login_check ($mysqli) {
 		return false; // Not Logged In.
 		}
 	} else {
-	return false // Not Logged In.
+	return false; // Not Logged In.
 	}
 }
 }
