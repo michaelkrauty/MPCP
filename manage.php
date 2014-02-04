@@ -66,6 +66,7 @@
                 }
               }
             </script>
+            <li class='dropdown'>
               <a href="" class="dropdown-toggle" data-toggle"dropdown" onclick="toggleMenu()">User's email here <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="">Settings</a></li>
