@@ -53,7 +53,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown open">
+            <li class="dropdown">
               <a href="" class="dropdown-toggle" data-toggle"dropdown">User's email here <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="">Settings</a></li>
