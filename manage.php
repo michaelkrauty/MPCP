@@ -153,8 +153,12 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                $cmd = $_GET['command'];
-                test($serverId, $cmd);
+                if($_GET["command"] != null){
+                  $cmd = $_GET['command'];
+                  test($serverId, $cmd);
+                }else{
+                  
+                }
               }else{
                 echo "Server is not online!";
               }
