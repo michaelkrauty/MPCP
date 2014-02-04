@@ -143,6 +143,7 @@
             }else{
               echo "Server does not exist!";
             }
+          ?>
         <div class="well">
           <div class="well">
             <p>The console goes here.</p>
