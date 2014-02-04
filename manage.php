@@ -156,7 +156,7 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                if($_GET['cmd']){
+                if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
                   echo test($serverId, $cmd);
                 }else{}
