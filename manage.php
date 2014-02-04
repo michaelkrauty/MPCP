@@ -61,7 +61,7 @@
                 <li class="divider"></li>
                 <li><a href="">Logout</a>
               </ul>
-            </li>
+            
           </ul>
             </li>
           </ul>
