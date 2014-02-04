@@ -63,4 +63,15 @@
       return $out;
     }
   }
+  
+  function serverExists($serverId){
+    $command = "[ -f /var/mpcp/servers/" . $serverId . " ] && echo t";
+    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+    if($out = "t"){
+      return true;
+    }
+    if($out = ""){
+      return false;
+    }
+  }
 ?>
