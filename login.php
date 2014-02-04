@@ -1,11 +1,14 @@
 <?php include_once 'includes/db_connect.php';	include_once 'includes/functions.php';
+
 	sec_session_start();
+
 	if (login_check($mysqli) == true) {
 		$logged = 'in';
 	} else {
 		$logged = 'out';
 	}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Daniel Oxenbury (http://daniel.oxituk.co.uk)">
+    <meta name="author" content="Michael Krautkramer">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <title>MPCP Login</title>
     <!-- Bootstrap core CSS -->
@@ -35,14 +39,13 @@
 	        	  	echo '<p class="error">Error Logging In!</p>';
 	        		}
 	      		?>
-	      		<input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
-	      		<input type="password" name="password" class="form-control" placeholder="Password" required>
-	      		<label class="checkbox">
-	      		<input type="checkbox" value="remember-me">Remember me</label>
-	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);">
-	      		<br>
-	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="parent.location='register.php'">
-	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='password_lost.php'">
+	      		<br><input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+	      		<br><input type="password" name="password" class="form-control" placeholder="Password" required>
+	      		<br><label class="checkbox">
+	      		<br><input type="checkbox" value="remember-me">Remember me</label>
+	      		<br><input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);">
+	      		<br><input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="parent.location='register.php'">
+	      		<br><input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='password_lost.php'">
 					</form>
 				</div>
 			</div>
