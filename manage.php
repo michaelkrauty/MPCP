@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <?php include_once "includes/db_connect.php"; include_once "includes/functions.php"; sec_session_start(); if(login_check($mysqli) == true){ ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -170,4 +171,5 @@
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap/assets/js/docs.min.js"></script>
   </body>
+  <?php }else{ header("Location: http://dominationvps.com/mpcp/login.php"); } ?>
 </html>
