@@ -95,7 +95,7 @@ function login ($email, $password, $mysqli) {
 			$_SESSION['username'] = $username;
 			$_SESSION['login_string'] = hash('sha512', $password . $user_browser);
 			return true; // Login Sucsessfull
-		else {
+		} else {
 			// Password is incorrect record in database.
 			 $now = time();
 			 $mysqli->query('("INSERT INTO login_attempts(user_id, time) VALUES ('$user_id', '$now')");
