@@ -81,7 +81,7 @@ function login ($email, $password, $mysqli) {
 	$password = hash('sha512', $password . $salt);
 
 	// If account exists check if the account is locked.
-	if $stmt->num_rows == 1) {
+	if ($stmt->num_rows == 1) {
 		if (checkbrute($user_id, mysqli) == true) {
 		return false; // Account is locked
 		}
