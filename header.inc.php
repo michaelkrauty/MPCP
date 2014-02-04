@@ -11,7 +11,7 @@
           <ul class='nav navbar-nav'>
             <?php
               if($pageName = "index"){
-                echo "<li class='active'>"
+                echo "<li class='active'>";
               }else{
                 echo "</li>";
               }
@@ -19,7 +19,7 @@
             <a href='index.php'>Home</a></li>
             <?php
               if($pageName = "manage"){
-                echo "<li class='active'>"
+                echo "<li class='active'>";
               }else{
                 echo "</li>";
               }
