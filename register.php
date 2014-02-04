@@ -35,12 +35,12 @@
     	<div class="container">
 	  	  <div class="well">
 	  	    <form action="includes/process_registration.php" class="form-signin" role="form" method="post" name="login_form">
-	  	    	<center><logintitle>Register.</logintitle></center>
-			<input type="text" name = "username" class="form-control" placeholder="Username" required autofocus>
-			<input type="email" name= "email" class="form-control" placeholder="Email address" required>
-	      		<input type="password" name="password" class="form-control" placeholder="Password" required>
-			<input type="passwordconf" name="passwordcomf" class="form-control" placeholder="Confirmation Password" required>
-	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="">
+	  	    	<center><logintitle>Register</logintitle></center>
+			<br><input type="text" name = "username" class="form-control" placeholder="Username" required autofocus>
+			<br><input type="email" name= "email" class="form-control" placeholder="Email address" required>
+	      		<br><input type="password" name="password" class="form-control" placeholder="Password" required>
+			<br><input type="passwordconf" name="passwordcomf" class="form-control" placeholder="Confirmation Password" required>
+	      		<br><input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="">
 					</form>
 				</div>
 			</div>
