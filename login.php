@@ -46,9 +46,9 @@
 	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);">
 			<table width="100%">
 			<tr>
-			<th>
+			<th width="50%">
   			<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="parent.location='register.php'">
-     			<th>
+     			<th width="50%">
 			<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='password_lost.php'">
 			</tr>
 					</form>
