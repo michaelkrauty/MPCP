@@ -64,12 +64,11 @@
   }
   
   function serverExists($serverId){
-    $command = "[ -f /var/mpcp/servers/" . $serverId . " ] && echo t";
+    $command = "ls /var/mpcp/servers";
     $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-    if($out = "t"){
+    if(strpos($out, $serverId) == true){
       return true;
-    }
-    if($out = ""){
+    }else{
       return false;
     }
   }
