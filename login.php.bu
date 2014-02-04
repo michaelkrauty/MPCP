@@ -37,8 +37,8 @@ if (login_check($mysqli) == true) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?>
-        <input type="email" value="email" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" value="password" class="form-control" placeholder="Password" required>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
         </label>
