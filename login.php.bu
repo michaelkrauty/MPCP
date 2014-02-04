@@ -37,14 +37,12 @@ if (login_check($mysqli) == true) {
             echo '<p class="error">Error Logging In!</p>';
         }
         ?>
-        <input type="email" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
+        <input type="email" value="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" value="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
         </label>
-	 <input type="button" 
-                   value="Login" 
-                   onclick="formhash(this.form, this.form.password);" /> 
+	 <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
       </form>
     </div>
 	<center>
