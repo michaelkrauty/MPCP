@@ -1,6 +1,4 @@
 <?php
-
-<?php
   $fh = fopen('/proc/meminfo');
   $mem = 0;
   while ($line = fgets($fh)) {
