@@ -137,6 +137,12 @@
               </div>';
             }
           ?>
+          <?php
+            if(serverExists($serverId)){
+              echo "Server exists!";
+            }else{
+              echo "Server does not exist!";
+            }
         <div class="well">
           <div class="well">
             <p>The console goes here.</p>
