@@ -1,3 +1,13 @@
 <?php
- $addr = file_get_contents("http://automation.whatismyip.com/n09230945.asp");
+$data['hostname'] = NULL;
+        $data['ip'] = NULL;
+        $var = gethostname();
+        if ($var === FALSE) {
+            $var = NULL;
+        }
+        else {
+            $data['hostname'] = $var;
+            $data['ip'] = gethostbyname($var);
+        }
+
  ?>
