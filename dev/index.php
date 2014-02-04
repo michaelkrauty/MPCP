@@ -1,17 +1,14 @@
 <?php
-  $fh = fopen('/proc/meminfo');
-  $mem = 0;
-  while ($line = fgets($fh)) {
-    $pieces = array();
-    if (preg_match('^MemTotal:\s+(\d+)\skB$', $line, $pieces)) {
-      $mem = $pieces[1];
-      break;
-    }
-  }
-  fclose($fh);
+// This is only an example, the numbers below will
+// differ depending on your system
 
-  echo "$mem kB RAM found"; ?>
+echo memory_get_usage() . "\n"; // 36640
 
+$a = str_repeat("Hello", 4242);
 
+echo memory_get_usage() . "\n"; // 57960
 
- ?>
+unset($a);
+
+echo memory_get_usage() . "\n"; // 36744
+?>
