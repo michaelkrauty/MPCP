@@ -39,13 +39,13 @@ function sec_session_start(){
 	$session_name = 'sec_session_id'; // Session Name.
 	$secure = SECURE; // Stops JS from accessing session id.
 	$httponly = true;
-
+/*
 	// Forces session to only use cookies.
-	if (ini_set('session.use_onlt_cookies', 1) === FALSE) {
+	if (ini_set('session.use_only_cookies', 1) === FALSE) {
 		header("Location: ../error.php?err=Could not initiate a safe session (ini_set)");
 		exit();
 	}
-
+*/
 	// Gets current cookies params.
 	$cookieParams = session_get_cookie_params();
 	session_set_cookie_params($cookieParams["lifetime"],

@@ -46,9 +46,11 @@ if (login_check($mysqli) == true) {
         <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign in</button>
       </form>
     </div>
+	<center>
         <p>If you don't have a login, please <a href="register.php">register</a></p>
         <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
         <p>You are currently logged <?php echo $logged ?>.</p>
-  </body>
+	</center> 
+</body>
 </html>
 
