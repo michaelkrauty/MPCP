@@ -40,7 +40,7 @@
 	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="openRegister()" />
 	      		<br>
 	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register">
-	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"onclick="window.open('http://dominationvps.com/mpcp/password_recovery.php','resizable=yes')">
+	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"onclick="window.open('http://dominationvps.com/mpcp/password_recovery.php')">
 					</form>
 				</div>
 			</div>
