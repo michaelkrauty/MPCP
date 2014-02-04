@@ -54,7 +54,7 @@ function sec_session_start(){
 		$secure,
 		$httponly);
 
-	session_name($session_name) // Sets the session name to the one set above.
+	session_name($session_name); // Sets the session name to the one set above.
 	session_start(); // Start the PHP session.
 	session_regenerate_id() // Delete old session and regenrate.
 }
