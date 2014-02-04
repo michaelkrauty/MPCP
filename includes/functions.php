@@ -70,7 +70,7 @@ function login ($email, $password, $mysqli) {
 	// Prepared statment to stop SQL injection.
 	if ($stmt = $mysqli->prepare("SELECT id,  username, password, salt FROM members WHERE email = ? LIMIT 1"))
 	$stmt->bind_param('s', $email); // Bind email to the parameter
-	$stmt->execure(); // Execute out statment
+	$stmt->execute(); // Execute out statment
 	$stmt->store_result();
 
 	// Get variables from result
