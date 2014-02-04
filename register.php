@@ -36,9 +36,13 @@
 	  	  <div class="well">
 			<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
 	  	    	<center><logintitle>Register</logintitle></center>
+			Username:
 			<br><input type="text" name = "username" class="form-control" placeholder="Username" required autofocus>
+			Email:
 			<br><input type="email" name= "email" class="form-control" placeholder="Email address" required>
-	      		<br><input type="password" name="password" class="form-control" placeholder="Password" required>
+	      		Password:
+			<br><input type="password" name="password" class="form-control" placeholder="Password" required>
+			Password Confirmation:
 			<br><input type="password" name="confirmpwd" class="form-control" placeholder="Confirmation Password" required>
 	      		<br><input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="return regformhash(this.form, this.form.username, this.form.email, this.form.password, this.form.confirmpwd);" />
 			<br><input class="btn btn-lg btn-primary btn-block" type="button" value="Back to login" onclick="parent.location='login.php'">
