@@ -121,9 +121,11 @@
   </body>
   <?php
     }else{
-      <script>
-        alert "You must be logged in to view this page!";
-      </script>
+    ?>
+    <script>
+      alert "You must be logged in to view this page!";
+    </script>
+    <?php
       header("Location: http://dominationvps.com/mpcp/login.php");
     }
   ?>
