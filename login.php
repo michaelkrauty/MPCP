@@ -35,11 +35,9 @@
       <center><h2 class="form-signin-heading">Sign in:</h2></center>
         <input type="email" class="form-control" placeholder="Email address" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
-        <div class="well">
-          <label class="checkbox">
-            <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
-          </label>
-        </div>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
+        </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
 
