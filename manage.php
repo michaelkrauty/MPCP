@@ -46,9 +46,30 @@
         <div class='navbar-collapse'>
           <ul class='nav navbar-nav'>
             <li><a href='index.php'>Home</a></li>
-            <li class='active'><a href='manage.php'>Manage</a></li>
-            <li><a href='account.php'>My Account</a></li>
-            <li><a href='logout.php'>Log Out</a></li>
+            <li class='active'>
+              <a href='manage.php'>
+                Manage
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle"dropdown">
+                User's email here
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="">Settings</a></li>
+                <li><a href="">Sub Users</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Knowledgebase</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Access Log</a></li>
+                <li class="divider"></li>
+                <li><a href="">Logout</a>
+              </ul>
+            </li>
+          </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
