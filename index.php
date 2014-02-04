@@ -29,7 +29,7 @@
     <?php
       $UE = $_SESSION['email'];
       $UN = $_SESSION['username'];
-      $userEmail = str_replace("%20.","",$UE);
+      $userEmail = str_replace("","",$UE);
       $userName = str_replace("%20.","",$UN);
     ?>
   </head>
@@ -77,8 +77,8 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
-          <h2><?php echo $userName . " " . $userEmail; ?></h2>
-          <img src="http://signaturecraft.us/avatars/30/face/' . <?php echo $userName; ?> . '.png"  height="100" width="100">
+          <h2><?php echo $userName $userEmail; ?></h2>
+          <img src="http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png"  height="100" width="100">
         </center>
       </div>
     </div>
