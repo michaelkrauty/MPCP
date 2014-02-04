@@ -44,6 +44,7 @@
 	      		<label class="checkbox">
 	      		<input type="checkbox" value="remember-me">Remember me</label>
 	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);">
+			<br>
 			<table width="100%">
 			<tr>
 			<th width="50%">
