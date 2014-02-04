@@ -29,8 +29,8 @@
     <?php
       $UE = $_SESSION['email'];
       $UN = $_SESSION['username'];
-      $userEmail = str_replace("%20.","",$UE)
-      $userName = str_replace("%20.","",$UN)
+      $userEmail = str_replace("%20.","",$UE);
+      $userName = str_replace("%20.","",$UN);
     ?>
   </head>
   
