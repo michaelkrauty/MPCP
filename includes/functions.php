@@ -107,6 +107,7 @@ function sec_session_start(){
             // No user exists.
             return false;
         }
+}
 /*
 * --------------------------
 */
