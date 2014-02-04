@@ -59,8 +59,10 @@
               var active=new Boolean();
                 if(!active){
                   document.write("<li class=\"dropdown open\">");
+                  active = true;
                 }else{
                   document.write("<li class=\"dropdown\">");
+                  active = false;
                 }
               }
             </script>
