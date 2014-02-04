@@ -56,6 +56,7 @@ sec_session_start();
 		} else {
     		// The correct POST variables were not sent to this page. 
     		echo 'Invalid Request';
+		}
 /*
 * --------------------------
 */
