@@ -56,12 +56,12 @@
             <script>
               active = false;
               funciton toggleMenu(){
-              var active=new Boolean();
+              var active = new Boolean();
                 if(!active){
-                  document.write("<li class=\"dropdown open\">");
+                  document.write("<li class='dropdown open'>");
                   active = true;
                 }else{
-                  document.write("<li class=\"dropdown\">");
+                  document.write("<li class='dropdown'>");
                   active = false;
                 }
               }
