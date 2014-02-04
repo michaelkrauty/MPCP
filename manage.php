@@ -50,18 +50,19 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">User's email here <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Settings</a></li>
+                <li><a href="">Sub Users</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Knowledgebase</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Access Log</a></li>
+                <li class="divider"></li>
+                <li><a href="">Logout</a></li>
+              </ul>
+            </li>
           </ul>
             </li>
           </ul>
