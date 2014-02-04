@@ -34,8 +34,8 @@
 	      		<input type="checkbox" value="remember-me">Remember me</label>
 	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);" />
 	      		<br>
-	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register"><a href="register.php"></a>
-	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"><a href="recovery.php"></a>
+	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register"onclick="window.open('http://dominationvps.com/mpcp/register.php','resizable=yes')">
+	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"onclick="window.open('http://dominationvps.com/mpcp/password_recovery.php','resizable=yes')">
 					</form>
 				</div>
 			</div>
