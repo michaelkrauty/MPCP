@@ -49,7 +49,7 @@
 			<tr>
 			<th width="45%">
   			<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="parent.location='register.php'">
-     			<th width="10%>
+     			<th width="10%">
 			<th width="45%">
 			<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='password_lost.php'">
 			</tr>
