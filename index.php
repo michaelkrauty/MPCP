@@ -101,7 +101,7 @@
             </div>
           </center>
         </div>
-        <div class="col-md-5" styple="float:right;">
+        <div class="col-md-5" style="float:right;">
           <center>
             <div class="welll">
               <div class="page-header">
