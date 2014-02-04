@@ -32,7 +32,7 @@
     <br>
     <div class="container">
       <form class="form-signin" role="form">
-      <h2 class="form-signin-heading">Sign in:</h2>
+      <center><h2 class="form-signin-heading">Sign in:</h2></center>
         <input type="email" class="form-control" placeholder="Email address" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
