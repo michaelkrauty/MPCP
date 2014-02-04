@@ -27,8 +27,8 @@
       <script src='https://oss.maxcdn.com/libs/respond.js/1.5.2/respond.min.js'></script>
     <![endif]-->
     <?php
-      $userEmail = echo $_SESSION['email'];
-      $userName = echo $_SESSION['username'];
+      $userEmail = $_SESSION['email'];
+      $userName = $_SESSION['username'];
     ?>
   </head>
   
