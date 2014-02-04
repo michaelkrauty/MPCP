@@ -161,7 +161,7 @@
                   echo test($serverId, $cmd);
                 }else{}
               }else{
-                echo "Server is not online!";
+                echo "Server is offline!";
               }
             ?>
           </form>
