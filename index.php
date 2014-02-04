@@ -77,7 +77,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
-          <h2><?php echo $userName $userEmail; ?></h2>
+          <h2><?php echo $userName; echo $userEmail; ?></h2>
           <img src="http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png"  height="100" width="100">
         </center>
       </div>
