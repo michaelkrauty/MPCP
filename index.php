@@ -27,10 +27,8 @@
       <script src='https://oss.maxcdn.com/libs/respond.js/1.5.2/respond.min.js'></script>
     <![endif]-->
     <?php
-      $UE = $_SESSION['email'];
-      $UN = $_SESSION['username'];
-      $userEmail = str_replace("","",$UE);
-      $userName = str_replace("%20.","",$UN);
+      $userEmail = $_SESSION['email'];
+      $userName = $_SESSION['username'];
     ?>
   </head>
   
