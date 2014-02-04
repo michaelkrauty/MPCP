@@ -115,5 +115,5 @@
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap/assets/js/docs.min.js"></script>
   </body>
-  <?php }else{ echo 'You are not authorized to access this page, please login.'; } ?>
+  <?php }else{ header("Location: http://dominationvps.com/mpcp/login.php"); } ?>
 </html>
