@@ -1,59 +1,51 @@
 <?php
-include_once 'includes/register.inc.php';
-include_once 'includes/functions.php';
+	include_once 'includes/db_connect.php';
+	include_once 'includes/functions.php';
+
+	sec_session_start();
+	if (login_check($mysqli) == true) {
+		$logged = 'in';
+	} else {
+		$logged = 'out';
+	}
+
 ?>
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Secure Login: Registration Form</title>
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script>
-        <link rel="stylesheet" href="styles/main.css" />
-    </head>
-    <body>
-        <!-- Registration form to be output if the POST variables are not
-        set or if the registration script caused an error. -->
-        <h1>Register with us</h1>
-        <?php
-        if (!empty($error_msg)) {
-            echo $error_msg;
-        }
-        ?>
-        <ul>
-            <li>Usernames may contain only digits, upper and lower case letters and underscores</li>
-            <li>Emails must have a valid email format</li>
-            <li>Passwords must be at least 6 characters long</li>
-            <li>Passwords must contain
-                <ul>
-                    <li>At least one upper case letter (A..Z)</li>
-                    <li>At least one lower case letter (a..z)</li>
-                    <li>At least one number (0..9)</li>
-                </ul>
-            </li>
-            <li>Your password and confirmation must match exactly</li>
-        </ul>
-        <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
-                method="post" 
-                name="registration_form">
-            Username: <input type='text' 
-                name='username' 
-                id='username' /><br>
-            Email: <input type="text" name="email" id="email" /><br>
-            Password: <input type="password"
-                             name="password" 
-                             id="password"/><br>
-            Confirm password: <input type="password" 
-                                     name="confirmpwd" 
-                                     id="confirmpwd" /><br>
-            <input type="button" 
-                   value="Register" 
-                   onclick="return regformhash(this.form,
-                                   this.form.username,
-                                   this.form.email,
-                                   this.form.password,
-                                   this.form.confirmpwd);" /> 
-        </form>
-        <p>Return to the <a href="index.php">login page</a>.</p>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MPCP Registration Page">
+    <meta name="author" content="Daniel Oxenbury (http://Daniel.oxituk.co.uk)">
+    <meta name="author" content="Michael Krautkramer">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>MPCP Registration</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="webroot/css/registration.css" rel="stylesheet">
+  </head>
+  <div class="strokeme">
+  	<pagetitle><center>MPCP User Registration</center></pagetitle>
+  </div>
+  <br>
+  <body>
+    	<div class="container">
+	  	  <div class="well">
+	  	    <form action="includes/process_registration.php" class="form-signin" role="form" method="post" name="login_form">
+	  	    	<center><logintitle>Register.</logintitle></center>
+			<input type="text" name = "username" class="form-control" placeholder="Username" required autofocus>
+			<input type="email" name= "email" class="form-control" placeholder="Email address" required>
+	      		<input type="password" name="password" class="form-control" placeholder="Password" required>
+			<input type="passwordconf" name="passwordcomf" class="form-control" placeholder="Confirmation Password" required>
+	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="">
+					</form>
+				</div>
+			</div>
+		</center>
+	</body>
 </html>
+<script type="text/JavaScript" src="js/sha512.js"></script> 
+<script type="text/JavaScript" src="js/forms.js"></script> 
