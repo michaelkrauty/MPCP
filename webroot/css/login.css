@@ -56,3 +56,13 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.strokeme
+{
+  color: black;
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+  1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+  1px 1px 0 #FFFFFF;
+}
