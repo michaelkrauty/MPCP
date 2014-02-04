@@ -26,7 +26,7 @@ if (login_check($mysqli) == true) {
     <!-- Custom styles for this template -->
     <link href="webroot/css/login.css" rel="stylesheet">
   </head>
-  <pagetitle><center>MPCP | Login</center></pagetitle>
+  <pagetitle><center>Log into MPCP</center></pagetitle>
   <body>
     <br>
     <center>
