@@ -47,12 +47,12 @@ function regformhash(form, uid, email, password, conf) {
     // At least one number, one lowercase and one uppercase letter 
     // At least six characters 
  
-    var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; 
+ /*   var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; 
     if (!re.test(password.value)) {
         alert('Passwords must contain at least one number, one lowercase and one uppercase letter.  Please try again');
         return false;
     }
- 
+*/ 
     // Check password and confirmation are the same
     if (password.value != conf.value) {
         alert('Your password and confirmation do not match. Please try again');
