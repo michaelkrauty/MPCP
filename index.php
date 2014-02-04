@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-  <?php include 'mpcp.php'; $serverId = 'mpcp_0'; ?>
+  <?php include_once "includes/db_connect.php"; include_once "includes/functions.php"; sec_session_start(); if(login_check($mysqli) == true){ ?>
+  <?php include_once 'mpcp.php'; $serverId = 'mpcp_0'; ?>
 
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -114,4 +115,5 @@
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap/assets/js/docs.min.js"></script>
   </body>
+  <?php }else{ echo 'You are not authorized to access this page, please login.'; } ?>
 </html>
