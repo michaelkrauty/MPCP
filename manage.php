@@ -153,8 +153,8 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                echo implode(" ",$_POST['command']);
-                echo test($serverId, $cmd);
+                $cmd = implode(" ",$_POST['command']);
+                test($serverId, $cmd);
               }else{
                 echo "Server is not online!";
               }
