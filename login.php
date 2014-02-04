@@ -30,8 +30,8 @@ if (login_check($mysqli) == true) {
   <body>
     <br>
     <center>
-    <div class="container">
     <div class="col-xs-4">
+    <div class="container">
     <div class="well">
       <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
       <h2 class="form-signin-heading">Sign in:</h2>
