@@ -29,10 +29,11 @@ if (login_check($mysqli) == true) {
   <pagetitle><center>Multiplayer Controle Panel | Login</center></pagetitle>
   <body>
     <br>
+    <center>
     <div class="container">
-    <div class="well">
+    <div class="col-xs-4">
       <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
-      <center><h2 class="form-signin-heading">Sign in:</h2></center>
+      <h2 class="form-signin-heading">Sign in:</h2>
       <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Error Logging In!</p>';
@@ -47,6 +48,7 @@ if (login_check($mysqli) == true) {
       </form>
     </div>
     </div>
+    </center>
 	<center>
         <p>If you don't have a login, please <a href="register.php">register</a></p>
         <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
