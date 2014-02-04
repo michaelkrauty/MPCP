@@ -12,11 +12,10 @@
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
     if(strpos($out,$serverId) == true){
-      $online = true;
+      return true;
     }else{
-      $online = false;
+      return false;
     }
-    return $online;
   }
   
   function serverOnline($serverId){
