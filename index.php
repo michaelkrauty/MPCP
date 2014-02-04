@@ -75,7 +75,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
-          <img src="http://signaturecraft.us/avatars/30/face/" . <?php echo $userName; ?> . ".png" height="100" width="100">
+          <img src="http://signaturecraft.us/avatars/30/face/' . <?php echo $userName; ?> . '.png"  height="100" width="100">
         </center>
       </div>
     </div>
