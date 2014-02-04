@@ -33,8 +33,8 @@
 	      		<label class="checkbox">
 	      		<input type="checkbox" value="remember-me">Remember me</label>
 	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);" />
-	      		<div class="col-xs-4"><input class="btn btn-lg btn-success btn-block" type="button" value="Register"></div>
-	      		<div class="col-xs-4"><input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"></div>
+	      		<div class="col-xs-3"><input class="btn btn-lg btn-success btn-block" type="button" value="Register"></div>
+	      		<div class="col-xs-3"><input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password"></div>
 					</form>
 				</div>
 			</div>
