@@ -103,6 +103,7 @@ function login($email, $password, $mysqli) {
                                                                 "", 
                                                                 $username);
                     $_SESSION['username'] = $username;
+                    $_SESSION['email'] = $email;
                     $_SESSION['login_string'] = hash('sha512', 
                               $password . $user_browser);
                     // Login successful.
