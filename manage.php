@@ -29,7 +29,7 @@
   <body>
   
   <!-- for now, the only server around town is "testserver" -->
-  <?php include "mpcp.php"; $serverId = "testserver"; ?>
+  <?php include "mpcp.php"; $serverId = "mpcp_0"; ?>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class='container'>

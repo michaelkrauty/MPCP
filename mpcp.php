@@ -24,7 +24,7 @@
   }
     
   function startServer($serverId){
-    if(!online($serverId)){
+    if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
     }else{
       
@@ -32,7 +32,7 @@
   }
   
   function stopServer($serverId){
-    if(online($serverId)){
+    if(screenOnline($serverId)){
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
     }else{
       
@@ -40,25 +40,25 @@
   }
   
   function restartServer($serverId){
-    if(online($serverId)){
+    if(screenOnline($serverId)){
       #restart
     }
   }
   
   function reloadServer($serverId){
-    if(online($serverId)){
+    if(screenOnline($serverId)){
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
     }
   }
   
   function executeCommand($serverId, $command){
-    if(online($serverId)){
+    if(screenOnline($serverId)){
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
     }
   }
   
   function test($serverId, $command){
-    if(online($serverId)){
+    if(screenOnline($serverId)){
       $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
       return $out;
     }
