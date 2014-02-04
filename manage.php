@@ -151,15 +151,15 @@
               <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
             </div>
             <br><br>
-          </form>
            <?php
               if(screenOnline($serverId)){
-                $cmd = $_POST['command'];
+                $cmd = $_GET['command'];
                 test($serverId, $cmd);
               }else{
                 echo "Server is not online!";
               }
             ?>
+          </form>
         </div>
       </div>
     </div>
