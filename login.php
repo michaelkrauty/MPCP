@@ -29,8 +29,8 @@
   </head>
 
   <body>
-<!--<center><pagetitle> MultiPlayer Control Panel | Login </pagetitle></center>-->
-    <br><br><br><br>
+    <center><pagetitle>Login:</pagetitle></center>
+    <br>
     <div class="container">
       <form class="form-signin" role="form">
       <!--<h2 class="form-signin-heading">Please sign in</h2>-->
