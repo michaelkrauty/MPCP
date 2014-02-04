@@ -68,7 +68,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome!</h1>
-          <img src="http://signaturecraft.us/avatars/10/face/mi16.png" height="100" width="100">
+          <img src="http://signaturecraft.us/avatars/11.25/face/mi16.png" height="90" width="90">
         </center>
       </div>
     </div>
