@@ -32,10 +32,10 @@
 	      		<input type="password" name="password" class="form-control" placeholder="Password" required>
 	      		<label class="checkbox">
 	      		<input type="checkbox" value="remember-me">Remember me</label>
-	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="openRegister()" />
+	      		<input class="btn btn-lg btn-primary btn-block" type="button" value="Login">
 	      		<br>
-	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register" action="http://dominationvps.com/mpcp/register.php">
-	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onclick="window.open('http://dominationvps.com/mpcp/password_recovery.php')">
+	      		<input class="btn btn-lg btn-success btn-block" type="button" value="Register">
+	      		<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password">
 					</form>
 				</div>
 			</div>
