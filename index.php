@@ -27,25 +27,44 @@
   <body role='document'>
   
     <!-- Fixed navbar -->
-    <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class='container'>
         <div class='navbar-header'>
-            <span class='sr-only'>Toggle navigation</span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
           <a class='navbar-brand' href='index.php'>DominationVPS</a>
         </div>
         <div class='navbar-collapse'>
           <ul class='nav navbar-nav'>
-            <li class='active'><a href='index.php'>Home</a></li>
-            <li><a href='manage.php'>Manage</a></li>
-            <li><a href='account.php'>My Account</a></li>
-            <li><a href='logout.php'>Log Out</a></li>
+            <li><a href='index.php'>Home</a></li>
+            <li class='active'>
+              <a href='manage.php'>
+                Manage
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">User's email here <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="settings/">Settings</a></li>
+                <li><a href="">Sub Users</a></li>
+                <li><a href="forum/">Support</a></li>
+                <li><a href="knowledgebase/">Knowledgebase</a></li>
+                <li><a href="forum/">Forum</a></li>
+                <li><a href="">Access Log</a></li>
+                <li class="divider"></li>
+                <li><a href="logout.php">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+    </div>
   </div>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
