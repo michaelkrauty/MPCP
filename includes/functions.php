@@ -127,9 +127,9 @@ function checkbrute($user_id, $mysqli) {
 	$stmt->store_result();
 
 	if ($stmt->num_rows > 5) {
-		return true
+		return true;
 	} else {
-		return false
+		return false;
 	}
 }
 }
