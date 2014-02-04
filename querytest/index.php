@@ -7,9 +7,7 @@
 		echo "OFFLINE";
 	}else{
 		echo"<img width=\"64\" height=\"64\" src=\"".$response['favicon']."\" /> <br>
-		ONLINE
-		currently are ".$response['players']." players online
-		of a maximum of ".$response['maxplayers'].". The motd of the server is '".$response['motd']."'. 
+		ONLINE '".$response['motd']."'. 
 		The server has a ping of ".$response['ping']." milliseconds.";
 	}
 ?>
