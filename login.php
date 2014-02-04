@@ -20,7 +20,11 @@
     	<div class="container">
 	  	  <div class="well">
 	  	    <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
+<<<<<<< HEAD
 	  	    	<logintitle>Sign In</logintitle>
+=======
+	  	    	<center><logintitle>Sign in:</logintitle></center>
+>>>>>>> 5dcb28d14039e68554147ce61ddaf683ca416b8d
 		      	<?php
 	  	    	  if (isset($_GET['error'])) {
 	        	  	echo '<p class="error">Error Logging In!</p>';
