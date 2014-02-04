@@ -77,7 +77,7 @@
           <h1>Welcome!</h1>
           <h2><?php echo $userName; echo $userEmail; ?></h2>
           <?php
-          $image1 = "http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png";
+          $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
           $image2 = "http://signaturecraft.us/avatars/30/face/noskin.png";
             $md5image1 = md5(file_get_contents($image1));
             $md5image2 = md5(file_get_contents($image2));
