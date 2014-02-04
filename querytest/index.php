@@ -6,6 +6,6 @@
 	if(!$response){
 		echo "OFFLINE";
 	}else{
-		echo"ONLINE '".$response['motd']."'";
+		echo"ONLINE";
 	}
 ?>
