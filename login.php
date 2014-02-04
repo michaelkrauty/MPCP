@@ -43,7 +43,7 @@ if (login_check($mysqli) == true) {
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="formhash(this.form, this.form.password);>Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign in</button>
       </form>
     </div>
         <p>If you don't have a login, please <a href="register.php">register</a></p>
