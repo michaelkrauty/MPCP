@@ -30,6 +30,7 @@ if (login_check($mysqli) == true) {
   <body>
     <br>
     <div class="container">
+    <div class="well">
       <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
       <center><h2 class="form-signin-heading">Sign in:</h2></center>
       <?php
@@ -44,6 +45,7 @@ if (login_check($mysqli) == true) {
         </label>
 	 <input class= "btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
       </form>
+    </div>
     </div>
 	<center>
         <p>If you don't have a login, please <a href="register.php">register</a></p>
