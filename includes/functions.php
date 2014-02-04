@@ -85,7 +85,7 @@ function login ($email, $password, $mysqli) {
 		if (checkbrute($user_id, mysqli) == true) {
 		return false; // Account is locked
 		}
-	else {
+	} else {
 		// Check if the password in the batabase matches & XSS protection.
 		if ($db_password == $password) {
 			$user_browser = $_SERVER['HTTP_USER_AGENT'];
