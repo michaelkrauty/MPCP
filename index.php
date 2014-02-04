@@ -76,7 +76,17 @@
         <center>
           <h1>Welcome!</h1>
           <h2><?php echo $userName; echo $userEmail; ?></h2>
+          <?php
+          $image1 = "http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png";
+          $image2 = "http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png";
+            $md5image1 = md5(file_get_contents($image1));
+            $md5image2 = md5(file_get_contents($image2));
+            if($md5image1 == $md5image2){
+          <img src="http://signaturecraft.us/avatars/30/face/Herobrine.png" height="100" width="100">
+            }else{
           <img src="http://signaturecraft.us/avatars/30/face/<?php echo $userName; ?>.png" height="100" width="100">
+            }
+          ?>
         </center>
       </div>
     </div>
