@@ -42,7 +42,7 @@ if (login_check($mysqli) == true) {
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> <font color="white">Remember me</font>
         </label>
-	 <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
+	 <input class= "btn btn-lg btn-primary btn-block" type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
       </form>
     </div>
 	<center>
