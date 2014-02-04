@@ -156,9 +156,7 @@
                 if($_GET["command"] != null){
                   $cmd = $_GET['command'];
                   echo test($serverId, $cmd);
-                }else{
-                  
-                }
+                }else{}
               }else{
                 echo "Server is not online!";
               }
