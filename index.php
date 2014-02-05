@@ -62,7 +62,7 @@
 		<td> Test Server 1 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><form><button type="submit"><i class="glyphicon glyphicon-icon-play">start</i><button type="submit"><i class="glyphicon glyphicon-icon-stop">stop</i> <button type="submit"><i class="glyphicon glyphicon-icon-refresh">reload</i><button type="submit"><i class="glyphicon glyphicon-icon-cog">settings</i></form></td>
+		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 	<tr class="success">
 		<td> 00002 </td>
@@ -70,7 +70,7 @@
 		<td> Test Server 2 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><form><button type="submit"><i class="glyphicon glyphicon-icon-play">start</i><button type="submit"><i class="glyphicon glyphicon-icon-stop">stop</i> <button type="submit"><i class="glyphicon glyphicon-icon-refresh">reload</i><button type="submit"><i class="glyphicon glyphicon-icon-cog">settings</i></form></td>
+		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 	<tr class="success">
 		<td> 00003 </td>
@@ -78,7 +78,7 @@
 		<td> Test Server 3 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><form><button type="submit"><i class="glyphicon glyphicon-icon-play">start</i><button type="submit"><i class="glyphicon glyphicon-icon-stop">stop</i> <button type="submit"><i class="glyphicon glyphicon-icon-refresh">reload</i><button type="submit"><i class="glyphicon glyphicon-icon-cog">settings</i></form></td>
+		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 	<tr class="success">
 		<td> 00004 </td>
@@ -86,7 +86,7 @@
 		<td> Test Server 4 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><form><button type="submit"><i class="glyphicon glyphicon-icon-play">start</i><button type="submit"><i class="glyphicon glyphicon-icon-stop">stop</i> <button type="submit"><i class="glyphicon glyphicon-icon-refresh">reload</i><button type="submit"><i class="glyphicon glyphicon-icon-cog">settings</i></form></td>
+		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 	<tr class="warning">
 		<td> 00005 </td>
@@ -94,10 +94,9 @@
 		<td> Test Server 5 </td>
 		<td> 0 / 24 </td>
 		<td> OFFLINE </td>
-		<td><i class="glyphicon glyphicon-icon-play">start</i><i class="glyphicon glyphicon-icon-stop">stop</i><i class="glyphicon glyphicon-icon-refresh">reload</i><i class="glyphicon glyphicon-icon-cog">settings</i></td>
+		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 </table>
-<span class="glyphicon glyphicon-ok"></span>.
 	</center>
       </div>
     </div>
