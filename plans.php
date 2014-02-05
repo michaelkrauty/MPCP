@@ -57,7 +57,7 @@
               <td>256MB</td>
               <td>3</td>
               <td>$2</td>
-              <td><ul class="pager"><li><a href="order"> Order Now</a></li></ul></td>
+              <td><ul class="pager"><a href="order"> Order Now</a></ul></td>
             </tr>
             <tr class="success">
               <td>Grass</td>
