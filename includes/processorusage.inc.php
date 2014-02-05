@@ -51,9 +51,9 @@ $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
         echo $v['user'] . ','. "<br>";
-        echo $v['nice'] . ','. "<br>";
-        echo $v['sys'] . ','. "<br>";
-        echo $v['idle'] . ','. "<br>";
+        /*echo $v['nice'] . ','. "<br>";*/
+        /*echo $v['sys'] . ','. "<br>";*/
+        /*echo $v['idle'] . ','. "<br>";*/
 	echo "<p>";
 }
 
