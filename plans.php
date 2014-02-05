@@ -14,7 +14,7 @@
     <meta name="author" content="Daniel Oxenbury (http://daniel.oxituk.co.uk)">
     <meta name="author" content="Michael Krautkramer">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-    <title>MPCP Login</title>
+    <title>MPCP Minecraft Plans</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
