@@ -1,39 +1,11 @@
 <div class="well">
 <h2> Memory Usage </h2>
 <?php
-function Memory_Usage($decimals = 2)
-{
-    $result = 0;
-
-    if (function_exists('memory_get_usage'))
-    {
-        $result = memory_get_usage() / 1024;
+    $data = explode("\n", file_get_contents("/proc/meminfo"));
+    $meminfo = array();
+    foreach ($data as $line) {
+    	list($key, $val) = explode(":", $line);
+    	$meminfo[$key] = trim($val);
     }
-
-    else
-    {
-        if (function_exists('exec'))
-        {
-            $output = array();
-
-            if (substr(strtoupper(PHP_OS), 0, 3) == 'WIN')
-            {
-                exec('tasklist /FI "PID eq ' . getmypid() . '" /FO LIST', $output);
-
-                $result = preg_replace('/[\D]/', '', $output[5]);
-            }
-
-            else
-            {
-                exec('ps -eo%mem,rss,pid | grep ' . getmypid(), $output);
-
-                $output = explode('  ', $output[0]);
-
-                $result = $output[1];
-            }
-        }
-    }
-
-    return number_format(intval($result) / 1024, $decimals, '.', '');
-}
+    var_dump($meminfo);
 ?>
