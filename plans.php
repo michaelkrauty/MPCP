@@ -43,6 +43,7 @@
       </div>
     </center>
     
+    <div class="table">
     <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
@@ -66,6 +67,7 @@
                 <td>Stone (1GB)</td>
                 <td>Overkill? naaaaah.</td>
 </table>
+</div>
     
     
     
