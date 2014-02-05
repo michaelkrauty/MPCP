@@ -35,7 +35,7 @@
       <div class='page-header'>
         <center>
           <h1>Welcome, <?php echo $userName; ?>!</h1>
-          <?php
+	  <?php
           $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
           $image2 = "http://signaturecraft.us/avatars/30/face/noskin.png";
             $md5image1 = md5(file_get_contents($image1));
@@ -46,52 +46,10 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
+
         </center>
       </div>
     </div>
-
-    <div class='jumbotron'>
-      <div class='row'>
-        <div class='col-md-5' style='float:left;'>
-          <center>
-            <div class='well'>
-              <div class='page-header'>
-                <h2>column 1</h2>
-              </div>
-            </div>
-          </center>
-        </div>
-        <div class='col-md-5' style='float:right;'>
-          <center>
-            <div class='well'>
-              <div class='page-header'>
-                <h2>column 2, lol</h2>
-              </div>
-            </div>
-          </center>
-        </div>
-        <div class="col-md-5" style="float:right;">
-          <center>
-            <div class="welll">
-              <div class="page-header">
-                <h2>Column 3</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
-    
-    </div> <!-- /container -->
-    
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./bootstrap/assets/js/docs.min.js"></script>
   </body>
   <?php
     }else{
@@ -104,3 +62,9 @@
     }
   ?>
 </html>
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/assets/js/docs.min.js"></script>
+
