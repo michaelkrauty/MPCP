@@ -50,7 +50,7 @@ $stat2 = GetCoreInformation();
 $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
-        echo ($k['user']);
+        echo ($v['user']);
 }
 ?>
 
