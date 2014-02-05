@@ -14,7 +14,7 @@
             <a href='../index.php'>Home</a></li>
             <?php
               if($pageName == "manage"){ echo "<li class='active'>"; }else{ echo "<li>"; } ?>
-            <a href='manage/index.php'>Manage</a></li>
+            <a href='../manage/index.php'>Manage</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
