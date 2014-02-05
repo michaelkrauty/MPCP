@@ -70,14 +70,14 @@ $c = 0;
         echo "</div>";
         echo "</div>";
         }
-        if ($i > 60) {
+        else if ($i > 60) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
         }
-        if ($i >= 0) {
+        else ($i >= 0) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
