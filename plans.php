@@ -52,19 +52,27 @@
         <th width="10%">Recommended Players</th>
         <th width="10%">Description</th>
         <tr class="success">
-                <td>Air (256MB)</td>
+                <td>Air</td>
+                <td>256MB</td>
+                <td>3</td>
                 <td>lol, this plan is light as air</td>
         </tr>
         <tr class="success">
-                <td>Grass (512MB)</td>
+                <td>Grass</td>
+                <td>512MB</td>
+                <td>5</td>
                 <td>so this plan is 512MB. yay.</td>
         </tr>
         <tr class="success">
-                <td>Cobble (768MB)</td>
+                <td>Cobble</td>
+                <td>768</td>
+                <td>10</td>
                 <td>For those people who think 512MB is whimpy, but 1GB is overkill</td>
         </center>
         <tr class="success">
-                <td>Stone (1GB)</td>
+                <td>Stone</td>
+                <td>1GB</td>
+                <td>20</td>
                 <td>Overkill? naaaaah.</td>
 </table>
 </div>
