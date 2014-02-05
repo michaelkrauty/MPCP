@@ -16,14 +16,14 @@
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown"><?php echo $userEmail; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="../settings/">Settings</a></li>
+            <li><a href="/var/www/html/mpcp/settings/">Settings</a></li>
             <li><a href="">Sub Users</a></li>
-            <li><a href="../forum/">Support</a></li>
-            <li><a href="../knowledgebase/">Knowledgebase</a></li>
-            <li><a href="../forum/">Forum</a></li>
+            <li><a href="/var/www/html/mpcp/forum/">Support</a></li>
+            <li><a href="/var/www/html/mpcp/knowledgebase/">Knowledgebase</a></li>
+            <li><a href="/var/www/html/mpcp/forum/">Forum</a></li>
             <li><a href="">Access Log</a></li>
             <li class="divider"></li>
-            <li><a href="../includes/logout.php">Logout</a></li>
+            <li><a href="/var/www/html/mpcp/includes/logout.php">Logout</a></li>
           </ul>
         </li>
       </ul>
