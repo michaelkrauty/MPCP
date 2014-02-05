@@ -42,7 +42,7 @@
 
   <body>
   
-  <?php include_once "../header.inc.php"; ?>
+  <?php include_once "../includes/header.inc.php"; ?>
     
     <div class="container-fluid">
       <div class="row">
