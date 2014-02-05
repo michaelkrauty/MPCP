@@ -99,7 +99,7 @@
 	</center>
 </table>
 <div class="progress progress-info">
-  <div class="bar" style="width: 20%"></div>
+  <div class="progress-bar" style="width: 20%"></div>
 </div>
 <div class="progress progress-success">
   <div class="bar" style="width: 40%"></div>
