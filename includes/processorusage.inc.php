@@ -49,10 +49,10 @@ sleep(1);
 $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
-
+$c = 0;
 foreach( $data as $k => $v ) {
         $i = $v['user'];
-	echo $k;
+	echo "<h4>Processor {C} <h4>
         if ($i > 80) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
@@ -73,6 +73,7 @@ foreach( $data as $k => $v ) {
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
+	$c ++;
         }
 }
 ?>
