@@ -40,8 +40,7 @@
 	  <br></br>
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
 	  <br></br>
-          <?php include_once "./includes/processorusage.inc.php"; ?>
-		<div id="procinfo"> <?php include_once "./includes/processorusage.inc.php"; ?> </div>
+          <div id="procinfo"></div>
 	</center>
       </div>
     </div>
