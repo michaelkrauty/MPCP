@@ -1,6 +1,6 @@
 <div class="navbar navbar-inverse navbar-fixed-bottom">
 <div class='container'>
-<center>CREATED BY DANIEL OXENBURY WITH NO HELP FROM MI16</center>
+<center><font color="#999">CREATED BY DANIEL OXENBURY WITH NO HELP FROM MI16</font></center>
 </div>
 </div>
 
