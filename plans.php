@@ -41,7 +41,6 @@
           </div>
         </div>
       </div>
-    </center>
     
     <div class="table">
     <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
@@ -76,6 +75,7 @@
                 <td>Overkill? naaaaah.</td>
 </table>
 </div>
+</center>
     
     
     
