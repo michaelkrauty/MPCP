@@ -34,7 +34,9 @@
     
     
     <center>
-      <div class="page-header">Minecraft Plans</div>
+      <div class="header">
+        <div class="page-header">Minecraft Plans</div>
+      </div>
     </center>
     
     
