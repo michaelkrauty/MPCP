@@ -133,7 +133,7 @@
               if(screenOnline($serverId)){
                 if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
-                  echo test($serverId, $cmd);
+                  echo executeCommand($serverId, $cmd);
                 }else{}
               }else{
                 echo "Server is offline!";
