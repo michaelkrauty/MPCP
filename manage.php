@@ -128,7 +128,7 @@
             <br><br>
            <?php
               if(screenOnline($serverId)){
-                if(isset($_GET['cmd'])){
+                if($_GET['cmd'] != ""){
                   $cmd = $_GET['cmd'];
                   executeCommand($serverId, $cmd);
                 }else{}
