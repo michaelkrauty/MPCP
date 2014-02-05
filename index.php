@@ -49,16 +49,6 @@
             }
           ?>
 	<h2>CPU Information</h2>
-<?php
-for($i=0; $i<=20; $i++) {
-    //cpu load
-    exec("top -b -n 1 | grep 'Cpu(s):' > /some/file.cpu");
-    //ram usage
-    exec("top -b -n 1 | grep 'Mem:' > /some/file.ram");
-    //wait 3sec
-    sleep(3);
-}
-?>
 	<h2></h2>
 
 
