@@ -65,7 +65,7 @@ foreach( $data as $k => $v ) {
         echo "</div>";
         echo "</div>";
         }
-        if ($i > 0) {
+        if ($i >= 0) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
