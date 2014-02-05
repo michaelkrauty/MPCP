@@ -47,11 +47,11 @@
         <table style="width:100%;" class="table table-curved table-hover">
         <tr>
           <center>
-            <th width="15%">Plan</th>
-            <th width="15%">RAM</th>
-            <th width="15%">Players</th>
-            <th width="15%">Price</th>
-            <th width="15%">Select</th>
+            <th width="15%"><center>Plan</center></th>
+            <th width="15%"><center>RAM</center></th>
+            <th width="15%"><center>Players</center></th>
+            <th width="15%"><center>Price</center></th>
+            <th width="15%"><center>Select</center></th>
             <tr>
               <td><h2>Air</h2></td>
               <td><h2>56MB</h2></td>
