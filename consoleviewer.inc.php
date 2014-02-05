@@ -1,4 +1,4 @@
 <?php
   include "mpcp.php";
-  follow($logFile);
+  echo "[console here ;)]";
 ?>
