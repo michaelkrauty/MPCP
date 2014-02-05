@@ -37,6 +37,7 @@
   function stopServer($serverId){
     if(screenOnline($serverId)){
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
+      sleep(1);
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
     }else{
       
