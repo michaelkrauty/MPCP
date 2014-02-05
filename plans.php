@@ -43,41 +43,43 @@
       </div>
     </center>
     <center>
-    <div class="table">
-    <table class="table table-striped table-bordered table-condensed">
+      <div class="table">
+        <table class="table table-striped table-bordered table-condensed">
         <tr>
-        <center>
-        <th width="25%">Plan</th>
-        <th width="25%">RAM</th>
-        <th width="25%">Recommended Players</th>
-        <th width="25%">Cost per Month</th>
-        <tr class="success">
-                <td>Air</td>
-                <td>256MB</td>
-                <td>3</td>
-                <td>$2</td>
-        </tr>
-        <tr class="success">
-                <td>Grass</td>
-                <td>512MB</td>
-                <td>5</td>
-                <td>$4</td>
-        </tr>
-        <tr class="success">
-                <td>Cobble</td>
-                <td>768</td>
-                <td>10</td>
-                <td>$6</td>
-        <tr class="success">
-                <td>Stone</td>
-                <td>1GB</td>
-                <td>20</td>
-                <td>$8</td>
-        </tr>
+          <center>
+            <th width="25%">Plan</th>
+            <th width="25%">RAM</th>
+            <th width="25%">Recommended Players</th>
+            <th width="25%">Cost per Month</th>
+            <tr class="success">
+              <td>Air</td>
+              <td>256MB</td>
+              <td>3</td>
+              <td>$2</td>
+            </tr>
+            <tr class="success">
+              <td>Grass</td>
+              <td>512MB</td>
+              <td>5</td>
+              <td>$4</td>
+            </tr>
+            <tr class="success">
+              <td>Cobble</td>
+              <td>768</td>
+              <td>10</td>
+              <td>$6</td>
+            </tr>
+            <tr class="success">
+              <td>Stone</td>
+              <td>1GB</td>
+              <td>20</td>
+              <td>$8</td>
+            </tr>
+          </tr>
         </center>
-</table>
-</div>
-</center>
+      </table>
+    </div>
+  </center>
     
     
     
