@@ -40,7 +40,7 @@
   <body>
   
   <!-- for now, the only server around town is "testserver" -->
-  <?php include "mpcp.php"; $serverId = "mpcp_0"; $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";?>
+  <?php include "mpcp.php"; $serverId = "mpcp_0"; $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log"; ?>
 
   <?php include_once "header.inc.php"; ?>
     
