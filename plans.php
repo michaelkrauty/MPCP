@@ -44,8 +44,7 @@
     </center>
     <center>
     <div class="table">
-    <table align="center" class="table table-striped table-bordered table-condensed">
-        <center>
+    <table class="table table-striped table-bordered table-condensed">
         <tr>
         <th width="25%">Plan</th>
         <th width="25%">RAM</th>
@@ -68,7 +67,6 @@
                 <td>768</td>
                 <td>10</td>
                 <td>For those people who think 512MB is whimpy, but 1GB is overkill</td>
-        </center>
         <tr class="success">
                 <td>Stone</td>
                 <td>1GB</td>
