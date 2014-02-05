@@ -117,9 +117,7 @@
             }
           ?>
         <div class="well">
-          <div class="well">
-            <?php include "consoleviewer.inc.php"; ?>
-          </div>
+          <iframe src="consoleviewer.inc.php" width="640" height="500">
           <form>
             <div class="col-xs-10">
               <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here..." autofocus>
