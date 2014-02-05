@@ -1,5 +1,4 @@
-<?php
-?>
+
 <div class="progress progress-info">
   <div class="bar" style="width: 20%"></div>
 </div>
