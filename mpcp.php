@@ -21,17 +21,23 @@
   function serverOnline($serverId){
     
   }
-    
-  function startServer($serverId){
+  
+  function startServer($serverId, $memory, $jar){
     if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
-    }else{
-      
     }
+#    if(!serverOnline){
+      $command = "cd /var/mpcp/servers/" . $serverId;
+      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+      $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
+      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+#    }
   }
   
   function stopServer($serverId){
     if(screenOnline($serverId)){
+      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
+      sleep(1);
       shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
     }else{
       
