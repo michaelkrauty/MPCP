@@ -88,16 +88,17 @@
 		<td> ONLINE </td>
 		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
 	</tr>
-	<tr class="error">
+	<tr class="success">
 		<td> 00005 </td>
 		<td> 192.168.1.5:25565 </td>
 		<td> Test Server 5 </td>
 		<td> 0 / 24 </td>
 		<td> OFFLINE </td>
-		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+		<td><i class="glyphicon glyphicon-icon-play">a</i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
 	</tr>
 </table>
-        </center>
+
+	</center>
       </div>
     </div>
   </body>
