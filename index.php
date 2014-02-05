@@ -48,7 +48,7 @@
             }
           ?><br></br>
 	<h2> Your Servers </h2>
-<table class="table table-striped table-bordered table-condensed">
+<table align="center"valign="center"class="table table-striped table-bordered table-condensed">
 	<center>	
 	<tr>
 	<th width="10%"> Server ID </th>
