@@ -20,7 +20,7 @@ return $ret[$this->_Id]['S1'];
 
 // Server connection varialbes
 $server = "192.187.118.206";
-$rconPort = 25577;
+$rconPort = 25575;
 $rconPass = "qwerty";
 
 // Connect to the server
