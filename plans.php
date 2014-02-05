@@ -52,12 +52,11 @@
             <th width="15%">Players</th>
             <th width="15%">Price</th>
             <th width="15%">Select</th>
-            <tr><h2>
-              <td>Air</td>
+            <tr>
+              <td><h2>Air</h2></td>
               <td>256MB</td>
               <td>3</td>
               <td>$2</td>
-              </h2>
               <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
