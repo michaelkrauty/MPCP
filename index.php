@@ -97,6 +97,7 @@
 		<td><i class="glyphicon glyphicon-icon-play">start</i><i class="glyphicon glyphicon-icon-stop">stop</i><i class="glyphicon glyphicon-icon-refresh">reload</i><i class="glyphicon glyphicon-icon-cog">settings</i></td>
 	</tr>
 </table>
+<span class="glyphicon glyphicon-ok"></span>.
 	</center>
       </div>
     </div>
