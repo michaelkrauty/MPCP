@@ -39,30 +39,26 @@
         <div class="container-fluid">
           <div class="row">
             <?php include_once "../includes/sidebar.inc.php"; ?>
-            <div class="consolebox">
-              <div class="wellconsole">
+            <div class="wellconsole">
+              <?php include_once "consoleviewer.inc.php"; ?>
+            </div>
+            <div class="commandbar">
+              <form>
+                <div class="col-xs-10">
+                  <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+                </div>
+              <div class="col-xs-2">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
+                </div>
                 <?php
-                  include_once "consoleviewer.inc.php";
-                ?>
-              </div>
-              <div class="commandbar">
-                <form>
-                  <div class="col-xs-10">
-                    <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
-                  </div>
-                  <div class="col-xs-2">
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
-                  </div>
-                  <?php
-                    if(screenOnline($serverId)){
-                      if(isset($_GET['cmd'])){
-                        $cmd = $_GET['cmd'];
-                        executeCommand($serverId, $cmd);
-                      }
+                if(screenOnline($serverId)){
+                    if(isset($_GET['cmd'])){
+                      $cmd = $_GET['cmd'];
+                      executeCommand($serverId, $cmd);
                     }
-                  ?>
-                </form>
-              </div>
+                }
+                ?>
+              </form>
             </div>
           </div>
         </div>
