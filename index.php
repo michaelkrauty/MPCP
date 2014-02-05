@@ -21,7 +21,6 @@
     <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="webroot/css/index.css" rel="stylesheet">
-    <link href="netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
@@ -88,7 +87,7 @@
 		<td> ONLINE </td>
 		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
-	<tr class="warning">
+	<tr class="error">
 		<td> 00005 </td>
 		<td> 192.168.1.5:25565 </td>
 		<td> Test Server 5 </td>
@@ -97,12 +96,6 @@
 		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
 </table>
-	<span class="glyphicon glyphicon-icon-play"></span>.
-<span class="glyphicon glyphicon-icon-stop"></span>.
-<span class="glyphicon glyphicon-icon-refresh"></span>.
-<span class="glyphicon glyphicon-icon-cog"></span>.
-<span class="glyphicon glyphicon-ok"></span>.
-<i class="icon-search icon-white"></i>
 	</center>
       </div>
     </div>
