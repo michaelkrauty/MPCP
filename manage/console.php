@@ -62,7 +62,7 @@
               ?>
               </div>
               <form>
-              <div class="commandbar">
+              <div class="commandbar" style="margin-left: 300px;">
                 <div class="col-xs-10">
                   <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
                 </div>
