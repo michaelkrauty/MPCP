@@ -32,6 +32,13 @@
   <?php include_once "./includes/header.inc.php"; ?>
   <body role='document'> <body role='document'>
     
+    
+    
+    <div class="page-header">Minecraft Plans</div>
+    
+    
+    
+    
   </body>
   <?php
     }else{
