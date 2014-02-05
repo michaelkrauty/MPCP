@@ -19,6 +19,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="./bootstrap/assets/ico/favicon.ico">
+   <!-- Custom styles for this template -->
+    <link href="webroot/css/manage.css" rel="stylesheet">
 
     <title>MPCP Dashboard</title>
     
@@ -114,7 +116,7 @@
               echo "Server does not exist!";
             }
           ?>
-        <div class="well">
+        <div class="wellconsole">
         <?php
           include_once "consoleviewer.inc.php";
         ?>
