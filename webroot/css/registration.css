@@ -45,6 +45,7 @@ body {
 }
 .form-signin .form-control:focus {
   z-index: 2;
+  margin-bottom:10px;
 }
 .form-signin input[type="email"] {
   margin-bottom: -1px;
