@@ -52,14 +52,14 @@ $data = GetCpuPercentages($stat1, $stat2);
 $c = 0;
 ?>
 <table class="table table-striped">
-<tr>
+	<tr>
 	<th> Processor # </th>
 	<th> Usage % <th>
-</tr>
-<tr>
-<?php
+	</tr>
+	<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
+	echo "<tr>";
 	echo "<td>";
 	echo "<h4>Processor {$c} <h4>";
         echo "</td><td>";
@@ -84,10 +84,10 @@ $c = 0;
         echo "</div>";
         echo "</div>";
 	echo "</td>";
+	echo "</tr>";
 	$c ++;
         }
-}
-?>
-</tr>
+	}
+	?>
 </table>
 </div>
