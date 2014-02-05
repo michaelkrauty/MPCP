@@ -53,7 +53,7 @@ foreach( $data as $k => $v ) {
 	echo "<p>";
         echo $v['user'] . ','. "<br>";
 
-	$i = 20;
+	$i = $v['user'];
 	if ($i > 1) {
 	echo "<div class=\"progress progress-striped\">";
   	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
