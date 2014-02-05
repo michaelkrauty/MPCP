@@ -48,7 +48,7 @@
   			<input class="btn btn-lg btn-success btn-block" type="button" value="Register" onClick="parent.location='register.php'">
      			<th width="4%">
 			<th width="48%">
-			<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='password_lost.php'">
+			<input class="btn btn-lg btn-warning btn-block" type="button" value="Forgot Password" onClick="parent.location='forgotpassword.php'">
 			</tr>
 					</form>
 				</div>
