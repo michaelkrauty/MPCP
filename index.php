@@ -49,16 +49,7 @@
             }
           ?>
 	  <h2>RAM Information</h2>
-<style>
-			canvas{
-			}
-		</style>
-	</head>
-	<body>
-		<canvas id="canvas" height="450" width="450"></canvas>
-
-
-	<script>
+<script>
 
 		var pieData = [
 				{
@@ -77,6 +68,11 @@
 			];
 
 	var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData);
+
+	</script>
+
+
+
           <h2>CPU Information</h2>
 	  <h2>JAVA Information</h2>
         </center>
