@@ -9,14 +9,14 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home"></span>Home</a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'>Manage</a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'>Plans</a></li>
+        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog"></span> Manage</a></li>
+        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-off"></span> Plans</a></li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown"><?php echo $userEmail; ?> <b class="caret"></b></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $userEmail; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/">Settings</a></li>
             <li><a href="">Sub Users</a></li>
