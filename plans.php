@@ -47,11 +47,11 @@
         <table class="table table-striped table-bordered table-condensed">
         <tr>
           <center>
-            <th width="25%">Plan</th>
-            <th width="25%">RAM</th>
-            <th width="25%">Recommended Players</th>
-            <th width="25%">Cost per Month</th>
-            <th width="25%">Select</th>
+            <th width="15%">Plan</th>
+            <th width="15%">RAM</th>
+            <th width="15%">Recommended Players</th>
+            <th width="15%">Cost per Month</th>
+            <th width="15%">Select</th>
             <tr class="success">
               <td>Air</td>
               <td>256MB</td>
