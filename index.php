@@ -56,7 +56,7 @@
 	<th width="20%"> Server Name </th>
 	<th width="10%"> Players </th>
 	<th width="10%"> Server Status </th>
-	<th width="30%"> Qucik Commands </th>
+	<th width="30%"> Quick Commands </th>
 	<tr class="success">
 		<td> 00001 </td>
 		<td> 192.168.1.1:25565 </td>
