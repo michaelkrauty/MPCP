@@ -5,12 +5,12 @@
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
-      <a class='navbar-brand' href='index.php'>DominationVPS</a>
+      <a class='navbar-brand' href='./'>DominationVPS</a>
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='../index.php'>Home</a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='manage/index.php'>Manage</a></li>
+        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='../'>Home</a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='manage'>Manage</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
