@@ -48,19 +48,30 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-	  <h3><?php echo __('RAM'); ?></h3>
-                    <p class="ram_tot"><?php echo __('Total'); ?>: <span></span> <?php echo __('MB'); ?></p>
-                    <p class="ram_used"><?php echo __('Used'); ?>: <span></span> <?php echo __('MB'); ?></p>
-                    <p class="ram_free"><?php echo __('Free'); ?>: <span></span> <?php echo __('MB'); ?></p>
-	  <h3><?php echo __('CPU'); ?></h3>
-                    <p class="cpu_tot"><?php echo __('CPUs'); ?>: <span></span></p>
-                    <p class="cpu_used"><?php echo __('Frequency') ?>: <span></span></p>
-                    <p class="cpu_free"><span></span></p>
-	  <h3><?php echo __('JAVA'); ?></h3>
-                    <p class="java_tot"><?php echo __('Total'); ?>: <span></span> <?php echo __('MB'); ?></p>
-                    <p class="java_used"><?php echo __('Used'); ?>: <span></span> <?php echo __('MB'); ?></p>
-                    <p class="java_free"><?php echo __('Free'); ?>: <span></span> <?php echo __('MB'); ?></p>
-                    <div class="timer timer3">
+	<h2>Ram Information</h2>
+	<?php
+  	$fh = fopen('/proc/meminfo');
+  	$mem = 0;
+  	while ($line = fgets($fh)) {
+    	$pieces = array();
+    	if (preg_match('^MemTotal:\s+(\d+)\skB$', $line, $pieces)) {
+      	$mem = $pieces[1];
+      	break;
+    }
+  }
+  fclose($fh);
+
+  echo "$mem kB RAM found"; ?>
+
+
+
+
+	<h2></h2>
+
+
+
+
+
 
         </center>
       </div>
