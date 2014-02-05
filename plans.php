@@ -54,9 +54,9 @@
             <th width="15%">Select</th>
             <tr>
               <td><h2>Air</h2></td>
-              <td>256MB</td>
-              <td>3</td>
-              <td>$2</td>
+              <td><h2>56MB</h2></td>
+              <td><h2>3</h2></td>
+              <td><h2>$2</h2></td>
               <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
