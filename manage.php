@@ -122,13 +122,14 @@
         ?>
         </div>
           <form>
-            <div class="col-xs-10">
-              <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+            <div class="commandbar">
+              <div class="col-xs-10">
+                <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+              </div>
+              <div class="col-xs-2">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
+              </div>
             </div>
-            <div class="col-xs-2">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
-            </div>
-            <br><br>
            <?php
               if(screenOnline($serverId)){
                 if(isset($_GET['cmd'])){
