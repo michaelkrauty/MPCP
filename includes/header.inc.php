@@ -9,9 +9,9 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-        <?phpif($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?>
+        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?>
         <a href='../index.php'>Home</a></li>
-        <?phpif($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?>
         <a href='../manage/index.php'>Manage</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
