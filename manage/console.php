@@ -20,7 +20,7 @@
       <meta name="author" content="">
       <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.ico">
       <!-- Custom styles for this template -->
-      <link href="../webroot/css/manage.css" rel="stylesheet">
+      <link href="../webroot/css/console.css" rel="stylesheet">
       <title>MPCP Dashboard</title>
       <!-- Bootstrap theme -->
       <link href='../bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
