@@ -111,6 +111,7 @@
               <div class="wellconsole">
                 <?php
                   include_once "consoleviewer.inc.php";
+                  <script>textbox.scroll = textbox.maxScroll;</script>
                 ?>
               </div>
             <form>
