@@ -28,20 +28,19 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     <?php
+      include "mpcp.php";
+      $serverId = "mpcp_0";
+      $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
-    ?>
-    <?php
       $pageName = "manage";
     ?>
   </head>
 
   <body>
   
-  <!-- for now, the only server around town is "testserver" -->
-  <?php include "mpcp.php"; $serverId = "mpcp_0"; ?>
-
   <?php include_once "header.inc.php"; ?>
     
     <div class="container-fluid">
@@ -117,7 +116,12 @@
             }
           ?>
         <div class="well">
-          <iframe src="consoleviewer.inc.php" width="640" height="500">
+        <iframe src="consoleviewer.inc.php" width="100%" class="myIframe">
+        <p>Hi SOF</p>
+        </iframe>
+        <script type="text/javascript" language="javascript"> 
+        $('.myIframe').css('height', $(window).height()+'px');
+        </script>
           <form>
             <div class="col-xs-10">
               <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here..." autofocus>
