@@ -56,7 +56,6 @@ foreach( $data as $k => $v ) {
 	$i = 50;
 	if ($i > 1) {
 	echo "<div class=\"progress progress-striped\">";
-	echo "<br>";
 	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\" "
 	. $i . "
 	 \"aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: "
@@ -65,8 +64,17 @@ foreach( $data as $k => $v ) {
 	echo "<span class=\"sr-only\">40% Complete (success)</span>";
 	echo "</div>";
 	echo "</div>";
-}
+?>
+<div class="progress progress-striped">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+
+
+
+
 }
 
-?>
+}
 
