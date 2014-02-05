@@ -52,9 +52,14 @@ $data = GetCpuPercentages($stat1, $stat2);
 foreach( $data as $k => $v ) {
 	echo "<p>";
         echo $v['user'] . ','. "<br>";
-        /*echo $v['nice'] . ','. "<br>";*/
-        /*echo $v['sys'] . ','. "<br>";*/
-        /*echo $v['idle'] . ','. "<br>";*/
+	
+	$i = $v['user'];
+	if ($i > 1) {
+	echo "<div class="progress progress-striped">";
+	echo "<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="". $i . ""aria-valuemin="0" aria-valuemax="100" style="width:"" . $i . ""%">";
+	echo "</div>";
+	echo "</div>";
+
 }
 
 
