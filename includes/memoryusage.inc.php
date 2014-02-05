@@ -1,16 +1,39 @@
 <div class="well">
 <h2> Memory Usage </h2>
 <?php
-  $fh = fopen('/proc/meminfo');
-  $mem = 0;
-  while ($line = fgets($fh)) {
-    $pieces = array();
-    if (preg_match('^MemTotal:\s+(\d+)\skB$', $line, $pieces)) {
-      $mem = $pieces[1];
-      break;
-    }
-  }
-  fclose($fh);
+function Memory_Usage($decimals = 2)
+{
+    $result = 0;
 
-  echo "$mem kB RAM found"; ?>
-</div>
+    if (function_exists('memory_get_usage'))
+    {
+        $result = memory_get_usage() / 1024;
+    }
+
+    else
+    {
+        if (function_exists('exec'))
+        {
+            $output = array();
+
+            if (substr(strtoupper(PHP_OS), 0, 3) == 'WIN')
+            {
+                exec('tasklist /FI "PID eq ' . getmypid() . '" /FO LIST', $output);
+
+                $result = preg_replace('/[\D]/', '', $output[5]);
+            }
+
+            else
+            {
+                exec('ps -eo%mem,rss,pid | grep ' . getmypid(), $output);
+
+                $output = explode('  ', $output[0]);
+
+                $result = $output[1];
+            }
+        }
+    }
+
+    return number_format(intval($result) / 1024, $decimals, '.', '');
+}
+?>
