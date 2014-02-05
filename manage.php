@@ -46,47 +46,51 @@
     
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <div class='well'>
-            <ul class="nav nav-sidebar">
-              <li><a href="">Dashboard</a></li>
-              <li><a href="">Manage</a></li>
-              <li><a href="">Server Jar Mod</a></li>
-              <li><a href="">Server Configuration</a></li>
-              <li><a href="">Server Files</a></li>
-              <li><a href="">Scheduled Tasks</a></li>
-              <li><a href="">Backup</a></li>
-              <li><a href="">Plugins</a></li>
-              <li><a href="">Support</a></li>
-            </ul>
+        <div class="sidebar">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <div class='well'>
+              <ul class="nav nav-sidebar">
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Manage</a></li>
+                <li><a href="">Server Jar Mod</a></li>
+                <li><a href="">Server Configuration</a></li>
+                <li><a href="">Server Files</a></li>
+                <li><a href="">Scheduled Tasks</a></li>
+                <li><a href="">Backup</a></li>
+                <li><a href="">Plugins</a></li>
+                <li><a href="">Support</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
-          <div class="well">
-            <?php
-              if(count($_POST) > 0 && isset($_POST['start'])) {
-                $memory = 1024;
-                $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-                startServer($serverId, $memory, $jar);
-              }
-              if(count($_POST) > 0 && isset($_POST['stop'])) {
-                stopServer($serverId);
-              }
-              if(count($_POST) > 0 && isset($_POST['restart'])) {
-                restartServer($serverId);
-              }
-              if(count($_POST) > 0 && isset($_POST['reload'])) {
-                reloadServer($serverId);
-              }
-            ?>
-            <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
-            <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
-             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <button name="start" type="submit" class='btn btn-lg btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
-               <button name="stop" type="submit" class='btn btn-lg btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
-               <button name="restart" type="submit" class='btn btn-lg btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
-               <button name="reload" type="submit" class='btn btn-lg btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button>
-             </form>
+          <div class="bar1">
+            <div class="well">
+              <?php
+                if(count($_POST) > 0 && isset($_POST['start'])) {
+                  $memory = 1024;
+                  $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
+                  startServer($serverId, $memory, $jar);
+                }
+                if(count($_POST) > 0 && isset($_POST['stop'])) {
+                  stopServer($serverId);
+                }
+                if(count($_POST) > 0 && isset($_POST['restart'])) {
+                  restartServer($serverId);
+                }
+                if(count($_POST) > 0 && isset($_POST['reload'])) {
+                  reloadServer($serverId);
+                }
+              ?>
+              <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
+              <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
+               <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                 <button name="start" type="submit" class='btn btn-lg btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+                 <button name="stop" type="submit" class='btn btn-lg btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+                 <button name="restart" type="submit" class='btn btn-lg btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+                 <button name="reload" type="submit" class='btn btn-lg btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button>
+               </form>
+            </div>
           </div>
           <?php
             if(screenOnline($serverId)){
