@@ -1,3 +1,3 @@
 <?php
-  echo shell_exec("ls");
+  echo shell_exec("screen -dmS mpcp_0");
 ?>
