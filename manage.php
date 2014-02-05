@@ -63,9 +63,6 @@
           </div>
         </div>
         <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
-          <br>
-          <br>
-          <h1 class="page-header">Dashboard</h1>
           <div class="well">
             <?php
               if(count($_POST) > 0 && isset($_POST['start'])) {
