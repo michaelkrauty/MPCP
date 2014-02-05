@@ -44,7 +44,7 @@
     </center>
     <center>
     <div class="table">
-    <table align="center" valign="center" class="table table-striped table-bordered table-condensed">
+    <table align="center" class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
         <th width="25%">Plan</th>
