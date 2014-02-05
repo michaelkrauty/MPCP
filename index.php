@@ -48,7 +48,7 @@
             }
           ?><br></br>
 	  <h2> Your Servers </h2>
-<table class="table table-striped table-bordered table-condensed">
+	<table class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
         <th width="10%"> Server ID </th>
@@ -72,7 +72,8 @@
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
                 <td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart$
-        <tr class="warning">
+        	</tr>
+	<tr class="warning">
                 <td> 00003 </td>
                 <td> 192.168.1.3:25565 </td>
                 <td> Test Server 3 </td>
@@ -87,7 +88,7 @@
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
                 <td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart$
-        </tr>
+        	</tr>
         <tr class="warning">
                 <td> 00005 </td>
                 <td> 192.168.1.5:25565 </td>
@@ -95,21 +96,11 @@
                 <td> 0 / 24 </td>
                 <td> OFFLINE </td>
                 <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button disabled="disabled" name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button disabled="dis$
-        </tr>
+        	</tr>
         </center>
 </table>
-
-
-
-
-
 	<h2> CPU Usage </h2>
-	
-
-
 	<h2> RAM Usage </h2>
-
-
 	</center>
       </div>
     </div>
