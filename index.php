@@ -21,7 +21,7 @@
     <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="webroot/css/index.css" rel="stylesheet">
-
+    <link href="netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
