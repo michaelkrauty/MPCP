@@ -33,9 +33,9 @@
   <body role='document'> <body role='document'>
     
     
-    
-    <div class="page-header">Minecraft Plans</div>
-    
+    <center>
+      <div class="page-header">Minecraft Plans</div>
+    </center>
     
     
     
