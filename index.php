@@ -18,7 +18,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="webroot/css/login.css" rel="stylesheet">
+    <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
@@ -27,9 +27,8 @@
       $pageName = "index";
     ?>
 </head>
-
   <?php include_once "header.inc.php"; ?>
-
+  <body role='document'> <body role='document'>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
       <div class='page-header'>
