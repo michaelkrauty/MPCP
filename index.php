@@ -47,8 +47,8 @@
             }else{
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
-          ?>
-<table class="table table-striped">
+          ?><br></br>
+<table class="table table-striped table-bordered table-condensed">
 	<tr>
 	<th> Server ID </th>
 	<th> Server Address </th>
