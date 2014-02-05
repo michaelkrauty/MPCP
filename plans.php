@@ -52,26 +52,26 @@
             <th width="15%">Players</th>
             <th width="15%">Price</th>
             <th width="15%">Select</th>
-            <tr class="success">
+            <tr>
               <td>Air</td>
               <td>256MB</td>
               <td>3</td>
               <td>$2</td>
               <td><ul class="pager"><li><a href="order"> Order Now</a></li></ul></td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>Grass</td>
               <td>512MB</td>
               <td>5</td>
               <td>$4</td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>Cobble</td>
               <td>768</td>
               <td>10</td>
               <td>$6</td>
             </tr>
-            <tr class="success">
+            <tr>
               <td>Stone</td>
               <td>1GB</td>
               <td>20</td>
