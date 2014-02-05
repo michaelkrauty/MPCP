@@ -48,7 +48,7 @@
             }
           ?><br></br>
 	<h2> Your Servers </h2>
-	<table class="table table-striped table-bordered table-condensed">
+<table class="table table-striped table-bordered table-condensed">
 	<tr>
 	<th> Server ID </th>
 	<th> Server Address </th>
@@ -62,7 +62,10 @@
 		<td> Test Server 1 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
+		<td><button name="start" type="submit" class='btn btn-small btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+<button name="stop" type="submit" class='btn btn-small btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+<button name="restart" type="submit" class='btn btn-small btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+<button name="reload" type="submit" class='btn btn-small btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button></td>
 	</tr>
 	<tr class="success">
 		<td> 00002 </td>
@@ -70,7 +73,10 @@
 		<td> Test Server 2 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
+		<td><button name="start" type="submit" class='btn btn-small btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+<button name="stop" type="submit" class='btn btn-small btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+<button name="restart" type="submit" class='btn btn-small btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+<button name="reload" type="submit" class='btn btn-small btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button></td>
 	</tr>
 	<tr class="success">
 		<td> 00003 </td>
@@ -78,7 +84,10 @@
 		<td> Test Server 3 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
+		<td><button name="start" type="submit" class='btn btn-small btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+<button name="stop" type="submit" class='btn btn-small btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+<button name="restart" type="submit" class='btn btn-small btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+<button name="reload" type="submit" class='btn btn-small btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button></td>
 	</tr>
 	<tr class="success">
 		<td> 00004 </td>
@@ -86,7 +95,10 @@
 		<td> Test Server 4 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
+		<td><button name="start" type="submit" class='btn btn-small btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+<button name="stop" type="submit" class='btn btn-small btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+<button name="restart" type="submit" class='btn btn-small btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+<button name="reload" type="submit" class='btn btn-small btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button></td>
 	</tr>
 	<tr class="warning">
 		<td> 00005 </td>
@@ -94,7 +106,10 @@
 		<td> Test Server 5 </td>
 		<td> 0 / 24 </td>
 		<td> OFFLINE </td>
-		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
+		<td><button name="start" type="submit" class='btn btn-small btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
+<button name="stop" type="submit" class='btn btn-small btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
+<button name="restart" type="submit" class='btn btn-small btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
+<button name="reload" type="submit" class='btn btn-small btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button></td>
 	</tr>
 </table>
 	</center>
