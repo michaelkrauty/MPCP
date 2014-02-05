@@ -47,7 +47,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-        <br><br><br>
           <div class='well'>
             <ul class="nav nav-sidebar">
               <li><a href="">Dashboard</a></li>
