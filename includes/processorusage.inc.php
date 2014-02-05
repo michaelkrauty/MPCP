@@ -50,12 +50,14 @@ $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
 $c = 0;
+?>
 <table class="table table-striped">
 <tr>
 	<th> Processor # </th>
 	<th> Usage % <th>
 </tr>
 <tr>
+<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
 	echo "<td>";
@@ -85,7 +87,7 @@ $c = 0;
 	$c ++;
         }
 }
+?>
 </tr>
 </table>
-?>
 </div>
