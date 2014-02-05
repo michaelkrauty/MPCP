@@ -1,6 +1,6 @@
 <h2> Your Servers </h2>
-<table align="center"valign="center"class="table table-striped table-bordered table-condensed">
-        <center>        
+<table class="table table-striped table-bordered table-condensed">
+        <center>
         <tr>
         <th width="10%"> Server ID </th>
         <th width="20%"> Server Address </th>
@@ -49,4 +49,3 @@
         </tr>
         </center>
 </table>
-
