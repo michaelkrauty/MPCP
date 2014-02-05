@@ -49,7 +49,7 @@
           <center>
             <th width="15%">Plan</th>
             <th width="15%">RAM</th>
-            <th width="15%">Recommended Players</th>
+            <th width="15%">Players</th>
             <th width="15%">Price</th>
             <th width="15%">Select</th>
             <tr class="success">
