@@ -98,6 +98,11 @@
 	</tr>
 	</center>
 </table>
+
+<span class="glyphicon glyphicon-play"></span>
+<span class="glyphicon glyphicon-stop"></span>
+<span class="glyphicon glyphicon-repeat"></span>
+<span class="glyphicon glyphicon-wrench"></span>
 	</center>
       </div>
     </div>
