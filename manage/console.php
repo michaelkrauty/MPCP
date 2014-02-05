@@ -34,7 +34,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
       <script>
-      $("#console").load("consoleviewer.php #console");
+      $("#console").load("consoleviewer.inc.php #console");
       </script>
     </head>
     <body>
