@@ -50,7 +50,7 @@ $stat2 = GetCoreInformation();
 $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
-        print_r($k['user'] . ',');
+        ehco ($k['user']);
 }
 ?>
 
