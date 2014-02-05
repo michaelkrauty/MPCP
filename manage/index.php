@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <?php include_once "includes/db_connect.php"; include_once "includes/functions.php";
+  <?php include_once "../includes/db_connect.php"; include_once "../includes/functions.php";
     sec_session_start();
     if(login_check($mysqli) == true){
     ?>
     <?php
-      include "mpcp.php";
+      include "../includes/mpcp.inc.php";
       $serverId = "mpcp_0";
       $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
       $userEmail = $_SESSION['email'];
@@ -18,17 +18,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="./bootstrap/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.ico">
    <!-- Custom styles for this template -->
-    <link href="webroot/css/manage.css" rel="stylesheet">
+    <link href="../webroot/css/manage.css" rel="stylesheet">
 
     <title>MPCP Dashboard</title>
     
     <!-- Bootstrap theme -->
-    <link href='./bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
+    <link href='../bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="./bootstrap/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,7 +42,7 @@
 
   <body>
   
-  <?php include_once "header.inc.php"; ?>
+  <?php include_once "../includes/header.inc.php"; ?>
     
     <div class="container-fluid">
       <div class="row">
