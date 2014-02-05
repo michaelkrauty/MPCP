@@ -29,7 +29,7 @@
       $pageName = "index";
     ?>
 </head>
-  <?php include_once "header.inc.php"; ?>
+  <?php include_once "./includes/header.inc.php"; ?>
   <body role='document'> <body role='document'>
   <div class='container theme-showcase' role='main'>
     <div class='jumbotron'>
@@ -48,8 +48,7 @@
             }
           ?><br></br>
 	<h2> Your Servers </h2>
-	<h2> ------------------------------------------- </h2>
-<table class="table table-striped table-bordered table-condensed">
+	<table class="table table-striped table-bordered table-condensed">
 	<tr>
 	<th> Server ID </th>
 	<th> Server Address </th>
