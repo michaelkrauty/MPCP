@@ -102,52 +102,45 @@
                   </div>';
                 }
               ?>
-              <?php
-                if(serverExists($serverId)){
-                  echo "Server exists!";
-                }else{
-                  echo "Server does not exist!";
-                }
-              ?>
               <div class="wellconsole">
                 <?php
                   include_once "consoleviewer.inc.php";
                 ?>
               </div>
-            <form>
-            <div class="commandbar">
-              <div class="col-xs-10">
-                <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+              <form>
+              <div class="commandbar">
+                <div class="col-xs-10">
+                  <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+                </div>
+                <div class="col-xs-2">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
+                </div>
               </div>
-              <div class="col-xs-2">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
-              </div>
-            </div>
-            <?php
-              if(screenOnline($serverId)){
-                if(isset($_GET['cmd'])){
-                  $cmd = $_GET['cmd'];
-                  if($cmd != null){
-                    executeCommand($serverId, $cmd);
+              <?php
+                if(screenOnline($serverId)){
+                  if(isset($_GET['cmd'])){
+                    $cmd = $_GET['cmd'];
+                    if($cmd != null){
+                      executeCommand($serverId, $cmd);
+                    }
                   }
+                }else{
+                  echo "Server is offline!";
                 }
-              }else{
-                echo "Server is offline!";
-              }
-              ?>
-            </form>
+                ?>
+              </form>
+            </div>
           </div>
-        </div>
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-      <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="./bootstrap/assets/js/docs.min.js"></script>
-    </body>
-  <?php
-    }else{
-      header("Location: http://dominationvps.com/mpcp/login.php");
-    }
-?>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./bootstrap/assets/js/docs.min.js"></script>
+      </body>
+    <?php
+      }else{
+        header("Location: http://dominationvps.com/mpcp/login.php");
+      }
+  ?>
 </html>
