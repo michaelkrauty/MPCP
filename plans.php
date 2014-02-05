@@ -49,29 +49,29 @@
         <th width="25%">Plan</th>
         <th width="25%">RAM</th>
         <th width="25%">Recommended Players</th>
-        <th width="25%">Description</th>
+        <th width="25%">Cost per Month</th>
         <tr class="success">
                 <td>Air</td>
                 <td>256MB</td>
                 <td>3</td>
-                <td>lol, this plan is light as air</td>
+                <td>$2</td>
         </tr>
         <tr class="success">
                 <td>Grass</td>
                 <td>512MB</td>
                 <td>5</td>
-                <td>so this plan is 512MB. yay.</td>
+                <td>$4</td>
         </tr>
         <tr class="success">
                 <td>Cobble</td>
                 <td>768</td>
                 <td>10</td>
-                <td>For those people who think 512MB is whimpy, but 1GB is overkill</td>
+                <td>$6</td>
         <tr class="success">
                 <td>Stone</td>
                 <td>1GB</td>
                 <td>20</td>
-                <td>Overkill? naaaaah.</td>
+                <td>$8</td>
 </table>
 </div>
 </center>
