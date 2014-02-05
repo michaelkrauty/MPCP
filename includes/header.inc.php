@@ -18,14 +18,14 @@
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $userEmail; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="http://dominationvps.com/mpcp/settings/">Settings</a></li>
-            <li><a href="">Sub Users</a></li>
-            <li><a href="http://dominationvps.com/mpcp/forum/">Support</a></li>
-            <li><a href="http://dominationvps.com/mpcp/knowledgebase/">Knowledgebase</a></li>
-            <li><a href="http://dominationvps.com/mpcp/forum/">Forum</a></li>
+            <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
+            <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>
+            <li><a href="http://dominationvps.com/mpcp/forum/"><span class="glyphicon glyphicon-question-sign"></span> Support</a></li>
+            <li><a href="http://dominationvps.com/mpcp/knowledgebase/"><span class="glyphicon glyphicon-info-sign"></span> Knowledgebase</a></li>
+            <li><a href="http://dominationvps.com/mpcp/forum/"><span class="glyphicon glyphicon-comment"></span> Forum</a></li>
             <li><a href="">Access Log</a></li>
             <li class="divider"></li>
-            <li><a href="http://dominationvps.com/mpcp/includes/logout.php">Logout</a></li>
+            <li><a href="http://dominationvps.com/mpcp/includes/logout.php"><span class="glyphicon glyphicon-power-off"></span> Logout</a></li>
           </ul>
         </li>
       </ul>
