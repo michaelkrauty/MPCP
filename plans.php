@@ -64,18 +64,21 @@
               <td>512MB</td>
               <td>5</td>
               <td>$4</td>
+              <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
               <td>Cobble</td>
               <td>768</td>
               <td>10</td>
               <td>$6</td>
+              <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
               <td>Stone</td>
               <td>1GB</td>
               <td>20</td>
               <td>$8</td>
+              <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
           </tr>
         </center>
