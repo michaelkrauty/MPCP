@@ -8,7 +8,6 @@
 #reloadServer($serverId) execute command "reload" in screen $serverId
 #executeCommand($serverId, $command) execute command $command in screen $serverId
 
-
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
     if(strpos($out,$serverId) == true){
@@ -28,16 +27,16 @@
     }
 #    if(!serverOnline){
       $command = "cd /var/mpcp/servers/" . $serverId;
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+      executeCommand($serverId, $command);
       $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+      executeCommand($serverId, $command);
 #    }
   }
   
   function stopServer($serverId){
     if(screenOnline($serverId)){
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+      executeCommand($serverId, "stop");
+      executeCommand($serverId, "exit");
     }else{
       
     }
@@ -51,20 +50,13 @@
   
   function reloadServer($serverId){
     if(screenOnline($serverId)){
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+      executeCommand($serverId, "reload");
     }
   }
   
   function executeCommand($serverId, $command){
     if(screenOnline($serverId)){
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-    }
-  }
-  
-  function test($serverId, $command){
-    if(screenOnline($serverId)){
-      $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-      return $out;
+      executeCommand($serverId, $command);
     }
   }
   
