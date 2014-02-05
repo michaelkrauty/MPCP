@@ -60,24 +60,24 @@
               <td><center><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td>Grass</td>
-              <td>512MB</td>
-              <td>5</td>
-              <td>$4</td>
+              <td><center><h2>Grass</h2></center></td>
+              <td><center><h2>512MB</h2></center></td>
+              <td><center><h2>5</h2></center></td>
+              <td><center><h2>$4</h2></center></td>
               <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td>Cobble</td>
-              <td>768</td>
-              <td>10</td>
-              <td>$6</td>
+              <td><center><h2>Cobble</h2></center></td>
+              <td><center><h2>768</h2></center></td>
+              <td><center><h2>10</h2></center></td>
+              <td><center><h2>$6</h2></center></td>
               <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td>Stone</td>
-              <td>1GB</td>
-              <td>20</td>
-              <td>$8</td>
+              <td><center><h2>Stone</h2></center></td>
+              <td><center><h2>1GB</h2></center></td>
+              <td><center><h2>20</h2></center></td>
+              <td><center><h2>$8</h2></center></td>
               <td><ul class="pager"><li><a href="order">Order Now</a></li></ul></td>
             </tr>
           </tr>
