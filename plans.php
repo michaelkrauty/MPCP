@@ -36,7 +36,13 @@
     <center>
       <div class="header">
         <div class="strokeme">
-          <div class="well" style="width:100%;">
+          <div class="well" style="
+            border-right-width: 1px;
+            padding-right: 19px;
+            margin-right: 560px;
+            margin-left: 560px;
+            margin-top: 30px;
+          ">
             <pagetitle>Minecraft Plans</pagetitles>
           </div>
         </div>
