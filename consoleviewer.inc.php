@@ -1,5 +1,5 @@
 <?php
-#  $out = shell_exec("tail -n 100 /var/mpcp/servers/" . $serverId . "/logs/latest.log");
-  $file = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
-  echo `sed -e "s/\\r/\\n/g" $file | tail -n 100`;
+  $cmd = shell_exec("tail -n 100 /var/mpcp/servers/" . $serverId . "/logs/latest.log");
+  $out = str_replace("\r","\n",$cmd);
+  echo $out;
 ?>
