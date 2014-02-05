@@ -47,6 +47,8 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?><br></br>
+	<?php include_once "./includes/serverlist.inc.php"; ?>
+
 	<h2> Your Servers </h2>
 <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
 	<center>	
@@ -98,11 +100,13 @@
 	</tr>
 	</center>
 </table>
+	<h2> CPU Usage </h2>
+	
 
-<span class="glyphicon glyphicon-play"></span>
-<span class="glyphicon glyphicon-stop"></span>
-<span class="glyphicon glyphicon-repeat"></span>
-<span class="glyphicon glyphicon-wrench"></span>
+
+	<h2> RAM Usage </h2>
+
+
 	</center>
       </div>
     </div>
