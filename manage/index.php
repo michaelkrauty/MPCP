@@ -44,6 +44,7 @@
                   <ul class="nav nav-sidebar">
                     <li><a href="">Dashboard</a></li>
                     <li><a href="">Manage</a></li>
+                    <li><a href="console.php">Console</a></li>
                     <li><a href="">Server Jar Mod</a></li>
                     <li><a href="">Server Configuration</a></li>
                     <li><a href="">Server Files</a></li>
