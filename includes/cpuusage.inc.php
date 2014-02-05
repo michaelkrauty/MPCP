@@ -1,7 +1,20 @@
-<?php
-$load = sys_getloadavg();
-if ($load[0] > 80) {
-    header('HTTP/1.1 503 Too busy, try again later');
-    die('Server too busy. Please try again later.');
+<?
+
+function sys_getloadavg_hack()
+{
+    $str = substr(strrchr(shell_exec("uptime"),":"),1);
+    $avs = array_map("trim",explode(",",$str));
+
+    return $avs;
 }
+
+print_r(sys_getloadavg_hack());
+
+// Array
+// (
+//     [0] => 6.24
+//     [1] => 4.92
+//     [2] => 3.99
+// )
+
 ?>
