@@ -1,6 +1,6 @@
 <h2> Your Servers </h2>
-<table class="table table-striped table-bordered table-condensed">
-        <center>
+<table align="center"valign="center"class="table table-striped table-bordered table-condensed">
+        <center>        
         <tr>
         <th width="10%"> Server ID </th>
         <th width="20%"> Server Address </th>
@@ -14,7 +14,7 @@
                 <td> Test Server 1 </td>
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
-                <td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart$
+                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
         </tr>
         <tr class="success">
                 <td> 00002 </td>
@@ -22,14 +22,14 @@
                 <td> Test Server 2 </td>
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
-                <td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart$
-        <tr class="warning">
+                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
+        <tr class="success">
                 <td> 00003 </td>
                 <td> 192.168.1.3:25565 </td>
                 <td> Test Server 3 </td>
                 <td> 0 / 24 </td>
-                <td> OFFLINE </td>
-                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button disabled="disabled" name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button disabled="dis$
+                <td> ONLINE </td>
+                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
                 </tr>
         <tr class="success">
                 <td> 00004 </td>
@@ -37,7 +37,7 @@
                 <td> Test Server 4 </td>
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
-                <td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart$
+                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
         </tr>
         <tr class="warning">
                 <td> 00005 </td>
@@ -45,7 +45,8 @@
                 <td> Test Server 5 </td>
                 <td> 0 / 24 </td>
                 <td> OFFLINE </td>
-                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button disabled="disabled" name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button disabled="dis$
+                <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
         </tr>
         </center>
 </table>
+
