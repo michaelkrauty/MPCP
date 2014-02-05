@@ -15,7 +15,7 @@
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
                 <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
-        </tr>
+	        </tr>
         <tr class="success">
                 <td> 00002 </td>
                 <td> 192.168.1.2:25565 </td>
@@ -23,6 +23,7 @@
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
                 <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
+		</tr>
         <tr class="success">
                 <td> 00003 </td>
                 <td> 192.168.1.3:25565 </td>
@@ -38,7 +39,7 @@
                 <td> 0 / 24 </td>
                 <td> ONLINE </td>
                 <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
-        </tr>
+        	</tr>
         <tr class="warning">
                 <td> 00005 </td>
                 <td> 192.168.1.5:25565 </td>
@@ -46,7 +47,7 @@
                 <td> 0 / 24 </td>
                 <td> OFFLINE </td>
                 <td><form><button name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" clas$
-        </tr>
+        	</tr>
         </center>
 </table>
 
