@@ -36,7 +36,7 @@
     <div class='jumbotron'>
       <div class='page-header'>
         <center>
-          <h1>Welcome, <?php echo $userName; ?>!</h1>
+          <h2>Welcome, <?php echo $userName; ?>!</h2>
 	  <?php
           $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
           $image2 = "http://signaturecraft.us/avatars/30/face/noskin.png";
@@ -48,6 +48,55 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
+<table class="table table-striped">
+	<tr>
+	<th> Server ID </th>
+	<th> Server Address </th>
+	<th> Server Name </th>
+	<th> Players </th>
+	<th> Server Status </th>
+	<th> Qucik Commands </th>
+	<tr class="success">
+		<td> 00001 </td>
+		<td> 192.168.1.1:25565 </td>
+		<td> Test Server 1 </td>
+		<td> 0 / 24 </td>
+		<td> ONLINE </td>
+		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+	</tr>
+	<tr class="success">
+		<td> 00002 </td>
+		<td> 192.168.1.2:25565 </td>
+		<td> Test Server 2 </td>
+		<td> 0 / 24 </td>
+		<td> ONLINE </td>
+		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+	</tr>
+	<tr class="success">
+		<td> 00003 </td>
+		<td> 192.168.1.3:25565 </td>
+		<td> Test Server 3 </td>
+		<td> 0 / 24 </td>
+		<td> ONLINE </td>
+		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+	</tr>
+	<tr class="success">
+		<td> 00004 </td>
+		<td> 192.168.1.4:25565 </td>
+		<td> Test Server 4 </td>
+		<td> 0 / 24 </td>
+		<td> ONLINE </td>
+		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+	</tr>
+	<tr class="error">
+		<td> 00005 </td>
+		<td> 192.168.1.5:25565 </td>
+		<td> Test Server 5 </td>
+		<td> 0 / 24 </td>
+		<td> OFFLINE </td>
+		<td><i class="glyphicon glyphicon-icon-play"></i><i class="glyphicon glyphicon-icon-stop"></i><i class="glyphicon glyphicon-icon-refresh"></i><i class="glyphicon glyphicon-icon-cog"></i></td>
+	</tr>
+</table>
         </center>
       </div>
     </div>
