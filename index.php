@@ -48,7 +48,8 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-
+	  <h2>Server Information</h2>
+          <h2></h2>
         </center>
       </div>
     </div>
