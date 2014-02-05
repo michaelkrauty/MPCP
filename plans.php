@@ -53,37 +53,37 @@
         <table style="width:100%;" class="table table-curved table-hover">
         <tr>
           <center>
-            <th width="15%"><center>Plan</center></th>
-            <th width="15%"><center>RAM</center></th>
-            <th width="15%"><center>Players</center></th>
-            <th width="15%"><center>Price</center></th>
-            <th width="15%"><center>Select</center></th>
+            <th width="15%">Plan</th>
+            <th width="15%">RAM</th>
+            <th width="15%">Players</th>
+            <th width="15%">Price</th>
+            <th width="15%">Select</th>
             <tr>
-              <td><center><h2>Air</h2></center></td>
-              <td><center><h2>56MB</h2></center></td>
-              <td><center><h2>3</h2></center></td>
-              <td><center><h2>$2</h2></center></td>
-              <td><center><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=add&pid=6">Order Now</a></li></ul></td>
+              <td><h2>Air</h2></td>
+              <td><h2>256MB</h2></td>
+              <td><h2>3</h2></td>
+              <td><h2>$2</h2></td>
+              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=add&pid=6">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td><center><h2>Grass</h2></center></td>
-              <td><center><h2>512MB</h2></center></td>
-              <td><center><h2>5</h2></center></td>
-              <td><center><h2>$4</h2></center></td>
+              <td><h2>Grass</h2></td>
+              <td><h2>512MB</h2></td>
+              <td><h2>5</h2></td>
+              <td><h2>$4</h2></td>
               <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=add&pid=7">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td><center><h2>Cobble</h2></center></td>
-              <td><center><h2>768</h2></center></td>
-              <td><center><h2>10</h2></center></td>
-              <td><center><h2>$6</h2></center></td>
+              <td><h2>Cobble</h2></td>
+              <td><h2>768MB</h2></td>
+              <td><h2>10</h2></td>
+              <td><h2>$6</h2></td>
               <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=add&pid=13">Order Now</a></li></ul></td>
             </tr>
             <tr>
-              <td><center><h2>Stone</h2></center></td>
-              <td><center><h2>1GB</h2></center></td>
-              <td><center><h2>20</h2></center></td>
-              <td><center><h2>$8</h2></center></td>
+              <td><h2>Stone</h2></td>
+              <td><h2>1GB</h2></td>
+              <td><h2>20</h2></td>
+              <td><h2>$8</h2></td>
               <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=add&pid=8">Order Now</a></li></ul></td>
             </tr>
           </tr>
