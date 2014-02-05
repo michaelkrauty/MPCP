@@ -8,4 +8,7 @@
     $i++;
   }
   echo "<br>";
+  <script>
+    textbox.scroll = textbox.maxScroll;
+  </script>
 ?>
