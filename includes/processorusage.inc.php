@@ -50,10 +50,18 @@ $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
 $c = 0;
-foreach( $data as $k => $v ) {
+<table class="table table-striped">
+<tr>
+	<th> Processor # </th>
+	<th> Usage % <th>
+</tr>
+<tr>
+	foreach( $data as $k => $v ) {
         $i = $v['user'];
+	echo "<td>";
 	echo "<h4>Processor {$c} <h4>";
-        if ($i > 80) {
+        echo "</td><td>";
+	if ($i > 80) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
@@ -73,8 +81,11 @@ foreach( $data as $k => $v ) {
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
+	echo "</td>";
 	$c ++;
         }
 }
+</tr>
+</table>
 ?>
 </div>
