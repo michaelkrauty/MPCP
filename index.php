@@ -50,13 +50,9 @@
           ?>
 	<h2>Ram Information</h2>
 	<?php
-  	$fh = fopen('/proc/meminfo');
-  	$mem = 0;
-  	while ($line = fgets($fh)) {
-    	$pieces = array();
-    	if (preg_match('^MemTotal:\s+(\d+)\skB$', $line, $pieces)) {
-      	$mem = $pieces[1];
-      	break;
+  exec("free -mtl", $output);
+  print_r($output);
+?>
     }
   }
   fclose($fh);
