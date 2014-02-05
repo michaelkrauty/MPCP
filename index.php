@@ -39,7 +39,6 @@
 	  <?php include_once "./includes/minecrafticon.inc.php"; ?>
 	  <br></br>
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
-	  <br></br>
           <div id="procinfo"></div>
 	  <br></br>
 	  <div id="meminfo"></div>
