@@ -52,13 +52,13 @@ $data = GetCpuPercentages($stat1, $stat2);
 foreach( $data as $k => $v ) {
 	echo "<p>";
         echo $v['user'] . ','. "<br>";
-	
+
 	$i = 50;
 	if ($i > 1) {
 	echo "<div class=\"progress progress-striped\">";
-	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\" "
+	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\""
 	. $i . "
-	 \"aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: "
+	 \"aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:"
 	 . $i . "
 	 \"%\">";
 	echo "<span class=\"sr-only\">40% Complete (success)</span>";
@@ -67,7 +67,8 @@ foreach( $data as $k => $v ) {
 }}
 ?>
 <div class="progress progress-striped">
-  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+ aria-valuemin="0" aria-valuemax="100" style="width: 40%">
     <span class="sr-only">40% Complete (success)</span>
   </div>
 </div>
