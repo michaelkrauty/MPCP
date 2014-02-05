@@ -50,6 +50,6 @@ $stat2 = GetCoreInformation();
 $data = GetCpuPercentages($stat1, $stat2);
 
 echo json_encode($data);
-}
+
 ?>
 
