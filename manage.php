@@ -117,7 +117,12 @@
             }
           ?>
         <div class="well">
-          <iframe src="consoleviewer.inc.php" width="640" height="500">
+        <iframe src="consoleviewer.inc.php" width="100%" class="myIframe">
+        <p>Hi SOF</p>
+        </iframe>
+        <script type="text/javascript" language="javascript"> 
+        $('.myIframe').css('height', $(window).height()+'px');
+        </script>
           <form>
             <div class="col-xs-10">
               <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here..." autofocus>
