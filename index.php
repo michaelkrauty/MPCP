@@ -41,6 +41,8 @@
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
 	  <br></br>
           <div id="procinfo"></div>
+	  <br></br>
+	  <div id="meminfo"></div>
 	</center>
       </div>
     </div>
@@ -69,5 +71,12 @@
     <script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#procinfo').load('./includes/processorusage.inc.php');
-    }, 1000); // refresh every 10000 milliseconds
-</script>
+    }, 1000);
+    </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    var auto_refresh = setInterval( function () {
+    $('#meminfo').load('./includes/serverlist.inc.php');
+    }, 1000);
+    </script>
