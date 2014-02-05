@@ -45,8 +45,8 @@
   <?php include_once "header.inc.php"; ?>
     
     <div class="container-fluid">
-      <div class="row">
-        <div class="sidebar">
+      <div class="sidebar">
+        <div class="row">
           <div class="col-sm-3 col-md-2 sidebar">
             <div class='well'>
               <ul class="nav nav-sidebar">
