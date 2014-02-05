@@ -59,9 +59,8 @@ foreach( $data as $k => $v ) {
 	echo "<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="". $i . ""aria-valuemin="0" aria-valuemax="100" style="width:"" . $i . ""%">";
 	echo "</div>";
 	echo "</div>";
-
 }
-
+}
 
 ?>
 
