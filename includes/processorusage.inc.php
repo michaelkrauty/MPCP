@@ -49,8 +49,7 @@ $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
 
-foreach( $data as $k => $v ) {
-	echo json_encode($data);
+echo json_encode($data);
 }
 ?>
 
