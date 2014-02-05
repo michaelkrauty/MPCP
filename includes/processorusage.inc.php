@@ -49,19 +49,19 @@ sleep(1);
 $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
-$c = 0;
+$c = 1;
 ?>
 <table class="table table-striped">
 	<tr>
-	<th> Processor # </th>
-	<th> Usage % <th>
+	<th width= "20%">Processor Number</th>
+	<th width= "80%"> Usage % <th>
 	</tr>
 	<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
 	echo "<tr>";
 	echo "<td>";
-	echo "<h4>Processor {$c} <h4>";
+	echo "<h4><b>Processor {$c}: </b><h4>";
         echo "</td><td>";
 	if ($i > 80) {
         echo "<div class=\"progress progress-striped\">";
