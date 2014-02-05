@@ -40,11 +40,12 @@
 	  <br></br>
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
 	  <br></br>
-	  $("document").ready(function(){
+	  <php $("document").ready(function(){
   	  var interval = setInterval(refresh_box(), 1000);
   	  function refresh_box() {
    	  $("#myDiv").load('./includes/processorusage.inc.php');}}
-          <?php include_once "./includes/processorusage.inc.php"; ?>
+         ?>  
+	<?php include_once "./includes/processorusage.inc.php"; ?>
 	</center>
       </div>
     </div>
