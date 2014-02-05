@@ -49,11 +49,14 @@
             }
           ?>
 	<h2>CPU Information</h2>
-	<?php
-$load = sys_getloadavg();
-if ($load[0] > 80) {
-    header('HTTP/1.1 503 Too busy, try again later');
-    die('Server too busy. Please try again later.');
+<?php
+for($i=0; $i<=20; $i++) {
+    //cpu load
+    exec("top -b -n 1 | grep 'Cpu(s):' > /some/file.cpu");
+    //ram usage
+    exec("top -b -n 1 | grep 'Mem:' > /some/file.ram");
+    //wait 3sec
+    sleep(3);
 }
 ?>
 	<h2></h2>
