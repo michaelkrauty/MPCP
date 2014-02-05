@@ -118,12 +118,7 @@
           ?>
         <div class="well">
           <div class="well">
-            <p>The console goes here.</p>
-            <p>This is box is where all server output will be printed</p>
-            <p>The Console Viewer will be a very responsive and nice-looking way to access the console of this minecraft server.</p>
-            <p>This box will expand as necessary to fit more content.</p>
-            <p>Unlike most other control panel consoles, this one outputs on the bottom, rather than the top. This is a good thing, because that's the way Minecraft's console prints anyway :)</p>
-            <p></p>
+            <?php include "consoleviewer.inc.php"; ?>
           </div>
           <form>
             <div class="col-xs-10">
