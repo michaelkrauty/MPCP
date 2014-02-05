@@ -46,12 +46,10 @@
     <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
-        <th width="10%"> Server ID </th>
-        <th width="20%"> Server Address </th>
-        <th width="20%"> Server Name </th>
-        <th width="10%"> Players </th>
-        <th width="10%"> Server Status </th>
-        <th width="30%"> Quick Commands </th>
+        <th width="10%">Plan</th>
+        <th width="10%">RAM</th>
+        <th width="10%">Recommended Players</th>
+        <th width="10%">Description</th>
         <tr class="success">
                 <td>Air (256MB)</td>
                 <td>lol, this plan is light as air</td>
