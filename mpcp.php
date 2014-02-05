@@ -56,7 +56,8 @@
   
   function executeCommand($serverId, $command){
     if(screenOnline($serverId)){
-      executeCommand($serverId, $command);
+      $out = executeCommand($serverId, $command);
+      return $out;
     }
   }
   
