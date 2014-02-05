@@ -72,6 +72,7 @@
                 <td>1GB</td>
                 <td>20</td>
                 <td>$8</td>
+        </tr>
 </table>
 </div>
 </center>
