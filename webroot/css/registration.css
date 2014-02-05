@@ -26,7 +26,6 @@ body {
   max-width: 330px;
   padding: 2px;
   margin: 0 auto;
-  margin-bottom: 10px;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -43,6 +42,7 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom:10px;
 }
 .form-signin .form-control:focus {
   z-index: 2;
