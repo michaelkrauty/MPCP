@@ -17,7 +17,9 @@ body {
   background-position:bottom;
   background-size: cover;
 }
-
+.btn {
+  margine-top 10px;
+}
 .container {
   width: 400px;
 }
