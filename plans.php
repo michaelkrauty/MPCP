@@ -51,11 +51,13 @@
             <th width="25%">RAM</th>
             <th width="25%">Recommended Players</th>
             <th width="25%">Cost per Month</th>
+            <th width="25%">Select</th>
             <tr class="success">
               <td>Air</td>
               <td>256MB</td>
               <td>3</td>
               <td>$2</td>
+              <td><ul class="pager">Order Now</ul></td>
             </tr>
             <tr class="success">
               <td>Grass</td>
