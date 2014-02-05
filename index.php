@@ -48,41 +48,12 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-
-
-	<style>
-			canvas{
-			}
-		</style>
-<canvas id="canvas" height="450" width="450"></canvas>
-
-
-
-
-
-
-
-
 	  <h2>RAM Information</h2>
+
 	  <script>
-          var pieData = [
-	  {
-	  value: 30,
-	  color:"#F38630"
-	  },
-	  {
-	  value : 50,
-	  color : "#E0E4CC"
-	  },
-	  {
-	  value : 100,
-	  color : "#69D2E7"
-	  }
-          ];
+          var pieData = [{value: 30, color:"#F38630"},{value : 50, color : "#E0E4CC"},{ value : 100, color : "#69D2E7"}];
           var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData);
           </script>
-
-
 
           <h2>CPU Information</h2>
 	  <h2>JAVA Information</h2>
