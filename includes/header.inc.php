@@ -9,9 +9,9 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='../'>Home</a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='manage'>Manage</a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='manage'>Plans</a></li>
+        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'>Home</a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'>Manage</a></li>
+        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'>Plans</a></li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
