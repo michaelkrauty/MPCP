@@ -51,6 +51,7 @@ $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
         $i = $v['user'];
+	echo $k;
         if ($i > 80) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
