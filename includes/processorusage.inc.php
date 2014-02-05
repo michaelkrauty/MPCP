@@ -50,36 +50,28 @@ $stat2 = GetCoreInformation();
 $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
-	echo "<p>";
-        echo $v['user'] . ','. "<br>";
-
-	$i = $v['user'];
-
-	if ($i <= 100) {
+        $i = $v['user'];
+        if ($i > 80) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
-        /*echo '<span class=\"sr-only\">40% Complete (success)</span>';*/
         echo "</div>";
         echo "</div>";
         }
-	if ($i < 10) {
+        if ($i > 60) {
         echo "<div class=\"progress progress-striped\">";
         echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
-        /*echo '<span class=\"sr-only\">40% Complete (success)</span>';*/
         echo "</div>";
         echo "</div>";
         }
-	if ($i < 5) {
-	echo "<div class=\"progress progress-striped\">";
-  	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
- 	aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
-    	/*echo '<span class=\"sr-only\">40% Complete (success)</span>';*/
-  	echo "</div>";
-	echo "</div>";
-	}
+        if ($i > 0) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        echo "</div>";
+        echo "</div>";
+        }
 }
 ?>
-
 
