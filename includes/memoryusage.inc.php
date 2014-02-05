@@ -1,18 +1,16 @@
 <div class="well">
 <h2> Memory Usage </h2>
 <?php
-// This is only an example, the numbers below will
-// differ depending on your system
+  $fh = fopen('/proc/meminfo');
+  $mem = 0;
+  while ($line = fgets($fh)) {
+    $pieces = array();
+    if (preg_match('^MemTotal:\s+(\d+)\skB$', $line, $pieces)) {
+      $mem = $pieces[1];
+      break;
+    }
+  }
+  fclose($fh);
 
-echo memory_get_usage() . "\n"; // 36640
-
-$a = str_repeat("Hello", 4242);
-
-echo memory_get_usage() . "\n"; // 57960
-
-unset($a);
-
-echo memory_get_usage() . "\n"; // 36744
-
-?>
+  echo "$mem kB RAM found"; ?>
 </div>
