@@ -130,7 +130,7 @@
               if(screenOnline($serverId)){
                 if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
-                  if($cmd != ""){
+                  if($cmd != null){
                     executeCommand($serverId, $cmd);
                   }
                 }
