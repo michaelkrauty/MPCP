@@ -36,7 +36,7 @@
 	  	  <div class="well">
 			<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="registration_form">
 	  	    	<center><logintitle>Register</logintitle></center>
-			Username:
+			Minecraft Username:
 			<br><input type="text" name = "username" class="form-control" placeholder="Minecraft Username" required autofocus>
 			Email:
 			<br><input type="email" name= "email" class="form-control" placeholder="Email address" required>
