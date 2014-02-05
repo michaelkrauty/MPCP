@@ -1,3 +1,7 @@
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="webroot/css/login.css" rel="stylesheet">
 
 <div class="progress progress-info">
   <div class="bar" style="width: 20%"></div>
