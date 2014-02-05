@@ -38,7 +38,7 @@
       <?php include_once "../includes/header.inc.php"; ?>
         <div class="container-fluid">
           <div class="row">
-          <?php includes "../includes/sidebar.inc.php"; ?>
+          <?php include_once "../includes/sidebar.inc.php"; ?>
             <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
               <div class="bar1">
                 <div class="well">
