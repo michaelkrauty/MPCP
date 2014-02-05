@@ -57,28 +57,28 @@
               <td><center><h2>56MB</h2></center></td>
               <td><center><h2>3</h2></center></td>
               <td><center><h2>$2</h2></center></td>
-              <td><center><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=confproduct&i=0">Order Now</a></li></ul></td>
+              <td><center><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?gid=2">Order Now</a></li></ul></td>
             </tr>
             <tr>
               <td><center><h2>Grass</h2></center></td>
               <td><center><h2>512MB</h2></center></td>
               <td><center><h2>5</h2></center></td>
               <td><center><h2>$4</h2></center></td>
-              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=confproduct&i=0">Order Now</a></li></ul></td>
+              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?gid=2">Order Now</a></li></ul></td>
             </tr>
             <tr>
               <td><center><h2>Cobble</h2></center></td>
               <td><center><h2>768</h2></center></td>
               <td><center><h2>10</h2></center></td>
               <td><center><h2>$6</h2></center></td>
-              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=confproduct&i=0">Order Now</a></li></ul></td>
+              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?gid=2">Order Now</a></li></ul></td>
             </tr>
             <tr>
               <td><center><h2>Stone</h2></center></td>
               <td><center><h2>1GB</h2></center></td>
               <td><center><h2>20</h2></center></td>
               <td><center><h2>$8</h2></center></td>
-              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?a=confproduct&i=0">Order Now</a></li></ul></td>
+              <td><ul class="pager"><li><a href="http://dominationvps.com/hosting/cart.php?gid=2">Order Now</a></li></ul></td>
             </tr>
           </tr>
         </center>
