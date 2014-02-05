@@ -48,15 +48,6 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-	<h2>CPU Information</h2>
-	<?php echo shell_exec('cat /proc/cpuinfo'); ?>
-	<h2>Memory Information</h2>
-	<?php echo shell_exec('cat /proc/meminfo'); ?>
-	<h2></h2?>
-
-
-
-
         </center>
       </div>
     </div>
