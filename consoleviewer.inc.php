@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="refresh" content="10">
 </head>
-<?php
-
+<?php include "mpcp.php";
+  
 ?>
 </html>
