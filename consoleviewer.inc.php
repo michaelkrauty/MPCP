@@ -1,5 +1,4 @@
 <?php
-$serverId = "mpcp_0";
 
 $i = 1;
 
