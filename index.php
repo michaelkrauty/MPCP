@@ -63,7 +63,7 @@
 		<td> Test Server 1 </td>
 		<td> 0 / 24 </td>
 		<td> ONLINE </td>
-		<td><form><button disabled="disabled" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" class='btn btn-small btn-warning'>Restart</button> <button name="reload" type="submit" class='btn btn-small btn-info'>Reload</button></form></td>
+		<td><form><button disable="disable" name="start" type="submit" class='btn btn-small btn-success'>Start</button> <button name="stop" type="submit" class='btn btn-small btn-danger'>Stop</button> <button name="restart" type="submit" class='btn btn-small btn-warning'>Restart</button> <button name="reload" type="submit" class='btn btn-small btn-info'>Reload</button></form></td>
 	</tr>
 	<tr class="success">
 		<td> 00002 </td>
