@@ -43,6 +43,32 @@
       </div>
     </center>
     
+    <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
+        <center>
+        <tr>
+        <th width="10%"> Server ID </th>
+        <th width="20%"> Server Address </th>
+        <th width="20%"> Server Name </th>
+        <th width="10%"> Players </th>
+        <th width="10%"> Server Status </th>
+        <th width="30%"> Quick Commands </th>
+        <tr class="success">
+                <td>Air (256MB)</td>
+                <td>lol, this plan is light as air</td>
+        </tr>
+        <tr class="success">
+                <td>Grass (512MB)</td>
+                <td>so this plan is 512MB. yay.</td>
+        </tr>
+        <tr class="success">
+                <td>Cobble (768MB)</td>
+                <td>For those people who think 512MB is whimpy, but 1GB is overkill</td>
+        </center>
+        <tr class="success">
+                <td>Stone (1GB)</td>
+                <td>Overkill? naaaaah.</td>
+</table>
+    
     
     
   </body>
