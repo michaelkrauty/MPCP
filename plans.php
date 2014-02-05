@@ -35,8 +35,10 @@
     
     <center>
       <div class="header">
-        <div class="page-header">
-          <pagetitle>Minecraft Plans</pagetitles>
+        <div class="strokeme">
+          <div class="page-header">
+            <pagetitle>Minecraft Plans</pagetitles>
+          </div>
         </div>
       </div>
     </center>
