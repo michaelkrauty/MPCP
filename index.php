@@ -71,7 +71,7 @@
       header("Location: http://dominationvps.com/mpcp/login.php");
     }
   ?>
-  <?php include_once "footer.inc.php"; ?>
+  <?php include_once "./includes/footer.inc.php"; ?>
 
 </html>
     <!-- ================================================== -->
