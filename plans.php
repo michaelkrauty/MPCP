@@ -41,15 +41,16 @@
           </div>
         </div>
       </div>
+    </center>
     
     <div class="table">
     <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
-        <th width="10%">Plan</th>
-        <th width="10%">RAM</th>
-        <th width="10%">Recommended Players</th>
-        <th width="10%">Description</th>
+        <th width="25%">Plan</th>
+        <th width="25%">RAM</th>
+        <th width="25%">Recommended Players</th>
+        <th width="25%">Description</th>
         <tr class="success">
                 <td>Air</td>
                 <td>256MB</td>
@@ -75,7 +76,6 @@
                 <td>Overkill? naaaaah.</td>
 </table>
 </div>
-</center>
     
     
     
