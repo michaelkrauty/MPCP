@@ -49,9 +49,9 @@
             }
           ?>
 	<h2>CPU Information</h2>
-	<?php echo shellexec('cat /proc/cpuinfo'); ?>
+	<?php echo shell_exec('cat /proc/cpuinfo'); ?>
 	<h2>Memory Information</h2>
-	<?php echo shellexec('cat /proc/meminfo'); ?>
+	<?php echo shell_exec('cat /proc/meminfo'); ?>
 	<h2></h2?>
 
 
