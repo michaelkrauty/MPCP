@@ -62,8 +62,7 @@
   
   function serverExists($serverId){
     $command = "ls /var/mpcp/servers";
-    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-    if(strpos($out, $serverId) == true){
+    if(strpos(shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";"), $serverId) == true){
       return true;
     }else{
       return false;
