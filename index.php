@@ -48,20 +48,14 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-	<h2>Ram Information</h2>
+	<h2>CPU Information</h2>
 	<?php
-  exec("free -mtl", $output);
-  print_r($output);
+$load = sys_getloadavg();
+if ($load[0] > 80) {
+    header('HTTP/1.1 503 Too busy, try again later');
+    die('Server too busy. Please try again later.');
+}
 ?>
-    }
-  }
-  fclose($fh);
-
-  echo "$mem kB RAM found"; ?>
-
-
-
-
 	<h2></h2>
 
 
