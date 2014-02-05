@@ -1,3 +1,4 @@
+$serverId = "MPCP_0"
 <?php
 $i = 1;
 while ($i <= 100) {
