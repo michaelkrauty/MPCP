@@ -49,9 +49,9 @@
             }
           ?>
 	<h2>CPU Information</h2>
-	echo exec('cat /proc/cpuinfo');
+	<?php echo exec('cat /proc/cpuinfo'); ?>
 	<h2></h2>
-	echo exec('cat /proc/meminfo');
+	<?php echo exec('cat /proc/meminfo'); ?>
 	<h2></h2?>
 
 
