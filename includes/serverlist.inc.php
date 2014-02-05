@@ -1,3 +1,4 @@
+<div class ="well">
 <h2> Your Servers </h2>
 <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
         <center>
@@ -55,4 +56,4 @@
         </tr>
         </center>
 </table>
-
+</div>
