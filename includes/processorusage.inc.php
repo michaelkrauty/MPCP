@@ -54,7 +54,24 @@ foreach( $data as $k => $v ) {
         echo $v['user'] . ','. "<br>";
 
 	$i = $v['user'];
-	if ($i > 1) {
+
+	if ($i <= 100) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        /*echo '<span class=\"sr-only\">40% Complete (success)</span>';*/
+        echo "</div>";
+        echo "</div>";
+        }
+	if ($i < 10) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        /*echo '<span class=\"sr-only\">40% Complete (success)</span>';*/
+        echo "</div>";
+        echo "</div>";
+        }
+	if ($i < 5) {
 	echo "<div class=\"progress progress-striped\">";
   	echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
  	aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
