@@ -16,7 +16,7 @@ define("SERVERDATA_AUTH",3);
 class RCon {
 	var $Password;
 	var $Host;
-	var $Port = 27015;
+	var $Port;
 	var $_Sock = null;
 	var $_Id = 0;
 
