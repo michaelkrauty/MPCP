@@ -1,3 +1,4 @@
+<div class="well">
 <h2> Processor Usage </h2>
 
 <?php
@@ -75,4 +76,4 @@ foreach( $data as $k => $v ) {
         }
 }
 ?>
-
+</div>
