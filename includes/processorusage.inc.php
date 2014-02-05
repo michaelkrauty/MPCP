@@ -51,5 +51,6 @@ $data = GetCpuPercentages($stat1, $stat2);
 
 foreach( $data as $k => $v ) {
         echo $data[user];
+}
 ?>
 
