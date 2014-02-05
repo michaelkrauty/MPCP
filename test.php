@@ -19,9 +19,9 @@ return $ret[$this->_Id]['S1'];
 }
  
 // Server connection varialbes
-$server = "#MY IP";
+$server = "192.187.118.206";
 $rconPort = 25575;
-$rconPass = "$MY PASSWORD";
+$rconPass = "fjdksla;";
  
 // Connect to the server
 $r = new minecraftRcon($server, $rconPort, $rconPass);
