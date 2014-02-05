@@ -44,7 +44,7 @@
     </center>
     <center>
       <div class="table">
-        <table class="table table-striped table-bordered table-condensed">
+        <table style="width:100%;" class="table table-curved table-hover">
         <tr>
           <center>
             <th width="15%">Plan</th>
