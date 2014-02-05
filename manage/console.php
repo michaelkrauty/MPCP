@@ -34,7 +34,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
       <script>
-      $("#console").load("consoleviewer.inc.php #console");
+      var $console = $("#console");
+      setInterval(function () {
+        $console.load("console.inc.php #console");
+      }, 5000);
       </script>
     </head>
     <body>
