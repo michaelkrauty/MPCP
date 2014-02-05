@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Quando);
+
+pagetitle {
+  font-family: 'Quando', serif;
+  font-size: 40px;
+}
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  background-image:url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:bottom;
+  background-size: cover;
+}

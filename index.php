@@ -19,6 +19,9 @@
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="webroot/css/login.css" rel="stylesheet">
+
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
