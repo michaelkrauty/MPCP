@@ -102,6 +102,7 @@
 <span class="glyphicon glyphicon-icon-refresh"></span>.
 <span class="glyphicon glyphicon-icon-cog"></span>.
 <span class="glyphicon glyphicon-ok"></span>.
+<i class="icon-search icon-white"></i>
 	</center>
       </div>
     </div>
