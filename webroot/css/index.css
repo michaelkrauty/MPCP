@@ -20,6 +20,9 @@ body{
 .well {
 background-color: gray-light;
 }
+.progress .bar {
+height: 30px;
+}
 td{
   text-align: center;
   vertical-align: middle;

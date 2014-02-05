@@ -40,7 +40,7 @@
 	  <br></br>
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
 	  <br></br>
-          <div id="procinfo" background-color:@gray-light></div>
+          <div id="procinfo"></div>
 	</center>
       </div>
     </div>
