@@ -28,9 +28,9 @@
     }
     if(!serverOnline){
       $command = "cd /var/mpcp/servers/" . $serverId;
-      $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
       $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
-      $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
     }
   }
   
