@@ -118,7 +118,7 @@
           ?>
         <div class="well">
           <div class="well">
-            <?php include "consoleviewer.inc.php"; ?>
+            <iframe src="consoleviewer.inc.php">
           </div>
           <form>
             <div class="col-xs-10">
