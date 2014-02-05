@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="./bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="webroot/css/index.css" rel="stylesheet">
+    <link href="webroot/css/plans.css" rel="stylesheet">
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
@@ -34,7 +34,9 @@
     
     
     <center>
-      <div class="page-header">Minecraft Plans</div>
+      <div class="header">
+        <div class="page-header">Minecraft Plans</div>
+      </div>
     </center>
     
     

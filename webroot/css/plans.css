@@ -1,1 +1,13 @@
-lol
+body{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  background-image:url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:bottom;
+  background-size: cover;
+}
+header{
+  margin-top: 50px;
+}
