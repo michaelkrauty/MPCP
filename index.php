@@ -40,12 +40,8 @@
 	  <br></br>
 	  <?php include_once "./includes/serverlist.inc.php"; ?>
 	  <br></br>
-	  <?php $("document").ready(function(){
-  	  var interval = setInterval(refresh_box(), 1000);
-  	  function refresh_box() {
-   	  $("#myDiv").load('./includes/processorusage.inc.php');}}
-         ?>  
-	<?php include_once "./includes/processorusage.inc.php"; ?>
+          <?php include_once "./includes/processorusage.inc.php"; ?>
+		<div id="procinfo"> </div>
 	</center>
       </div>
     </div>
@@ -69,3 +65,10 @@
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap/assets/js/docs.min.js"></script>
     <script src="./webroot/js/Chart.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    var auto_refresh = setInterval( function () {
+    $('#procinfo').load('');
+    }, 1000); // refresh every 10000 milliseconds
+</script>
