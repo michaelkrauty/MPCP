@@ -88,7 +88,7 @@
 		<td> ONLINE </td>
 		<td><span class="glyphicon glyphicon-icon-play"></span><span class="glyphicon glyphicon-icon-stop"></span><span class="glyphicon glyphicon-icon-refresh"></span><span class="glyphicon glyphicon-icon-cog"></span></td>
 	</tr>
-	<tr class="error">
+	<tr class="warning">
 		<td> 00005 </td>
 		<td> 192.168.1.5:25565 </td>
 		<td> Test Server 5 </td>
