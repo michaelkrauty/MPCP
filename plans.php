@@ -46,6 +46,7 @@
     <div class="table">
     <table class="table table-striped table-bordered table-condensed">
         <tr>
+        <center>
         <th width="25%">Plan</th>
         <th width="25%">RAM</th>
         <th width="25%">Recommended Players</th>
@@ -73,6 +74,7 @@
                 <td>20</td>
                 <td>$8</td>
         </tr>
+        </center>
 </table>
 </div>
 </center>
