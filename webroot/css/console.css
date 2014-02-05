@@ -18,6 +18,11 @@ body{
 .bar1{
   margin-top: 15px;
 }
+
+.consolebox{
+  margin-bottom: 10%;
+}
+
 .wellconsole{
   min-height: 20px;
   padding: 19px;
