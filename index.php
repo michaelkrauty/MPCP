@@ -48,15 +48,20 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
           ?>
-	  <h2>RAM Information</h2>
+	  <h3><?php echo __('RAM'); ?></h3>
+                    <p class="ram_tot"><?php echo __('Total'); ?>: <span></span> <?php echo __('MB'); ?></p>
+                    <p class="ram_used"><?php echo __('Used'); ?>: <span></span> <?php echo __('MB'); ?></p>
+                    <p class="ram_free"><?php echo __('Free'); ?>: <span></span> <?php echo __('MB'); ?></p>
+	  <h3><?php echo __('CPU'); ?></h3>
+                    <p class="cpu_tot"><?php echo __('CPUs'); ?>: <span></span></p>
+                    <p class="cpu_used"><?php echo __('Frequency') ?>: <span></span></p>
+                    <p class="cpu_free"><span></span></p>
+	  <h3><?php echo __('JAVA'); ?></h3>
+                    <p class="java_tot"><?php echo __('Total'); ?>: <span></span> <?php echo __('MB'); ?></p>
+                    <p class="java_used"><?php echo __('Used'); ?>: <span></span> <?php echo __('MB'); ?></p>
+                    <p class="java_free"><?php echo __('Free'); ?>: <span></span> <?php echo __('MB'); ?></p>
+                    <div class="timer timer3">
 
-	  <script>
-          var pieData = [{value: 30, color:"#F38630"},{value : 50, color : "#E0E4CC"},{ value : 100, color : "#69D2E7"}];
-          var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData);
-          </script>
-
-          <h2>CPU Information</h2>
-	  <h2>JAVA Information</h2>
         </center>
       </div>
     </div>
