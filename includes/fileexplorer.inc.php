@@ -35,8 +35,6 @@
 <th width="300px">MD5</th>
 <th width="100px">Controls</th>
 </tr>
-</table>
-</div>
 <?php
 
 $serverId = "mpcp_0";
@@ -45,26 +43,22 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
 
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
-        echo "$entry\n";
-	echo "<br>";
+        echo "<tr>";
+	echo "<td></td>";
+	echo "<td>$entry\n</td>";
+	echo "</tr>";
     }
 
-    /* This is the WRONG way to loop over the directory. */
+    /* This is the WRONG way to loop over the directory.
     while ($entry = readdir($handle)) {
+        echo "</tr>";
+	echo "<td></td>";
         echo "$entry\n";
-	echo "<br>";
-    }
+	echo "</tr>";
+    }*/
 
     closedir($handle);
 }
 ?>
-
-
-
-
-
-
-
-
-
-?>
+</table>
+</div>
