@@ -20,20 +20,9 @@
     echo "Used : " . intval($memused * 0.000976563) . " MB";
     echo "<br>";
     echo "Free : " . intval($memfree * 0.000976563) . " MB";
-    echo "Used : " . (intval($memtotal * 0.000976563) / 100 * (intval($memused * 0.000976563)) . " %"; 
-    echo "Free : " . (intval($memtotal * 0.000976563) / 100 * (intval($memfree * 0.000976563)) . " %";
+
+
 
 ?>
 
-<table class="table table-striped">
-        <tr>
-        <th width= "20%">Ram Usage</th>
-        <th width= "80%"> Usage % <th>
-        </tr>
-        <tr>
-	<div class="progress progress-striped">
-  	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-    	<span class="sr-only">40% Complete </span>
-  	</tr>
-	</div>
-</div>
+
