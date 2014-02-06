@@ -14,12 +14,12 @@
     $memused = ($meminfo["MemTotal"] - $meminfo["MemFree"]);
     $memfree = $meminfo["MemFree"];
     $memtotal = $meminfo["MemTotal"];
-    echo '"<br>";'
-    echo '"Memory Used : " . $memused;'
-    echo '"<br>";'
-    echo '"Memory Free : " . $memfree;'
-    echo '"<br>;'
-    echo '"Memory Total : " . $memtotal;'
+    echo "<br>";
+    echo "Memory Used : " . $memused;
+    echo "<br>";
+    echo "Memory Free : " . $memfree;
+    echo "<br>;
+    echo "Memory Total : " . $memtotal;
 
 ?>
 
