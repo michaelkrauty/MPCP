@@ -69,8 +69,8 @@
     <script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#procinfo').load('./includes/processorusage.inc.php');
-    }, 10000000);
+    }, 10);
     var auto_refresh = setInterval( function () {
     $('#meminfo').load('./includes/memoryusage.inc.php');
-    }, 10000000);
+    }, 10);
     </script>
