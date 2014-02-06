@@ -21,8 +21,18 @@
 <div class="btn-group">
 <button type="button" class="btn btn-default"></span> Zip</button>
 <button type="button" class="btn btn-default"></span> Unzip</button>
+</div>
 **/
 ?>
-</div>
+<table class="table table-hover">
+<tr>
+<th width="5%"></th>
+<th width="30%">Filename</th>
+<th width="10%">Type</th>
+<th width="5%">Size</th>
+<th width="10%">Modified</th>
+<th width="30%">MD5</th>
+<th width="10%">Controls</th>
+</table>
 </div>
 </div>
