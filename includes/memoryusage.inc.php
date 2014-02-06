@@ -15,9 +15,11 @@
     $memfree = $meminfo["MemFree"];
     $memtotal = $meminfo["MemTotal"];
     echo "<br>";
-    echo $memused;
-    echo $memfree;
-    echo $memtotal;
+    echo "Memory Used : " . $memused;
+    echo "<br>";
+    echo "Memory Free : " . $memfree;
+    "echo "<br>;
+    echo "Memory Total : " . $memtotal;
 
 ?>
 
