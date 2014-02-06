@@ -1,4 +1,5 @@
 <?php
+          echo "<h2>Welcome, <?php echo $userName; ?>!</h2>";
           $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
           $image2 = "http://signaturecraft.us/avatars/30/face/noskin.png";
             $md5image1 = md5(file_get_contents($image1));
