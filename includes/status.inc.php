@@ -1,4 +1,4 @@
-<?php
+<?php include "mpcp.inc.php";
   if(screenOnline($serverId)){
     echo '
     <div class="alert alert-success">
