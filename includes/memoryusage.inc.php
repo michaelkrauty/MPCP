@@ -11,21 +11,38 @@
     $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
     $memused = intval($memtotal - $memfree);
     $memusedper = intval($memused / (intval($memtotal / 100)));
-    $memfreeper = intval($memfree / (intval($memtotal / 100)));
-	
+    $memfreeper = intval($memfree / (intval($memtotal / 100)));	
     echo "<br>";
     echo $memfree . "<br>";
     echo $memtotal . "<br>";
     echo $memused . "<br>";
     echo $memusedper . "<br>";
     echo $memfreeper . "<br>";
-
-
-
-
-
-
-
-
-
 ?>
+        echo "<tr>";
+        echo "<td>";
+        echo "<h4><b>a</b><h4>";
+        echo "</td><td>";
+        if ($memusedper > 70) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "</div>";
+        echo "</div>";
+        }
+        else if ($memusedper > 50) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "</div>";
+        echo "</div>";
+        }
+        else {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "</div>";
+        echo "</div>";
+        echo "</td>";
+        echo "</tr>";
+
