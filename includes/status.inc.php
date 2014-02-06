@@ -10,17 +10,17 @@
       </div>';
     }else{
       echo '
-      <div class="alert alert-danger">
+      <div class="alert alert-warning">
         <center>
-          <strong>Server Status: Server is Offline!</strong>
+          <strong>Server Status: Server is starting/stopping!</strong>
         </center>
       </div>';
     }
   }else{
       echo '
-      <div class="alert alert-warning">
+      <div class="alert alert-danger">
         <center>
-          <strong>Server Status: Server is starting/stopping!</strong>
+          <strong>Server Status: Server is Offline!</strong>
         </center>
       </div>';
   }
