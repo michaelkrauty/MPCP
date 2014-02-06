@@ -62,7 +62,7 @@ $c = 1;
         $i = $v['user'];
 	echo "<tr>";
 	echo "<td>";
-	echo "<h4><b>Processor {c} :</b><h4>";
+	echo "<h4><b>Processor" . {c} . " :</b><h4>";
         echo "</td><td>";
 	if ($i > 80) {
         echo "<div class=\"progress progress-striped active\">";
