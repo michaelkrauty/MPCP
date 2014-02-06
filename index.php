@@ -36,11 +36,10 @@
       <div class='page-header'>
         <center>
           <h2>Welcome, <?php echo $userName; ?>!</h2>
-	  <?php include_once "./includes/minecrafticon.inc.php"; ?>
-	  <br></br>
-	  <?php include_once "./includes/serverlist.inc.php"; ?>
-          <div id="procinfo" style="width:80%"></div>
-	  <div id="meminfo"  style="width:80%"></div>
+	  <div id="usewelcome"><?php include_once "./includes/minecrafticon.inc.php";?></div>
+          <div id="serverlist"></div>
+	  <div id="procinfo"></div>
+	  <div id="meminfo"></div>
 	</center>
       </div>
     </div>
@@ -67,13 +66,18 @@
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap/assets/js/docs.min.js"></script>
     <script src="./webroot/js/Chart.js"></script>
-
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-    <script type="text/javascript">
+
+    var auto_refresh = setInterval( function () {
+    $('#serverlist').load('./includes/serverlist.inc.php');
+    }, 1000);
+
     var auto_refresh = setInterval( function () {
     $('#procinfo').load('./includes/processorusage.inc.php');
-    }, 10);
+    }, 1000);
+
     var auto_refresh = setInterval( function () {
     $('#meminfo').load('./includes/memoryusage.inc.php');
-    }, 10);
+    }, 1000);
+
     </script>
