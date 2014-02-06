@@ -44,11 +44,12 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
         echo "<tr>";
+        $fullpath = ('/var/mpcp/servers/' . $serverId . $entry);
 	echo "<td>$entry\n</td>";
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
-        echo "<td>"; try { echo filesize("../" + $entry); } catch (Exception $e) {echo "";} echo "</td>";
-        echo "<td>"; try { echo filemtime("../" + $entry); } catch (Exception $e) {echo "";} echo "</td>";
-	echo "<td>"; try { echo md5_file(("../" + $entry); } catch (Exception $e) {echo "";} echo "</td>";
+        echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
+        echo "<td>"; try { echo filemtime($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
+	echo "<td>"; try { echo md5_file($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
 	echo "<td><span class=\"glyphicon glyphicon-minus\"> <span class=\"glyphicon glyphicon-wrench\"> <span class=\"glyphicon glyphicon-font\"> <span class=\"glyphicon glyphicon-search\"></td>";
 	echo "</tr>";
     }
