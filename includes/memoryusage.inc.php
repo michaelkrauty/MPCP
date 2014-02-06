@@ -6,9 +6,14 @@
     foreach ($data as $line) {
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
-	echo $key;
-	echo "<br>";
     }
 
-    echo $meminfo["MemTotal"];
+    $meminfo["MemTotal"];
+    $meminfo["MemFree"];
+
+    $memused = ($meminfo["MemTotal"] - $meminfo["MemFree"]);
+    $memfree = $meminfo["MemFree"];
+    $memtotal = $meminfo["MemTotal"];
 ?>
+
+
