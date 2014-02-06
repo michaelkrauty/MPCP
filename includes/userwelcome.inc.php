@@ -1,8 +1,6 @@
 <div class ="well">
 <?php
-          $userEmail = $_SESSION['email'];
-	  $userName = $_SESSION['username'];
-	  echo "<h2>Welcome, <?php echo $userName; ?>!</h2>";
+	  echo "<h2>Welcome!</h2>";
           $image1 = "http://signaturecraft.us/avatars/30/face/" . $userName . ".png";
           $image2 = "http://signaturecraft.us/avatars/30/face/noskin.png";
             $md5image1 = md5(file_get_contents($image1));
@@ -12,5 +10,8 @@
             }else{
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
+	    echo "<br>";
+	    $fortune = shell_exec(fortune);
+	    echo $fortune;
           ?>
 </div>
