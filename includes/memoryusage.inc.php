@@ -18,7 +18,7 @@
     echo "Memory Used : " . $memused;
     echo "<br>";
     echo "Memory Free : " . $memfree;
-    echo "<br>;
+    echo "<br>";
     echo "Memory Total : " . $memtotal;
 
 ?>
