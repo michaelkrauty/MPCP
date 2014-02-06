@@ -20,7 +20,7 @@
     echo "Used : " . intval($memused * 0.000976563) . " MB";
     echo "<br>";
     echo "Free : " . intval($memfree * 0.000976563) . " MB";
-    echo "Used : " . (intval($memtotal * 0.000976563) / 100 * (intval($memused * 0.000976563)) . " %";
-    echo "Free : " . (intval($memtotal * 0.000976563) / 100 * (intval($memfree * 0.000976563)) . " %";
+    echo "Used : " . intval($memtotal * 0.000976563) / 100 * (intval($memused * 0.000976563) . " %";
+    echo "Free : " . intval($memtotal * 0.000976563) / 100 * (intval($memfree * 0.000976563) . " %";
 
 ?>
