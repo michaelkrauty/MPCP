@@ -10,9 +10,10 @@
     $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563);
     $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
     $memused = intval($memtotal - $memfree);
-    $memusedper = intval($memused * intval($memtotal / 100));
-    $memfreeper = intval($memfree * intval($memtotal / 100));
-
+    $memusedper = intval($memused / (intval($memtotal / 100)));
+    $memfreeper = intval($memfree / (intval($memtotal / 100)));
+	
+    echo "<br>";
     echo $memfree . "<br>";
     echo $memtotal . "<br>";
     echo $memused . "<br>";
