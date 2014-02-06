@@ -67,7 +67,7 @@
     <script src="./bootstrap/assets/js/docs.min.js"></script>
     <script src="./webroot/js/Chart.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-
+    <script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#serverlist').load('./includes/serverlist.inc.php');
     }, 1000);
