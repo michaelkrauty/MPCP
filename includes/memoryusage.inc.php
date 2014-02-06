@@ -13,9 +13,11 @@
     $memusedper = intval($memused / (intval($memtotal / 100)));
     $memfreeper = intval($memfree / (intval($memtotal / 100)));	
     echo "<br>";
-    echo "Memory Free : " . $memfree . " MB<br>";
-    echo "Memory Total : " . $memtotal . " MB<br>";
-    echo "Memory Used : " . $memused . " MB<br>";
+    echo "<br>";
+    echo "<b>Memory Free :</b> " . $memfree . " MB<br>";
+    echo "<b>Memory Total :</b> " . $memtotal . " MB<br>";
+    echo "<b>Memory Used :</b> " . $memused . " MB<br>";
+    echo "<br>";
         echo "<tr>";
         echo "<td>";
         echo "</td><td>";
