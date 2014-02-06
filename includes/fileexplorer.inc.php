@@ -16,9 +16,13 @@
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-open"></span></button>
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span></button>
 </div>
+<?php
+/**
 <div class="btn-group">
 <button type="button" class="btn btn-default"></span> Zip</button>
 <button type="button" class="btn btn-default"></span> Unzip</button>
+**/
+?>
 </div>
 </div>
 </div>
