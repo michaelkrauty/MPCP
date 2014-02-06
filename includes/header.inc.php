@@ -15,6 +15,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <?php include_once "./includes/minecrafticon.inc.php"; ?>
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $userEmail; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
