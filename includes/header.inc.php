@@ -5,7 +5,7 @@
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
-      <a class='navbar-brand' href='./'; style="font-size:28px";> MPCP </a>
+      <a class='navbar-brand' href='./'; style="font-size:32px";> MPCP </a>
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
