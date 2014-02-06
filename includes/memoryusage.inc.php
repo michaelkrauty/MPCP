@@ -7,7 +7,7 @@
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
     }
-    $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563)
+    $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563);
     $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
     $memused = intval($memtotal - $memfree);
     $memusedper = intval($memused * intval($memtotal / 100));
