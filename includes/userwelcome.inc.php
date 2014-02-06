@@ -11,6 +11,6 @@
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
 	    echo "<br>";
-	    $fortune = shell_exec(fortune);
+	    $fortune = shell_exec("fortune");
           ?>
 </div>
