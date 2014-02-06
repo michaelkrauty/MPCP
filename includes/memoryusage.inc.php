@@ -7,7 +7,7 @@
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
 	echo $key;
-	echo <br>;
+	echo "<br>";
     }
 
     echo $meminfo["MemTotal"];
