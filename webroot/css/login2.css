@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Quando);
+
+pagetitle {
+  font-family: 'Quando', serif;
+  font-size: 40px;
+}
+logintitle{
+  font-size: 30px;
+}
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  background-image:url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:bottom;
+  background-size: cover;
+}
+.btn {
+  margin-top: 10px;
+}
+.container {
+  width: 400px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 2px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 14px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.strokeme
+{
+  color: black;
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+  1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+  1px 1px 0 #FFFFFF;
+}
