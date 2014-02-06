@@ -33,7 +33,7 @@
 <th width="10%">Size</th>
 <th width="10%">Modified</th>
 <th width="20%">MD5</th>
-<th width="10%">Controls</th>
+<th width="20%">Controls</th>
 </tr>
 <?php
 
