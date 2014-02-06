@@ -15,11 +15,11 @@
     $memfree = substr($meminfo["MemFree"], 0, -3);
     $memtotal = substr($meminfo["MemTotal"], 0, -3);
     echo "<br>";
-    echo "Memory Used : " . ($memused * 0.000976563);
+    echo "Memory Used : " . intval($memused * 0.000976563) . "MB";
     echo "<br>";
-    echo "Memory Free : " . ($memfree * 0.000976563);
+    echo "Memory Free : " . intval($memfree * 0.000976563) . "MB";
     echo "<br>";
-    echo "Memory Total : " . ($memtotal * 0.000976563);
+    echo "Memory Total : " . intval($memtotal * 0.000976563) . "MB";
 
 ?>
 
