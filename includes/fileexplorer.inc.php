@@ -26,13 +26,11 @@
 ?>
 <table class="table table-hover">
 <tr>
-<th width="5%"></th>
-<th width="30%">Filename</th>
-<th width="10%">Type</th>
-<th width="5%">Size</th>
-<th width="10%">Modified</th>
-<th width="30%">MD5</th>
-<th width="10%">Controls</th>
+<th width="50px"></th>
+<th width="300px">Filename</th>
+<th width="100px">Type</th>
+<th width="50px">Size</th>
+<th width="100px">Modified</th>
+<th width="300px">MD5</th>
+<th width="100px">Controls</th>
 </table>
-</div>
-</div>
