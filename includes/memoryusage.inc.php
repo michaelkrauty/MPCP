@@ -7,21 +7,24 @@
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
     }
+    $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563)
+    $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
+    $memused = intval($memtotal - $memfree);
+    $memusedper = intval($memused * intval($memtotal / 100));
+    $memfreeper = intval($memfree * intval($memtotal / 100));
 
-    $meminfo["MemTotal"];
-    $meminfo["MemFree"];
+    echo $memfree;
+    echo $memtotal;
+    echo $memused;
+    echo $memusedper;
+    echo $memfreeper;
 
-    $memused = ($meminfo["MemTotal"] - $meminfo["MemFree"]);
-    $memfree = substr($meminfo["MemFree"], 0, -3);
-    $memtotal = substr($meminfo["MemTotal"], 0, -3);
-    echo "<br>";
-    echo "Memory Total : " . intval($memtotal * 0.000976563) . " MB";
-    echo "<br>";
-    echo "Used : " . intval($memused * 0.000976563) . " MB";
-    echo "<br>";
-    echo "Free : " . intval($memfree * 0.000976563) . " MB";
-    echo "<br>";
-    echo "Used : " . intval((intval($memused * 0.000976563)) / (intval($memtotal * 0.000976563) / 100)) . " %";
-    echo "<br>";
-    echo "Free : " . intval((intval($memfree * 0.000976563)) / (intval($memtotal * 0.000976563) / 100)) . " %";
+
+
+
+
+
+
+
+
 ?>
