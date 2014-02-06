@@ -72,7 +72,7 @@
           <div class="commandbar">
             <form>
               <div class="col-xs-10">
-                <input name="cmd" type="text" class="form-control" method="post" placeholder="Enter a command here...">
+                <input name="cmd" type="text" class="form-control" method="get" placeholder="Enter a command here...">
               </div>
             <div class="col-xs-2">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
