@@ -19,6 +19,17 @@
   
   function serverOnline($serverId){
     
+    $serverIp = "dominationvps.com";
+    $serverPort = "25565";
+    
+	  include_once 'status.class.php';
+	  $status = new MinecraftServerStatus();
+	  $response = $status->getStatus($serverIp, $serverPort);
+	  if(!$response) {
+  	  return false;
+	  } else {
+      return true;
+  	}
   }
   
   function startServer($serverId, $memory, $jar){
