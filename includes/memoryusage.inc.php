@@ -5,7 +5,7 @@
     $meminfo = array();
     foreach ($data as $line) {
     	list($key, $val) = explode(":", $line);
-        $key --;
+        $key = 1;
 	$meminfo[$key] = trim($val);
     }
 
