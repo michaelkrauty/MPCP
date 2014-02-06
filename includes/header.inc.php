@@ -10,9 +10,9 @@
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
 	<center>
-        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home"></span><br> Home</a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog"></span><br> Manage</a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag"></span><br> Plans</a></li>
+        <?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog"></span>Manage</a></li>
+        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag"></span>Plans</a></li>
         </center>
       </ul>
       <ul class="nav navbar-nav navbar-right">
