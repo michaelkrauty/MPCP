@@ -17,17 +17,7 @@ body{
 .page-header {
    margin: 0px 0 20px;
 }
-.table {
- padding: 0px;
-}
-.table thead>tr>th,.table tbody>tr>th,.table tfoot>tr>th,.table thead>tr>td,.table tbody>tr>td,.table tfoot>tr>td{
- passing: 0px;
-}
 td{
   text-align: center;
   vertical-align: middle;
   padding: 0px;
-}
-.progress {
- margin-bottom: 0px;
-}
