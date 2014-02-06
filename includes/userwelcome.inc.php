@@ -10,7 +10,7 @@
             }else{
               echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='100' width='100'>";
             }
-	    echo "<br>";
+	    echo "<br></br>";
 	    echo shell_exec("fortune");
           ?>
 </div>
