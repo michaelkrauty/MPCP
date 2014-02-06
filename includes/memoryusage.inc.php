@@ -13,11 +13,11 @@
     $memusedper = intval($memused * intval($memtotal / 100));
     $memfreeper = intval($memfree * intval($memtotal / 100));
 
-    echo $memfree;
-    echo $memtotal;
-    echo $memused;
-    echo $memusedper;
-    echo $memfreeper;
+    echo $memfree . "<br>";
+    echo $memtotal . "<br>";
+    echo $memused . "<br>";
+    echo $memusedper . "<br>";
+    echo $memfreeper . "<br>";
 
 
 
