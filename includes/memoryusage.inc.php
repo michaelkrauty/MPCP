@@ -3,6 +3,7 @@
 <?php
     $data = explode("\n", file_get_contents("/proc/meminfo"));
     $meminfo = array();
+    $line = 0;
     foreach ($data as $line) {
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
