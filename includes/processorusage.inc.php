@@ -61,7 +61,7 @@ $c = 1;
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
 	echo "<tr>";
-	echo "<td style="height:20px>";
+	echo "<td style=\"height:20px>\";
 	echo "<h4><b>Processor {c} :</b><h4>";
         echo "</td><td>";
 	if ($i > 80) {
