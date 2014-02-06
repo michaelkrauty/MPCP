@@ -22,21 +22,21 @@
         echo "<td>";
         echo "</td><td>";
         if ($memusedper > 70) {
-        echo "<div class=\"progress progress-striped active\">";
+        echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
         echo "</div>";
         echo "</div>";
         }
         else if ($memusedper > 50) {
-        echo "<div class=\"progress progress-striped active\">";
+        echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
         echo "</div>";
         echo "</div>";
         }
         else {
-        echo "<div class=\"progress progress-striped active\">";
+        echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
         echo "</div>";
