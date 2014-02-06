@@ -10,8 +10,8 @@
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
 	<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home" style="font-size:20px; vertical-align: middle;"></span>Home</a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog" style="font-size:20px; vertical-align: middle;"></span>NA</a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag" style="font-size:20px; vertical-align: middle;"></span>Settings</a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog" style="font-size:20px; vertical-align: middle;"></span>Manage</a></li>
+        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag" style="font-size:20px; vertical-align: middle;"></span>Plans</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
