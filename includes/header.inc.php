@@ -12,7 +12,6 @@
 	<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home"></span> Home</a></li>
         <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog"></span> Manage</a></li>
         <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag"></span> Plans</a></li>
-        <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home"></span> Home </button>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
