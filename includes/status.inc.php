@@ -16,5 +16,12 @@
         </center>
       </div>';
     }
+  }else{
+      echo '
+      <div class="alert alert-danger">
+        <center>
+          <strong>Server Status: Server is Offline!</strong>
+        </center>
+      </div>';
   }
 ?>
