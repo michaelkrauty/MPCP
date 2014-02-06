@@ -65,21 +65,21 @@ $c = 1;
 	echo "<h4><b>Processor {$c}: </b><h4>";
         echo "</td><td>";
 	if ($i > 80) {
-        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress progress-striped active\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
         }
         else if ($i > 60) {
-        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress progress-striped active\">";
         echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
         }
         else {
-        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress progress-striped active\">";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
