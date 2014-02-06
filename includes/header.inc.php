@@ -9,7 +9,7 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-	<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home" style="font-size:20px; text-align: center;"></span><br> Home</a></li>
+	<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp'><span class="glyphicon glyphicon-home" style="font-size:20px; text-align: center; vertical-align: middle;"></span><br> Home</a></li>
         <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage'><span class="glyphicon glyphicon-cog" style="font-size:20px; text-align: center;"></span><br> Manage</a></li>
         <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php'><span class="glyphicon glyphicon-tag" style="font-size:20px; text-align: center"></span><br> Plans</a></li>
      </ul>
