@@ -11,9 +11,9 @@
     $meminfo["MemTotal"];
     $meminfo["MemFree"];
 
-    $memused = ($meminfo["MemTotal"] - $meminfo["MemFree"]);
-    $memfree = $meminfo["MemFree"];
-    $memtotal = $meminfo["MemTotal"];
+    $memused = ($meminfo["MemTotal"] - $meminfo["MemFree" / 0.000976562]);
+    $memfree = $meminfo["MemFree" / 0.000976562];
+    $memtotal = $meminfo["MemTotal" / 0.000976562];
     echo "<br>";
     echo "Memory Used : " . $memused;
     echo "<br>";
