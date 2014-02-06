@@ -5,7 +5,7 @@
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
       <span class='icon-bar'></span>
-      <a class='navbar-brand' href='./'; style="font-size:32px";> MPCP </a>
+      <a class='navbar-brand' href='./'; style="font-size:32px"; "vertical-align:middle";> MPCP </a>
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
@@ -15,7 +15,7 @@
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once "includes/minecrafticonsmall.inc.php" ?><?php echo " " . $userEmail; ?> <b class="caret"></b></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once "includes/minecrafticonsmall.inc.php" ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
             <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>
