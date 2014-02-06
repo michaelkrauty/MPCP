@@ -45,7 +45,7 @@
       <div class="container-fluid">
         <div class="row">
           <?php include_once "../includes/sidebar.inc.php"; ?>
-          <div class="status-header">
+          <div class="status-header" id="status">
             <?php
               if(screenOnline($serverId)){
                 echo '
@@ -99,6 +99,9 @@
     <script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#consoleviewer').load('consoleviewer.inc.php');
+    }, 1000);
+    var auto_refresh = setInterval( function () {
+    $('#status').load('../includes/status.inc.php');
     }, 1000);
     </script>
     </body>
