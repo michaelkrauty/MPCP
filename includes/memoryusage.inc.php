@@ -5,8 +5,8 @@
     $meminfo = array();
     foreach ($data as $line) {
     	list($key, $val) = explode(":", $line);
-        $key = 1;
 	$meminfo[$key] = trim($val);
+	echo $key;
     }
 
     echo $meminfo["MemTotal"];
