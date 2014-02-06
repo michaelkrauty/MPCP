@@ -1,5 +1,6 @@
 <div class="well">
 <h2> File Explorer </h2>
+<div class="well">
 <div class="btn-group">
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></button>
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
@@ -19,5 +20,6 @@
 <div class="btn-group">
 <button type="button" class="btn btn-default"></span> Zip</button>
 <button type="button" class="btn btn-default"></span> Unzip</button>
+</div>
 </div>
 </div>
