@@ -61,9 +61,9 @@ $c = 1;
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
 	echo "<tr>";
-	echo "<td>";
+	echo "<td height="10">";
 	echo "<h4><b>Processor {$c}: </b><h4>";
-        echo "</td><td>";
+        echo "</td><td height="10">";
 	if ($i > 80) {
         echo "<div class=\"progress progress-striped active\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
