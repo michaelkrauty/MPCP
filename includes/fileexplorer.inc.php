@@ -24,8 +24,8 @@
 </div>
 **/
 ?>
-<table class="table table-hover">
-<tr>
+<table class="table table-hover table-bordered">
+<tr align="center">
 <th width="50px"></th>
 <th width="300px">Filename</th>
 <th width="100px">Type</th>
@@ -33,4 +33,5 @@
 <th width="100px">Modified</th>
 <th width="300px">MD5</th>
 <th width="100px">Controls</th>
+</tr>
 </table>
