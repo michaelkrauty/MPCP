@@ -12,6 +12,5 @@
             }
 	    echo "<br>";
 	    $fortune = shell_exec(fortune);
-	    echo $fortune;
           ?>
 </div>
