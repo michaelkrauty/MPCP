@@ -1,5 +1,5 @@
 <div class="well">
-<h2> Memory Usage </h2>
+<h2> File Explorer </h2>
 <div class="btn-group">
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></button>
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
