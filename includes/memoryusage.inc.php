@@ -13,14 +13,11 @@
     $memusedper = intval($memused / (intval($memtotal / 100)));
     $memfreeper = intval($memfree / (intval($memtotal / 100)));	
     echo "<br>";
-    echo $memfree . "<br>";
-    echo $memtotal . "<br>";
-    echo $memused . "<br>";
-    echo $memusedper . "<br>";
-    echo $memfreeper . "<br>";
+    echo "Memory Free : " . $memfree . " MB<br>";
+    echo "Memory Total : " . $memtotal . " MB<br>";
+    echo "Memory Used : " . $memused . " MB<br>";
         echo "<tr>";
         echo "<td>";
-        echo "<h4><b>a</b><h4>";
         echo "</td><td>";
         if ($memusedper > 70) {
         echo "<div class=\"progress progress-striped\">";
