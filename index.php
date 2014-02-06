@@ -35,8 +35,7 @@
     <div class='jumbotron'>
       <div class='page-header'>
         <center>
-          <h2>Welcome, <?php echo $userName; ?>!</h2>
-	  <div id="usewelcome"><?php include_once "./includes/minecrafticon.inc.php";?></div>
+	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
           <div id="serverlist"></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
