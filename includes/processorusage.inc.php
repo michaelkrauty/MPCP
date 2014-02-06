@@ -56,10 +56,10 @@ $c = 1;
 	<th width= "20%">Processor Number</th>
 	<th width= "80%"> Usage % <th>
 	</tr>
+	<tr>
 	<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
-	echo "<tr>";
 	echo "<td>";
 	echo "<h4><b>Processor {$c}: </b><h4>";
         echo "</td><td>";
@@ -84,7 +84,7 @@ $c = 1;
         echo "</div>";
         echo "</div>";
 	echo "</td>";
-	echo "</tr>";
+	echo "<br>";
 	$c ++;
         }
 	}
