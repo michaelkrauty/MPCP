@@ -18,7 +18,7 @@
   }
   
   function serverOnline($serverId){
-    
+    #temp
     $serverIp = "dominationvps.com";
     $serverPort = "6070";
     
