@@ -51,7 +51,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<td> - </td>";/** echo "<td>"; try { echo filesize($entry); } catch (Exception $e) {echo "";} echo "</td>";**/
         echo "<td> - </td>";/** echo "<td>"; try { echo filetime($entry); } catch (Exception $e) {echo "";} echo "</td>";**/
 	echo "<td> - </td>";/** echo "<td>"; try { echo md5_file($entry); } catch (Exception $e) {echo "";} echo "</td>";**/
-	echo "<span class="glyphicon glyphicon-plus">";
+	echo "<span class=\"glyphicon glyphicon-plus\">";
 	echo "</tr>";
     }
     closedir($handle);
