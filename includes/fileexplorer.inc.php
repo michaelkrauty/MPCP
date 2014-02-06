@@ -44,7 +44,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
         echo "<tr>";
-        $fullpath = ('/var/mpcp/servers/' . $serverId . $entry);
+        $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
 	echo "<td>$entry\n</td>";
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
         echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
