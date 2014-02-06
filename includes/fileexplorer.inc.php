@@ -38,7 +38,7 @@
 </table>
 </div>
 <?php
-$serverId = "mpcp_0"
+$serverId = "mpcp_0";
 $dir = ("/var/mpcp/servers/" . $serverId . "/");
 while (false !== ($file = readdir($dir)))
 {
