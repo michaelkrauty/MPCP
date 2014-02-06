@@ -39,6 +39,7 @@
           <div id="serverlist"></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
+	  <div id="fileexplorer"><?php include_once "./includes/fileexplorer.inc.php";?></div>
 	</center>
       </div>
     </div>

@@ -1,47 +1,23 @@
 <div class="well">
 <h2> Memory Usage </h2>
-<?php
-    $data = explode("\n", file_get_contents("/proc/meminfo"));
-    $meminfo = array();
-    foreach ($data as $line) {
-    	list($key, $val) = explode(":", $line);
-	$meminfo[$key] = trim($val);
-    }
-    $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563);
-    $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
-    $memused = intval($memtotal - $memfree);
-    $memusedper = intval($memused / (intval($memtotal / 100)));
-    $memfreeper = intval($memfree / (intval($memtotal / 100)));	
-    echo "<br>";
-    echo "<br>";
-    echo "<b>Memory Free :</b> " . $memfree . " MB<br>";
-    echo "<b>Memory Total :</b> " . $memtotal . " MB<br>";
-    echo "<b>Memory Used :</b> " . $memused . " MB<br>";
-    echo "<br>";
-        echo "<tr>";
-        echo "<td>";
-        echo "</td><td>";
-        if ($memusedper > 70) {
-        echo "<div class=\"progress\">";
-        echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
-        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
-        echo "</div>";
-        echo "</div>";
-        }
-        else if ($memusedper > 50) {
-        echo "<div class=\"progress\">";
-        echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
-        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
-        echo "</div>";
-        echo "</div>";
-        }
-        else {
-        echo "<div class=\"progress\">";
-        echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
-        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
-        echo "</div>";
-        echo "</div>";
-        echo "</td>";
-        echo "</tr>";
-	}
-?>
+<div class="actions button-container">
+                  <div class="button-group">
+                      <a id="filebrowserhomebtn" class="button icon home">Home Directory</a>
+                      <a id="filebrowserrefreshbtn" class="button icon loop">Refresh</a>
+                  </div>
+                  <div class="button-group">
+                      <a id="filebrowsernewdirectorybtn" class="button">New Directory</a>
+                      <a id="filebrowsernewfilebtn" class="button">New File</a>
+                      <a id="filebrowseruploadfilebtn" class="button icon arrowup">Upload File</a>
+                  </div>
+                  <div class="button-group">
+                      <a id="filebrowserzipbtn" class="button">Zip</a>
+                      <a id="filebrowserunzipbtn" class="button disabled">UnZip</a>
+                  </div>
+                  <div class="button-group">
+                      <a id="filebrowsereditfilebtn" class="button icon edit disabled">Edit File</a>
+                      <a id="filebrowserdownloadbtn" class="button icon arrowdown">Download</a>
+                      <a id="filebrowserrenamebtn" class="button disabled">Rename</a>
+                      <a id="filebrowserdeletebtn" class="button icon trash disabled">Delete</a>
+                  </div>
+                </div>
