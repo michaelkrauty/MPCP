@@ -8,10 +8,9 @@
 </div>
 <div class="btn-group">
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button>
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-wrench"></span></button>
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font"></span></button>
-<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
 </div>
 <div class="btn-group">
 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-open"></span></button>
