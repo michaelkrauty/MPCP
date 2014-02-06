@@ -28,7 +28,7 @@
 <div id='fileexplorer' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="20%">Filename</th>
+<th width="30%">Filename</th>
 <th width="10%">Type</th>
 <th width="10%">Size</th>
 <th width="10%">Modified</th>
@@ -44,7 +44,6 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
         echo "<tr>";
-	echo "<td></td>";
 	echo "<td>$entry\n</td>";
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
         echo "<td> - </td>";/** echo "<td>"; try { echo filesize($entry); } catch (Exception $e) {echo "";} echo "</td>";**/
