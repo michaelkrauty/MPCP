@@ -45,25 +45,7 @@
       <div class="container-fluid">
         <div class="row">
           <?php include_once "../includes/sidebar.inc.php"; ?>
-          <div class="status-header" id="status">
-            <?php
-              if(screenOnline($serverId)){
-                echo '
-                <div class="alert alert-success">
-                <center>
-                <strong>Server Status: Server is Online!</strong>
-                </center>
-                </div>';
-              }else{
-                echo '
-                <div class="alert alert-danger">
-                <center>
-                <strong>Server Status: Server is Offline!</strong>
-                </center>
-                </div>';
-              }
-            ?>
-          </div>
+          <div class="status-header" id="status"></div>
           <div id="console">
             <div class="wellconsole">
               <div id="consoleviewer"></div>
