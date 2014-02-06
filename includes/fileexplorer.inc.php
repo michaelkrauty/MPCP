@@ -4,10 +4,8 @@
     $data = explode("\n", file_get_contents("/proc/meminfo"));
     $meminfo = array();
     foreach ($data as $line) {
-	if (isset($chunks[1])) {
     	list($key, $val) = explode(":", $line);
 	$meminfo[$key] = trim($val);
-	}
     }
     $memfree = intval(substr($meminfo["MemFree"], 0, -3) * 0.000976563);
     $memtotal = intval(substr($meminfo["MemTotal"], 0, -3) * 0.000976563);
