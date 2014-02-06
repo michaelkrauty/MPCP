@@ -18,9 +18,9 @@
     }
   }else{
       echo '
-      <div class="alert alert-danger">
+      <div class="alert alert-warning">
         <center>
-          <strong>Server Status: Server is Offline!</strong>
+          <strong>Server Status: Server is starting/stopping!</strong>
         </center>
       </div>';
   }
