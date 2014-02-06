@@ -7,5 +7,5 @@
     	list($key, $val) = explode(":", $line);
     	$meminfo[$key] = trim($val);
     }
-    var_dump($meminfo);
+    var_dump($meminfo[1]);
 ?>

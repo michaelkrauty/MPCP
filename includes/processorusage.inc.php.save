@@ -1,3 +1,4 @@
+<div class="well">
 <h2> Processor Usage </h2>
 
 <?php
@@ -48,8 +49,45 @@ sleep(1);
 $stat2 = GetCoreInformation();
 /* get the cpu percentage based off two snapshots */
 $data = GetCpuPercentages($stat1, $stat2);
-
-foreach( $data as $k => $v ) {
-        echo $data;
+$c = 0;
 ?>
-
+<table class="table table-striped">
+	<tr>
+	<th> Processor # </th>
+	<th> Usage % <th>
+	</tr>
+	<?php
+	foreach( $data as $k => $v ) {
+        $i = $v['user'];
+	echo "<tr>";
+	echo "<td>";
+	echo "<h4>Processor {$c} <h4>";
+        echo "</td><td>";
+	if ($i > 80) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        echo "</div>";
+        echo "</div>";
+        }
+         ($i > 60) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        echo "</div>";
+        echo "</div>";
+        }
+        if ($i >= 0) {
+        echo "<div class=\"progress progress-striped\">";
+        echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
+        aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
+        echo "</div>";
+        echo "</div>";
+	echo "</td>";
+	echo "</tr>";
+	$c ++;
+        }
+	}
+	?>
+</table>
+</div>
