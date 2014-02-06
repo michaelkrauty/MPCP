@@ -66,7 +66,7 @@
           </div>
           <div id="console">
             <div class="wellconsole">
-              <?php include_once "consoleviewer.inc.php"; ?>
+              <div id="consoleviewer"></div>
             </div>
           </div>
           <div class="commandbar">
@@ -95,6 +95,12 @@
       <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="./bootstrap/assets/js/docs.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    var auto_refresh = setInterval( function () {
+    $('#consoleviewer').load('consoleviewer.inc.php');
+    }, 1000);
+    </script>
     </body>
   <?php
     }else{
