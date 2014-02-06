@@ -28,13 +28,12 @@
 <div id='fileexplorer' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="50px"></th>
-<th width="300px">Filename</th>
-<th width="100px">Type</th>
-<th width="100px">Size</th>
-<th width="100px">Modified</th>
-<th width="300px">MD5</th>
-<th width="100px">Controls</th>
+<th width="20%">Filename</th>
+<th width="10%">Type</th>
+<th width="10%">Size</th>
+<th width="10%">Modified</th>
+<th width="20%">MD5</th>
+<th width="10%">Controls</th>
 </tr>
 <?php
 
