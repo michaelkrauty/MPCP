@@ -37,3 +37,11 @@
 </tr>
 </table>
 </div>
+<?php
+$serverId = "mpcp_0"
+$dir = ("/var/mpcp/servers/" . $serverId . "/");
+while (false !== ($file = readdir($dir)))
+{
+echo '<a href="'.$file.'">'.$file.'</a><br />';
+}
+?>
