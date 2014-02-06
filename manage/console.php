@@ -33,37 +33,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-      <script>
-      var $console = $("#console");
-      setInterval(function () {
-        $console.load("console.inc.php #console");
-      }, 5000);
-      </script>
     </head>
     <body>
       <?php include_once "../includes/header.inc.php"; ?>
       <div class="container-fluid">
         <div class="row">
           <?php include_once "../includes/sidebar.inc.php"; ?>
-          <div class="status-header" id="status">
-            <?php
-              if(screenOnline($serverId)){
-                echo '
-                <div class="alert alert-success">
-                <center>
-                <strong>Server Status: Server is Online!</strong>
-                </center>
-                </div>';
-              }else{
-                echo '
-                <div class="alert alert-danger">
-                <center>
-                <strong>Server Status: Server is Offline!</strong>
-                </center>
-                </div>';
-              }
-            ?>
-          </div>
+          <div class="status-header" id="status"></div>
           <div id="console">
             <div class="wellconsole">
               <div id="consoleviewer"></div>
