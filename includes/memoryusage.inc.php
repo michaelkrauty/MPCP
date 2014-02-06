@@ -18,7 +18,6 @@
     echo $memused . "<br>";
     echo $memusedper . "<br>";
     echo $memfreeper . "<br>";
-?>
         echo "<tr>";
         echo "<td>";
         echo "<h4><b>a</b><h4>";
@@ -45,4 +44,4 @@
         echo "</div>";
         echo "</td>";
         echo "</tr>";
-
+?>
