@@ -68,23 +68,7 @@
                   </form>
                 </div>
               </div>
-              <?php
-                if(screenOnline($serverId)){
-                  echo '
-                  <div class="alert alert-success">
-                  <center>
-                  <strong>Server Status: Server is Online!</strong>
-                  </center>
-                  </div>';
-                }else{
-                  echo '
-                  <div class="alert alert-danger">
-                  <center>
-                  <strong>Server Status: Server is Offline!</strong>
-                  </center>
-                  </div>';
-                }
-              ?>
+              <div class="status-header" id="status"></div>
             </div>
           </div>
         <!-- Bootstrap core JavaScript
@@ -93,6 +77,11 @@
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="./bootstrap/assets/js/docs.min.js"></script>
+        <script type="text/javascript">
+          var auto_refresh = setInterval( function () {
+          $('#status').load('../includes/status.inc.php');
+          }, 1000);
+        </script>
       </body>
     <?php
       }else{
