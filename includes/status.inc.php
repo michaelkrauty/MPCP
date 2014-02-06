@@ -1,12 +1,21 @@
 <?php include "mpcp.inc.php";
   $serverId = "mpcp_0";
   if(screenOnline($serverId)){
-    echo '
-    <div class="alert alert-success">
-      <center>
-        <strong>Server Status: Server is Online!</strong>
-      </center>
-    </div>';
+    if(serverOnline($serverId)){
+      echo '
+      <div class="alert alert-success">
+        <center>
+          <strong>Server Status: Server is Online!</strong>
+        </center>
+      </div>';
+    }else{
+      echo '
+      <div class="alert alert-warning">
+        <center>
+          <strong>Server Status: Server is starting/stopping!</strong>
+        </center>
+      </div>';
+    }
   }else{
     echo '
     <div class="alert alert-danger">

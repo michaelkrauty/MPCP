@@ -20,7 +20,7 @@
   function serverOnline($serverId){
     
     $serverIp = "dominationvps.com";
-    $serverPort = "25565";
+    $serverPort = "6070";
     
 	  include_once 'status.class.php';
 	  $status = new MinecraftServerStatus();
