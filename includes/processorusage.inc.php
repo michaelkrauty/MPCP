@@ -60,6 +60,7 @@ $c = 1;
 	<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
+	echo "<tr>";
 	echo "<td>";
 	echo "<h4><b>Processor {$c}: </b><h4>";
         echo "</td><td>";
@@ -84,7 +85,7 @@ $c = 1;
         echo "</div>";
         echo "</div>";
 	echo "</td>";
-	echo "<br>";
+	echo "</tr>";
 	$c ++;
         }
 	}
