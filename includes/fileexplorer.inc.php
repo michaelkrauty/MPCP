@@ -47,7 +47,8 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<tr>";
 	echo "<td></td>";
 	echo "<td>$entry\n</td>";
-	echo "<td>" . (try {pathinfo($entry, PATHINFO_EXTENSION)}catch(Exception $e){}) . "</td>";
+	
+	echo "<td>" . (try {pathinfo($entry, PATHINFO_EXTENSION)} catch (Exception $e){echo "";}) . "</td>";
         echo "<td>" . filesize($entry) . "</td>";
 	echo "</tr>";
     }
