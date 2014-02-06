@@ -17,7 +17,10 @@ body{
 .page-header {
    margin: 0px 0 20px;
 }
+.table {
+ padding: 0px
 }
+
 td{
   text-align: center;
   vertical-align: middle;
