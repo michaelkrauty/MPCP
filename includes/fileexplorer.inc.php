@@ -24,8 +24,8 @@
 </div>
 **/
 ?>
+<div id='fileexplorer' style='background:white;'>
 <table class="table table-hover table-bordered">
-<center>
 <tr>
 <th width="50px"></th>
 <th width="300px">Filename</th>
@@ -35,5 +35,5 @@
 <th width="300px">MD5</th>
 <th width="100px">Controls</th>
 </tr>
-</center>
 </table>
+</div>
