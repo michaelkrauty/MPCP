@@ -24,6 +24,7 @@
 </div>
 **/
 ?>
+<br></br>
 <div id='fileexplorer' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
@@ -46,6 +47,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<tr>";
 	echo "<td></td>";
 	echo "<td>$entry\n</td>";
+	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
 	echo "</tr>";
     }
 
