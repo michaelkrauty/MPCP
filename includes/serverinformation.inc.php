@@ -80,7 +80,6 @@ $secs = $uptime%60;
 return "$days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 }
 
-echo "<br>";
 echo "<table align=\"center\"valign=\"center\"class=\"table table-striped table-bordered table-condensed\">";
 echo "<tr>";
 echo "<td>Server Operating System:</td>";
