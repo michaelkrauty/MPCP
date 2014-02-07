@@ -3,14 +3,14 @@
 <?php
 /** Gets the servers operating system **/
 function getos() {
-return php_uname('s')
+return php_uname('s');
 }
 /** Gets the servers distrobution**/
 function getdistro() {
 }
 /** Gets the servers architecture**/
 function getarc() {
-return php_uname('m')
+return php_uname('m');
 }
 /** Gets the servers web server version**/
 function getwebsvr() {
@@ -37,14 +37,14 @@ function getuptime() {
 
 echo $_SERVER['SERVER_NAME'];
 echo "<br>";
-echo getos() . "<br>";
-echo getdistro() . "<br>";
-echo getarc() . "<br>";
-echo getwebsvr() . "<br>";
-echo getwan() . "<br>";
-echo getphp() . "<br>";
-echo getjava() . "<br>";
-echo getsdate() . "<br>";
-echo getstime() . "<br>";
-echo getuptime() . "<br>";
+echo "Operating System:" . getos() . "<br>";
+echo "Distribution:" . getdistro() . "<br>";
+echo "Machine Architecture:" . getarc() . "<br>";
+echo "Web Server:" . getwebsvr() . "<br>";
+echo "WAN Address:" . getwan() . "<br>";
+echo "PHP Version:" . getphp() . "<br>";
+echo "JAVA Version:" . getjava() . "<br>";
+echo "System Date:" . getsdate() . "<br>";
+echo "System Time:" . getstime() . "<br>";
+echo "System Uptime:" . getuptime() . "<br>";
 ?>
