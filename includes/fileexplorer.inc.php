@@ -60,8 +60,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
 }
 
 var_dump($_POST);
-$resp = system("top -n 1");
-print $resp; 
+
 ?>
 </table>
 </div>

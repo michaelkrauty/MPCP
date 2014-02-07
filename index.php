@@ -40,6 +40,7 @@
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
 	  <div id="fileexplorer"><?php include_once "./includes/fileexplorer.inc.php";?></div>
+	  <div id="console"></div>
 	</center>
       </div>
     </div>
@@ -79,6 +80,11 @@
     var auto_refresh = setInterval( function () {
     $('#meminfo').load('./includes/memoryusage.inc.php');
     }, 1000);
+
+    var auto_refresh = setInterval( function () {
+    $('#console').load('./includes/console.inc.php');
+    }, 1000);
+
     </script>
     <script language="javascript"> 
     function DoPost($fullpath){
