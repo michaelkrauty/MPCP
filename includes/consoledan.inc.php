@@ -9,7 +9,7 @@ while (($line = fgets($file)) !== false) {
         echo "$line";
 	echo "<br>";
 }
-fclose(logfile);
+fclose(&logfile);
 echo "</div>";
 
 ?>
