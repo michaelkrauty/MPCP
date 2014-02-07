@@ -43,7 +43,7 @@ function getstime() {
 function getuptime() {
 }
 
-$output = shell_exec('java -version');
+$output = shell_exec('/usr/bin/java -version');
 echo $output . "test" ;
 echo "<br>";
 echo "Your IP Address: " . getuserip() . "<br>";
