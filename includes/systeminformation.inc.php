@@ -31,6 +31,7 @@ return phpversion();
 }
 /** Gets the servers java version **/
 function getjava() {
+return shell_exec('java -version');
 }
 /** Gets the current date**/
 function getsdate() {
