@@ -16,15 +16,6 @@ $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
             <div class="col-xs-2">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
               </div>
-              <?php
-              if(screenOnline($serverId)){
-                  if(isset($_GET['cmd'])){
-                    $cmd = $_GET['cmd'];
-                    executeCommand($serverId, $cmd);
-                  }
-              }
-              ?>
-            </form>
           </div>
     <script type="text/javascript">
     var auto_refresh = setInterval( function () {
