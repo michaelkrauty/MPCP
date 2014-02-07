@@ -49,7 +49,7 @@ $days = floor($uptime/60/60/24);
 $hours = $uptime/60/60%24;
 $mins = $uptime/60%60;
 $secs = $uptime%60;
-return "up $days days $hours hours $mins minutes and $secs seconds";
+return "up $days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 }
 
 echo "<br>";
