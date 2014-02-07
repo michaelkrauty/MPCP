@@ -36,6 +36,7 @@ return shell_exec('java -version');
 }
 /** Gets the current date**/
 function getsdate() {
+return shell_exec('date +”%A,%B %d %Y”');
 }
 /** Gets the current time**/
 function getstime() {
@@ -53,7 +54,7 @@ echo "Web Server: " . getwebsvr() . "<br>";
 echo "WAN Address: " . getwan() . "<br>";
 echo "PHP Version: " . getphp() . "<br>";
 echo "JAVA Version: " . getjava() . "<br>";
-echo "System Date: " . getdate() . "<br>";
-echo "System Time: " . gettime() . "<br>";
-echo "System Uptime: " . getuptime() . "<br>";
+echo "Server Date: " . getsdate() . "<br>";
+echo "Server Time: " . getstime() . "<br>";
+echo "Server Uptime: " . getuptime() . "<br>";
 ?>
