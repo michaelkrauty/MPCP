@@ -17,6 +17,7 @@ function getwebsvr() {
 }
 /** Gets the servers WAN address **/
 function getwan() {
+return $_SERVER['SERVER_NAME'];
 }
 /** Gets the servers php version **/
 function getphp() {
@@ -35,16 +36,15 @@ function getuptime() {
 }
 
 
-echo $_SERVER['SERVER_NAME'];
 echo "<br>";
-echo "Operating System:" . getos() . "<br>";
-echo "Distribution:" . getdistro() . "<br>";
-echo "Machine Architecture:" . getarc() . "<br>";
-echo "Web Server:" . getwebsvr() . "<br>";
-echo "WAN Address:" . getwan() . "<br>";
-echo "PHP Version:" . getphp() . "<br>";
-echo "JAVA Version:" . getjava() . "<br>";
-echo "System Date:" . getsdate() . "<br>";
-echo "System Time:" . getstime() . "<br>";
-echo "System Uptime:" . getuptime() . "<br>";
+echo "Operating System: " . getos() . "<br>";
+echo "Distribution: " . getdistro() . "<br>";
+echo "Machine Architecture: " . getarc() . "<br>";
+echo "Web Server: " . getwebsvr() . "<br>";
+echo "WAN Address: " . getwan() . "<br>";
+echo "PHP Version: " . getphp() . "<br>";
+echo "JAVA Version: " . getjava() . "<br>";
+echo "System Date: " . getsdate() . "<br>";
+echo "System Time: " . getstime() . "<br>";
+echo "System Uptime: " . getuptime() . "<br>";
 ?>
