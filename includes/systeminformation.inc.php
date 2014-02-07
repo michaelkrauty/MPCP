@@ -3,12 +3,14 @@
 <?php
 /** Gets the servers operating system **/
 function getos() {
+return php_uname('s')
 }
 /** Gets the servers distrobution**/
 function getdistro() {
 }
 /** Gets the servers architecture**/
 function getarc() {
+return php_uname('m')
 }
 /** Gets the servers web server version**/
 function getwebsvr() {
@@ -32,12 +34,17 @@ function getstime() {
 function getuptime() {
 }
 
-echo php_uname('a') . "<br>";
-echo php_uname('s') . "<br>";
-echo php_uname('n') . "<br>";
-echo php_uname('r') . "<br>";
-echo php_uname('v') . "<br>";
-echo php_uname('m') . "<br>";
 
-
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo getos() . "<br>";
+echo getdistro() . "<br>";
+echo getarc() . "<br>";
+echo getwebsvr() . "<br>";
+echo getwan() . "<br>";
+echo getphp() . "<br>";
+echo getjava() . "<br>";
+echo getsdate() . "<br>";
+echo getstime() . "<br>";
+echo getuptime() . "<br>";
 ?>
