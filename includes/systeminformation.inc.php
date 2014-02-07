@@ -36,7 +36,7 @@ return shell_exec('java -version');
 }
 /** Gets the current date**/
 function getsdate() {
-return shell_exec('date +”%A,%B %d %Y”');
+return date('l jS \of F Y');
 }
 /** Gets the current time**/
 function getstime() {
