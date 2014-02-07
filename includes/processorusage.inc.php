@@ -81,8 +81,8 @@ $c = 1;
         echo "</div>";
         }
         else {
-        echo "{$i}%";
 	echo "<div class=\"progress progress-striped active\">";
+	echo "{$i}%";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
