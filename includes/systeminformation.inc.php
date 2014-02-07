@@ -32,7 +32,12 @@ function getstime() {
 function getuptime() {
 }
 
-echo php_uname();
-echo PHP_OS;
+echo php_uname('a');
+echo php_uname('s');
+echo php_uname('n');
+echo php_uname('r');
+echo php_uname('v');
+echo php_uname('m');
+
 
 ?>
