@@ -48,7 +48,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<form action=\"fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
 	echo "<tr>";
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
-	echo "<td> <a href=\"#\" onclick=\"fileexplore.submit();>\"$entry</a>  </td>";
+	echo "<td> <a href=\"#\" onclick=\"fileexplore.submit()\">$entry</a>  </td>";
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
         echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
         echo "<td>"; try { echo filemtime($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
