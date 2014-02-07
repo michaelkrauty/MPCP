@@ -13,3 +13,7 @@ fclose(logfile);
 echo "</div>";
 
 ?>
+<script>
+  textbox.scroll = textbox.maxScroll;
+</script>
+
