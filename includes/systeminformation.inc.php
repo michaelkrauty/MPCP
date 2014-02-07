@@ -36,6 +36,8 @@ function getuptime() {
 }
 
 
+echo $_SERVER['SERVER_SOFTWARE'];
+echo $_SERVER['REMOTE_ADDR'];
 echo "<br>";
 echo "Operating System: " . getos() . "<br>";
 echo "Distribution: " . getdistro() . "<br>";
