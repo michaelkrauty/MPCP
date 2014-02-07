@@ -3,7 +3,7 @@
 <?php
 $serverId = "mpcp_0";
 $logfile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
-echo "<div style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px; overflow:scroll; font-size: 3;\">";
+echo "<div style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px; overflow:scroll; font-size: 10pt;\">";
 $file = fopen("$logfile", "r");
 while (($line = fgets($file)) !== false) {
         echo "$line";
