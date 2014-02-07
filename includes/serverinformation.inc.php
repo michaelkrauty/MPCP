@@ -109,7 +109,7 @@ echo "<td>" . getarc() . "</td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td>Web Server:</td>";
-echo "<td>" . getwebsrv() . "</td>";
+echo "<td>" . getwebsvr() . "</td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td>WAN Address:</td>";
