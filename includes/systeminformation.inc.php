@@ -27,6 +27,7 @@ return $_SERVER['SERVER_NAME'];
 }
 /** Gets the servers php version **/
 function getphp() {
+return phpversion();
 }
 /** Gets the servers java version **/
 function getjava() {
