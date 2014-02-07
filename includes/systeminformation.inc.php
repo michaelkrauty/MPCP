@@ -23,10 +23,10 @@ function getphp() {
 function getjava() {
 }
 /** Gets the current date**/
-function getdate() {
+function getsdate() {
 }
 /** Gets the current time**/
-function gettime() {
+function getstime() {
 }
 /** Gets the servers uptime **/
 function getuptime() {
