@@ -40,6 +40,7 @@ return @date('l jS \of F Y');
 }
 /** Gets the current time**/
 function getstime() {
+return @date('h:i:s A')
 }
 /** Gets the servers uptime **/
 function getuptime() {
