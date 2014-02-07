@@ -63,3 +63,9 @@ var_dump($_POST);
 ?>
 </table>
 </div>
+<script language="javascript"> 
+    function DoPost($fullpath){
+    $.post("fileexplorer.inc.php", {$fullpath;} );  //Your values here..
+    }
+    </script>
+
