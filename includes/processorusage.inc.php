@@ -53,7 +53,7 @@ $c = 1;
 ?>
 <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
 	<th width= "20%">Processor Number</th>
-	<th width= "80%"> Usage % <th>
+	<th width= "80%"> Usage % </th>
 	<?php
 	foreach( $data as $k => $v ) {
         $i = $v['user'];
