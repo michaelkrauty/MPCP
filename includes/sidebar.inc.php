@@ -3,7 +3,7 @@
     <div class='well'>
       <ul class="nav nav-sidebar">
         <li><a href="http://dominationvps.com/mpcp/manage.php">Dashboard</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=console">Console</a></li>
+        <li><a href="http://dominationvps.com/mpcp/includes/console.inc.php">Console</a></li>
         <li><a href="http://dominationvps.com/mpcp/manage.php?p=jar">Server Jar Mod</a></li>
         <li><a href="http://dominationvps.com/mpcp/manage.php?p=config">Server Configuration</a></li>
         <li><a href="http://dominationvps.com/mpcp/manage.php?p=files">Server Files</a></li>
