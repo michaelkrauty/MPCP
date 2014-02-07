@@ -1,5 +1,5 @@
 <div class ="well">
-<h2> Your Servers </h2>
+<h2> Server List </h2>
 <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
         <center>
         <tr>
