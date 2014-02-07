@@ -47,7 +47,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
     while (false !== ($entry = readdir($handle))) {
         echo "<tr>";
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
-	echo "<td> <a href="javascript:DoPost($fullpath)">$entry\n</A></td>";
+	echo "<td> <a href=\"javascript:DoPost($fullpath)\">$entry\n</A></td>";
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
         echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
         echo "<td>"; try { echo filemtime($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
