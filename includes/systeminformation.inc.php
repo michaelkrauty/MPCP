@@ -1,6 +1,11 @@
 <div class="well">
 <h2> System Information </h2>
 <?php
+
+/** Gets the current users IP address **/
+function  getuserip(){
+return $_SERVER['REMOTE_ADDR'];
+}
 /** Gets the servers operating system **/
 function getos() {
 return php_uname('s');
@@ -14,6 +19,7 @@ return php_uname('m');
 }
 /** Gets the servers web server version**/
 function getwebsvr() {
+return $_SERVER['SERVER_SOFTWARE'];
 }
 /** Gets the servers WAN address **/
 function getwan() {
@@ -36,9 +42,8 @@ function getuptime() {
 }
 
 
-echo $_SERVER['SERVER_SOFTWARE'];
-echo $_SERVER['REMOTE_ADDR'];
 echo "<br>";
+echo "Your IP Address: " . getuseip() . "<br>";
 echo "Operating System: " . getos() . "<br>";
 echo "Distribution: " . getdistro() . "<br>";
 echo "Machine Architecture: " . getarc() . "<br>";
