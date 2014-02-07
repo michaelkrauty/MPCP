@@ -69,7 +69,7 @@ $c = 1;
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$i}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
-        echo "</div>"
+        echo "</div>";
 	echo "{$i}%";
         }
         else if ($i > 60) {
