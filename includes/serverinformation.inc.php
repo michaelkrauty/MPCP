@@ -108,7 +108,7 @@ echo "<td>Server Architecture:</td>";
 echo "<td> . getarc() . </td>";
 echo "</tr>";
 echo "<tr>";
-echo "<td>"Web Server:</td>";
+echo "<td>Web Server:</td>";
 echo "<td> . getwebsrv() . </td>";
 echo "</tr>";
 echo "<tr>";
