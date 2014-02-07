@@ -82,9 +82,9 @@ return "$days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 
 echo "<br>";
 echo "Your IP Address: " . getuserip() . "<br>";
-echo "Operating System: " . getos() . "<br>";
-echo "Distribution: NA" . getdistro() . "<br>";
-echo "Machine Architecture: " . getarc() . "<br>";
+echo "Server Operating System: " . getos() . "<br>";
+echo "Server Distribution: " . getdistro() . "<br>";
+echo "Server Architecture: " . getarc() . "<br>";
 echo "Web Server: " . getwebsvr() . "<br>";
 echo "WAN Address: " . getwan() . "<br>";
 echo "PHP Version: " . getphp() . "<br>";
