@@ -1,5 +1,5 @@
 <div class="well">
-<h2> System Information </h2>
+<h2> Server Information </h2>
 <?php
 
 /** Gets the current users IP address **/
