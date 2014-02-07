@@ -12,6 +12,34 @@ return php_uname('s');
 }
 /** Gets the servers distrobution**/
 function getdistro() {
+$distros = array(
+                "Arch" => "arch-release",
+                "Debian" => "debian_version",
+                "Fedora" => "fedora-release",
+                "Ubuntu" => "lsb-release",
+                'Redhat' => 'redhat-release',
+                'CentOS' => 'centos-release');
+    //Get everything from /etc directory.
+    $etcList = scandir('/etc');
+
+    //Loop through /etc results...
+    $OSDistro;
+    foreach ($etcList as $entry)
+    {
+        //Loop through list of distros..
+        foreach ($distros as $distroReleaseFile)
+        {
+            //Match was found.
+            if ($distroReleaseFile === $entry)
+            {
+                //Find distros array key(i.e. Distro name) by value(i.e. distro release file)
+                $OSDistro = array_search($distroReleaseFile, $distros);
+
+                break 2;//Break inner and outer loop.
+            }
+        }
+    }
+    return $OSDistro;
 }
 /** Gets the servers architecture**/
 function getarc() {
@@ -49,18 +77,18 @@ $days = floor($uptime/60/60/24);
 $hours = $uptime/60/60%24;
 $mins = $uptime/60%60;
 $secs = $uptime%60;
-return "up $days Days, $hours Hours, $mins Minutes, and $secs Seconds";
+return "$days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 }
 
 echo "<br>";
 echo "Your IP Address: " . getuserip() . "<br>";
 echo "Operating System: " . getos() . "<br>";
-echo "Distribution: " . getdistro() . "<br>";
+echo "Distribution: NA" . getdistro() . "<br>";
 echo "Machine Architecture: " . getarc() . "<br>";
 echo "Web Server: " . getwebsvr() . "<br>";
 echo "WAN Address: " . getwan() . "<br>";
 echo "PHP Version: " . getphp() . "<br>";
-echo "JAVA Version: " . getjava() . "<br>";
+echo "JAVA Version: NA" . getjava() . "<br>";
 echo "Server Date: " . getsdate() . "<br>";
 echo "Server Time: " . getstime() . "<br>";
 echo "Server Uptime: " . getuptime() . "<br>";
