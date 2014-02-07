@@ -81,19 +81,6 @@ return "$days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 }
 
 echo "<br>";
-/** echo "Your IP Address: " . getuserip() . "<br>";**/
-echo "Server Operating System: " . getos() . "<br>";
-echo "Server Distribution: " . getdistro() . "<br>";
-echo "Server Architecture: " . getarc() . "<br>";
-echo "Web Server: " . getwebsvr() . "<br>";
-echo "WAN Address: " . getwan() . "<br>";
-echo "PHP Version: " . getphp() . "<br>";
-echo "JAVA Version: NA" . getjava() . "<br>";
-echo "Server Date: " . getsdate() . "<br>";
-echo "Server Time: " . getstime() . "<br>";
-echo "Server Uptime: " . getuptime() . "<br>";
-
-
 echo "<table align=\"center\"valign=\"center\"class=\"table table-striped table-bordered table-condensed\">";
 echo "<tr>";
 echo "<td>Server Operating System:</td>";
