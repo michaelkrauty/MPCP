@@ -17,7 +17,6 @@
     echo "<tr><th width=\"30%\" <b>Memory Free :</b> " . $memfree . " MB</th>";
     echo "<th width=\"30%\" <b>Memory Total :</b> " . $memtotal . " MB</th>";
     echo "<th width=\"30%\" <b>Memory Used :</b> " . $memused . " MB <th></tr></table>";
-    echo "<br>";
         echo "<tr>";
         echo "<td>";
         echo "</td><td>";
