@@ -59,8 +59,6 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
     closedir($handle);
 }
 
-var_dump($_POST);
-
 ?>
 </table>
 </div>
