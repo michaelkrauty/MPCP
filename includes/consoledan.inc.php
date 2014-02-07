@@ -3,5 +3,5 @@
 <?php
 echo "<div style=\"background-color:black;color:#FFFFFF\">";
 echo "test console text";
-echo </div>";
+echo "</div>";
 ?>
