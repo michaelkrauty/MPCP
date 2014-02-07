@@ -3,7 +3,7 @@
 <?php
 $serverId = "mpcp_0";
 $logfile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
-echo "<div style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px; overflow:scroll; font-size: 8pt;\">";
+echo "<div id=\"consoleview\" style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px; overflow:scroll; font-size: 8pt;\">";
 $file = fopen("$logfile", "r");
 while (($line = fgets($file)) !== false) {
         echo "$line";
@@ -14,6 +14,7 @@ echo "</div>";
 
 ?>
 <script>
-  textbox.scroll = textbox.maxScroll;
+  var objDiv = document.getElementById("consoleview");
+objDiv.scrollTop = objDiv.scrollHeight;
 </script>
 
