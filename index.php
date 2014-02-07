@@ -79,5 +79,9 @@
     var auto_refresh = setInterval( function () {
     $('#meminfo').load('./includes/memoryusage.inc.php');
     }, 1000);
-
+    </script>
+    <script language="javascript"> 
+    function DoPost($fullpath){
+    $.post("index.php", {$fullpath;} );  //Your values here..
+    }
     </script>
