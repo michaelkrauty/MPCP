@@ -4,13 +4,13 @@
       <ul class="nav nav-sidebar">
         <li><a href="http://dominationvps.com/mpcp/manage.php">Dashboard</a></li>
         <li><a href="http://dominationvps.com/mpcp/includes/console.inc.php">Console</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=jar">Server Jar Mod</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=config">Server Configuration</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=files">Server Files</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=tasks">Scheduled Tasks</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=backup">Backup</a></li>
-        <li><a href="http://dominationvps.com/mpcp/manage.php?p=plugins">Plugins</a></li>
-        <li><a href="http://dominationvps.com/mpcp/forum.php">Support</a></li>
+        <li><a href="">Server Jar Mod</a></li>
+        <li><a href="">Server Configuration</a></li>
+        <li><a href="">Server Files</a></li>
+        <li><a href="">Scheduled Tasks</a></li>
+        <li><a href="">Backup</a></li>
+        <li><a href="">Plugins</a></li>
+        <li><a href="">Support</a></li>
       </ul>
     </div>
   </div>
