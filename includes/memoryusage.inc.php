@@ -24,6 +24,7 @@
         echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-danger\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "{$memusedper}%";
         echo "</div>";
         echo "</div>";
         }
@@ -31,6 +32,7 @@
         echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-warning\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "{$memusedper}%";
         echo "</div>";
         echo "</div>";
         }
@@ -38,6 +40,7 @@
         echo "<div class=\"progress\">";
         echo "<div class=\"progress-bar progress-bar-success\" role=\"progressbar\" aria-valuenow=\"{$memusedper}\"
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$memusedper}%\">";
+        echo "{$memusedper}%";
         echo "</div>";
         echo "</div>";
         echo "</td>";
