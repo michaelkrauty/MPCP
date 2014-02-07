@@ -27,8 +27,10 @@ td{
 }
 .progress{
    margin-bottom:0  !important ;
+   color:black;
 }
 
 .progress-bar {
-   margin-bottom:0  !important ;
+   margin-bottom:0  !important ; 
+   color:black;
 }
