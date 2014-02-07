@@ -101,7 +101,7 @@ echo "<td>" . getos() . "</td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td>Server Distribution:</td>";
-echo "<td>" . getdist() . "</td>";
+echo "<td>" . getdistro() . "</td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td>Server Architecture:</td>";
