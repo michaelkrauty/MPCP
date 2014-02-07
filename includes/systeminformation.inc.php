@@ -36,5 +36,5 @@ function getuptime {
 
 echo php_uname();
 echo PHP_OS;
-
+}
 ?>
