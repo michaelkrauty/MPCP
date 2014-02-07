@@ -92,7 +92,7 @@ echo "JAVA Version: NA" . getjava() . "<br>";
 echo "Server Date: " . getsdate() . "<br>";
 echo "Server Time: " . getstime() . "<br>";
 echo "Server Uptime: " . getuptime() . "<br>";
-?>
+
 
 echo "<table align=\"center\"valign=\"center\"class=\"table table-striped table-bordered table-condensed\">";
 echo "<tr>";
@@ -137,3 +137,4 @@ echo "<td> . getuptime . </td>";
 echo "</tr>";
 echo "</table>";
 
+?> 
