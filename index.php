@@ -37,7 +37,8 @@
         <center>
 	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
           <div id="serverinformation"></div>
-	  <div id="serverlist"></div>
+	  <div id="serverlist"><?php include once "./includes/serverlist.inc.php;?></div>
+	  <div id="userlist"><?php include once "./includes/userlist.inc.php;?></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
 	  <div id="fileexplorer"><?php include_once "./includes/fileexplorer.inc.php";?></div>
@@ -70,9 +71,6 @@
     <script src="./webroot/js/Chart.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
     <script type="text/javascript">
-    var auto_refresh = setInterval( function () {
-    $('#serverlist').load('./includes/serverlist.inc.php');
-    }, 1000);
 
     var auto_refresh = setInterval( function () {
     $('#procinfo').load('./includes/processorusage.inc.php');
