@@ -13,10 +13,10 @@
     $memusedper = intval($memused / (intval($memtotal / 100)));
     $memfreeper = intval($memfree / (intval($memtotal / 100)));	
     echo "<br>";
-    echo "<table class=\"table table-striped\">;
-    echo "<tr><th width=\"30%\" align=\"center\"><b>Memory Free :</b> " . $memfree . " MB</th>";
-    echo "<th width=\"30%\" align=\"center\"><b>Memory Total :</b> " . $memtotal . " MB</th>";
-    echo "<th width=\"30%\" align=\"center\"><b>Memory Used :</b> " . $memused . " MB <th></tr></table>";
+    echo "<table class=\"table table-striped\">";
+    echo "<tr><th width=\"30%\" <b>Memory Free :</b> " . $memfree . " MB</th>";
+    echo "<th width=\"30%\" <b>Memory Total :</b> " . $memtotal . " MB</th>";
+    echo "<th width=\"30%\" <b>Memory Used :</b> " . $memused . " MB <th></tr></table>";
     echo "<br>";
         echo "<tr>";
         echo "<td>";
