@@ -70,7 +70,7 @@ $c = 1;
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>"
-	echo {$i} . "%";
+	echo "{$i}%";
         }
         else if ($i > 60) {
         echo "<div class=\"progress progress-striped active\">";
@@ -78,7 +78,7 @@ $c = 1;
         aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:{$i}%\">";
         echo "</div>";
         echo "</div>";
-        echo {$i} . "%";
+        echo "{$i}%";
         }
         else {
         echo "<div class=\"progress progress-striped active\">";
@@ -88,7 +88,7 @@ $c = 1;
         echo "</div>";
 	echo "</td>";
 	echo "</tr>";
-        echo {$i} . "%";
+        echo "{$i}%";
 	}
 	$c ++;
 	}
