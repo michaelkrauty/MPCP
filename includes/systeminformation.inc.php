@@ -31,6 +31,7 @@ return phpversion();
 }
 /** Gets the servers java version **/
 function getjava() {
+// TODO:Doesnt work check permissions & path??
 return shell_exec('java -version');
 }
 /** Gets the current date**/
@@ -43,8 +44,6 @@ function getstime() {
 function getuptime() {
 }
 
-$output = shell_exec('/usr/bin/java -version');
-echo $output . "test" ;
 echo "<br>";
 echo "Your IP Address: " . getuserip() . "<br>";
 echo "Operating System: " . getos() . "<br>";
@@ -54,7 +53,7 @@ echo "Web Server: " . getwebsvr() . "<br>";
 echo "WAN Address: " . getwan() . "<br>";
 echo "PHP Version: " . getphp() . "<br>";
 echo "JAVA Version: " . getjava() . "<br>";
-echo "System Date: " . getsdate() . "<br>";
-echo "System Time: " . getstime() . "<br>";
+echo "System Date: " . getdate() . "<br>";
+echo "System Time: " . gettime() . "<br>";
 echo "System Uptime: " . getuptime() . "<br>";
 ?>
