@@ -81,7 +81,7 @@ return "$days Days, $hours Hours, $mins Minutes, and $secs Seconds";
 }
 
 echo "<br>";
-echo "Your IP Address: " . getuserip() . "<br>";
+/** echo "Your IP Address: " . getuserip() . "<br>";**/
 echo "Server Operating System: " . getos() . "<br>";
 echo "Server Distribution: " . getdistro() . "<br>";
 echo "Server Architecture: " . getarc() . "<br>";
