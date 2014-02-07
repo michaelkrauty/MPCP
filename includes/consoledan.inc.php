@@ -1,7 +1,10 @@
 <div class="well">
 <h2> Console </h2>
 <?php
-echo "<div style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px\">";
-echo "test console text";
+$serverId = "mpcp_0";
+$logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
+echo "<div style=\"background-color:black; color:white; text-align:left; padding:10px; height:400px; overflow:scroll\">";
+echo readfile($logFile);
 echo "</div>";
+
 ?>
