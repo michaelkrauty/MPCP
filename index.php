@@ -36,7 +36,7 @@
       <div class='page-header'>
         <center>
 	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
-          <div id="systeminformation"> <?php include_once "./includes/systeminformation.inc.php";?></div>
+          <div id="serverinformation"></div>
 	  <div id="serverlist"></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
@@ -85,6 +85,11 @@
     var auto_refresh = setInterval( function () {
     $('#console').load('./includes/consoledan.inc.php');
     }, 1000);
+
+    var auto_refresh = setInterval( function () {
+    $('#serverinformation').load('./includes/serverinformation.inc.php');
+    }, 1000);
+
 
     </script>
     <script language="javascript"> 
