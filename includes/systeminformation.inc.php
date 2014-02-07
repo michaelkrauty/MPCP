@@ -43,7 +43,7 @@ function getuptime() {
 
 
 echo "<br>";
-echo "Your IP Address: " . getuseip() . "<br>";
+echo "Your IP Address: " . getuserip() . "<br>";
 echo "Operating System: " . getos() . "<br>";
 echo "Distribution: " . getdistro() . "<br>";
 echo "Machine Architecture: " . getarc() . "<br>";
