@@ -82,7 +82,7 @@
     }, 1000);
 
     var auto_refresh = setInterval( function () {
-    $('#console').load('./includes/console.inc.php');
+    $('#console').load('./includes/consoledan.inc.php');
     }, 1000);
 
     </script>
