@@ -42,7 +42,7 @@
           <div class="status-header" id="status"></div>
           <div id="console">
             <div class="wellconsole">
-              <div id="consoleviewer" style="overflow-y:scroll;overflow-x:auto;height:264px;"></div>
+              <div id="consoleviewer" style="overflow-y:scroll;overflow-x:auto;"></div>
             </div>
           </div>
           <div class="commandbar">
