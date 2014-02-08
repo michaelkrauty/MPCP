@@ -54,14 +54,10 @@
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
               </div>
               <?php
-              if(screenOnline($serverId)){
-                if(serverOnline($serverId)){
-                  if(isset($_GET['cmd'])){
-                    $cmd = $_GET['cmd'];
-                    executeCommand($serverId, $cmd);
-                  }
+                if(isset($_GET['cmd'])){
+                  $cmd = $_GET['cmd'];
+                  executeCommand($serverId, $cmd);
                 }
-              }
               ?>
             </form>
           </div>
