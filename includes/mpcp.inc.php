@@ -25,10 +25,10 @@
 	  include_once 'status.class.php';
 	  $status = new MinecraftServerStatus();
 	  $response = $status->getStatus($serverIp, $serverPort);
-	  if(!$response) {
-  	  return false;
-	  } else {
-      return true;
+	  if($response){
+  	  return true;
+	  }else{
+      return false;
   	}
   }
   
