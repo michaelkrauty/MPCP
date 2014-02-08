@@ -36,7 +36,6 @@
       <div class='page-header'>
         <center>
 	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
-	  test
           <div id="serverinformation"></div>
 	  <div id="serverlist"><?php include_once "./includes/serverlist.inc.php";?></div>
 	  <div id="userlist"><?php include_once "./includes/userlist.inc.php";?></div>
