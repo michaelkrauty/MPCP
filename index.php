@@ -43,6 +43,7 @@
 	  <div id="meminfo"></div>
 	  <div id="fileexplorer"><?php include_once "./includes/fileexplorer.inc.php";?></div>
 	  <div id="console"></div>
+	  test
 	</center>
       </div>
     </div>
