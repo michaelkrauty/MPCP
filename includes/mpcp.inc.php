@@ -36,44 +36,54 @@
     if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
     }
-#    if(!serverOnline){
+    if(!serverOnline){
       $command = "cd /var/mpcp/servers/" . $serverId;
       $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
       $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
       $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-#    }
+    }
   }
   
   function stopServer($serverId){
     if(screenOnline($serverId)){
-    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
-    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+    	if(serverOnline($serverId)){
+    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
+    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+    	}else{
+    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+    	}
     }else{
-      
+      #do nothing
     }
   }
   
   function restartServer($serverId){
     if(screenOnline($serverId)){
-      #restart
+    	if(serverOnline($serverId)){
+      	#restart
+    	}
     }
   }
   
   function reloadServer($serverId){
     if(screenOnline($serverId)){
-    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+    	if(serverOnline($serverId)){
+		    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+    	}
     }
   }
   
   function executeCommand($serverId, $command){
     if(screenOnline($serverId)){
-      shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+    	if(serverOnline($serverId)){
+      	shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+    	}
     }
   }
   
   function serverExists($serverId){
     $command = "ls /var/mpcp/servers";
-    if(strpos(shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";"), $serverId) == true){
+    if(strpos(shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";"), $serverId)){
       return true;
     }else{
       return false;
