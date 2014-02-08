@@ -55,10 +55,12 @@
               </div>
               <?php
               if(screenOnline($serverId)){
+                if(serverOnline($serverId)){
                   if(isset($_GET['cmd'])){
                     $cmd = $_GET['cmd'];
                     executeCommand($serverId, $cmd);
                   }
+                }
               }
               ?>
             </form>
