@@ -60,12 +60,7 @@
                   ?>
                   <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
                   <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
-                  <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                  <button name="start" type="submit" class='btn btn-lg btn-success' <?php if(screenOnline($serverId)){echo "disabled='disabled'";}?>>Start</button>
-                  <button name="stop" type="submit" class='btn btn-lg btn-danger' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Stop</button>
-                  <button name="restart" type="submit" class='btn btn-lg btn-warning' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Restart</button>
-                  <button name="reload" type="submit" class='btn btn-lg btn-info' <?php if(!screenOnline($serverId)){echo "disabled='disabled'";}?>>Reload</button>
-                  </form>
+                  <?php include_once "includes/managebuttons.inc.php"; ?>
                 </div>
               </div>
               <div class="status-header" id="status"></div>
