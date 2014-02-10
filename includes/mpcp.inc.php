@@ -42,7 +42,10 @@
   
   function stopServer($serverId){
   	
-    if(serverOnline($serverId)){
+  	if(screenOnline($serverId)){
+  		shell_exec("screen -x " . $serverId . " && stop");
+  	}
+/*    if(serverOnline($serverId)){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
     	while(serverOnline($serverId)){
     		sleep(1);
@@ -51,7 +54,7 @@
     if(screenOnline($serverId)){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
     }
-  }
+*/  }
   
   function restartServer($serverId){
   	if(serverOnline($serverId)){
