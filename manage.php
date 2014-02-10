@@ -60,7 +60,7 @@
                   ?>
                   <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
                   <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
-              <div class="status-header" id="buttons"></div>
+              <div id="buttons"></div>
                 </div>
               </div>
               <div class="status-header" id="status"></div>
