@@ -35,6 +35,9 @@
   function startServer($serverId, $memory, $jar){
     if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
+      while(!screenOnline($serverId)){
+      	#do onthing, wait until the screen is online
+      }
     }
     if(!serverOnline){
       $command = "cd /var/mpcp/servers/" . $serverId;
@@ -45,23 +48,22 @@
   }
   
   function stopServer($serverId){
+  	
+    if(serverOnline($serverId)){
+    	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
+    	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+    }
     if(screenOnline($serverId)){
-    	if(serverOnline($serverId)){
-    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
-    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
-    	}else{
-    		$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
-    	}
-    }else{
-      #do nothing
+    	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
     }
   }
   
   function restartServer($serverId){
+  	if(serverOnline($serverId)){
+  		
+  	}
     if(screenOnline($serverId)){
-    	if(serverOnline($serverId)){
-      	#restart
-    	}
+    	
     }
   }
   
