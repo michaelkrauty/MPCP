@@ -63,7 +63,8 @@
   function reloadServer($serverId){
     if(screenOnline($serverId)){
     	if(serverOnline($serverId)){
-		    $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+    		shell_exec("screen -x " . $serverId . " -X reload");
+		    #$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
     	}
     }
   }
