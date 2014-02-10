@@ -42,7 +42,7 @@
             <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
               <div class="bar1">
                 <div class="well">
-                  <?php include_once "includes/mangebuttons.inc.php"; ?>
+                  <?php include_once "includes/managebuttons.inc.php"; ?>
                   <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
                   <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
                   <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
