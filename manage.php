@@ -45,7 +45,7 @@
                   <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
                   <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
                   <div id="buttons">
-                  <?php include "mpcp.inc.php";
+                  <?php
                     if(count($_POST) > 0 && isset($_POST['start'])) {
                       $memory = 1024;
                       $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
