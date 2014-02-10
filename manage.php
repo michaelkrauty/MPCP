@@ -42,22 +42,7 @@
             <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
               <div class="bar1">
                 <div class="well">
-                  <?php
-                    if(count($_POST) > 0 && isset($_POST['start'])) {
-                      $memory = 1024;
-                      $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-                      startServer($serverId, $memory, $jar);
-                    }
-                    if(count($_POST) > 0 && isset($_POST['stop'])) {
-                      stopServer($serverId);
-                    }
-                    if(count($_POST) > 0 && isset($_POST['restart'])) {
-                      restartServer($serverId);
-                    }
-                    if(count($_POST) > 0 && isset($_POST['reload'])) {
-                      reloadServer($serverId);
-                    }
-                  ?>
+                  <?php include_once "includes/mangebuttons.inc.php"; ?>
                   <h2>Server Address: <strong>VPS's IP address goes here</strong></h2>
                   <div class='progress-bar' role='progressbar' aria-valuenow='19' aria-valuemin='0' aria-valuemax='20' style='width: 90%;'><span class='sr-only'></span></div>
                   <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
