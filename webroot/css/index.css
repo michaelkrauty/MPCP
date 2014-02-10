@@ -34,3 +34,6 @@ td{
    margin-bottom:0  !important ; 
    color:black;
 }
+.navbar {
+min-height: 20px;
+}
