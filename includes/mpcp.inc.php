@@ -9,15 +9,6 @@
 #executeCommand($serverId, $command) execute command $command in screen $serverId
 
 #TEMP STUFF {
-$serverIp = "dominationvps.com";
-$serverPort = "6070";
-$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-$serverId = "mpcp_0";
-$memory = "1024";
-
-
-
-
 #}
 
 
@@ -31,7 +22,8 @@ $memory = "1024";
   }
   
   function serverOnline($serverId){
-    
+$serverIp = "dominationvps.com";
+$serverPort = "6070";
 	  include_once 'status.class.php';
 	  $status = new MinecraftServerStatus();
 	  $response = $status->getStatus($serverIp, $serverPort);
@@ -55,8 +47,8 @@ $memory = "1024";
   }
   
   function restartServer($serverId){
-  	if(serverOnline($serverId)){
-  		if(screenOnline($serverId)){
+$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
+$memory = "1024";
   			stopServer($serverId);
   			while(screenOnline($serverId)){
   				sleep(.25);
