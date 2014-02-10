@@ -42,7 +42,6 @@
   
   function stopServer($serverId){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
-    	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
   }
   
   function restartServer($serverId){
