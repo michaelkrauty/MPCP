@@ -22,8 +22,10 @@
   }
   
   function serverOnline($serverId){
-$serverIp = "dominationvps.com";
-$serverPort = "6070";
+  	#temp
+		$serverIp = "dominationvps.com";
+		$serverPort = "6070";
+		#/temp
 	  include_once 'status.class.php';
 	  $status = new MinecraftServerStatus();
 	  $response = $status->getStatus($serverIp, $serverPort);
@@ -47,15 +49,15 @@ $serverPort = "6070";
   }
   
   function restartServer($serverId){
-$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-$memory = "1024";
-  			stopServer($serverId);
-  			while(screenOnline($serverId)){
-  				sleep(.25);
-  			}
-  			startServer($serverId, $memory, $jar);
-  		}	
+  	#temp
+		$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
+		$memory = "1024";
+		#/temp
+  	stopServer($serverId);
+  	while(screenOnline($serverId)){
+  		sleep(.25);
   	}
+  	startServer($serverId, $memory, $jar);
   }
   
   function reloadServer($serverId){
