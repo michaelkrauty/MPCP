@@ -55,7 +55,7 @@
 		#/temp
   	stopServer($serverId);
   	while(screenOnline($serverId)){
-  		sleep(.25);
+  		sleep(0);
   	}
   	startServer($serverId, $memory, $jar);
   }
