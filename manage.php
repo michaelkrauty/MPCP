@@ -81,7 +81,7 @@
         <script src="bootstrap/assets/js/docs.min.js"></script>
         <script type="text/javascript">
           var auto_refresh = setInterval( function () {
-          $('#buttons').load('includes/managebuttons.inc.php');
+          $('#buttons').load();
           $('#status').load('includes/status.inc.php');
           }, 1000);
         </script>
