@@ -46,11 +46,14 @@
   
   function restartServer($serverId){
   	if(serverOnline($serverId)){
-  		
+  		if(screenOnline($serverId)){
+  			stopServer($serverId);
+  			while(screenOnline($serverId)){
+  				sleep();
+  			}
+  			startServer($serverId);
+  		}	
   	}
-    if(screenOnline($serverId)){
-    	
-    }
   }
   
   function reloadServer($serverId){
