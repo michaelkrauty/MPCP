@@ -34,16 +34,10 @@
   
   function startServer($serverId, $memory, $jar){
     if(!screenOnline($serverId)){
-      shell_exec("screen -dmS " . $serverId);
-      while(!screenOnline($serverId)){
-      	sleep(1);
-      }
-    }
-    if(!serverOnline($serverId)){
-      $command = "cd /var/mpcp/servers/" . $serverId;
-      $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
-      $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
-      $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
+    	if(!serverOnline($serverId)){
+      	shell_exec("cd /var/mpcp/servers/" . $serverId)
+      	shell_exec("screen -dmS " . $serverId . " java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar);
+    	}
     }
   }
   
