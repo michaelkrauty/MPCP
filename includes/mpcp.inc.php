@@ -36,7 +36,7 @@
     if(!screenOnline($serverId)){
       shell_exec("screen -dmS " . $serverId);
       while(!screenOnline($serverId)){
-      	sleep(.25);
+      	sleep(1);
       }
     }
     if(!serverOnline($serverId)){
@@ -52,7 +52,7 @@
     if(serverOnline($serverId)){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
     	while(serverOnline($serverId)){
-    		sleep(.25);
+    		sleep(1);
     	}
     }
     if(screenOnline($serverId)){
