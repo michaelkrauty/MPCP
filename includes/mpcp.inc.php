@@ -35,7 +35,7 @@
   function startServer($serverId, $memory, $jar){
     if(!screenOnline($serverId)){
     	if(!serverOnline($serverId)){
-      	shell_exec("cd /var/mpcp/servers/" . $serverId)
+      	shell_exec("cd /var/mpcp/servers/" . $serverId);
       	shell_exec("screen -dmS " . $serverId . " java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar);
     	}
     }
