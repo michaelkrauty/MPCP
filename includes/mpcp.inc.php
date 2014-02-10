@@ -49,7 +49,7 @@
   		if(screenOnline($serverId)){
   			stopServer($serverId);
   			while(screenOnline($serverId)){
-  				sleep();
+  				sleep(.25);
   			}
   			startServer($serverId);
   		}	
