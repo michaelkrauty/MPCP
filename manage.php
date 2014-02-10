@@ -82,7 +82,7 @@
         <script type="text/javascript">
           var auto_refresh = setInterval( function () {
           $('#buttons').load('includes/managebuttons.inc.php');
-          $('#status').load('includes/status.inc.php');
+          $('#status').load();
           }, 1000);
         </script>
       </body>
