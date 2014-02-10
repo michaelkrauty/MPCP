@@ -52,6 +52,9 @@
     if(serverOnline($serverId)){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
+    	while(serverOnline($serverId)){
+    		#do nothing, wait for server to go offline
+    	}
     }
     if(screenOnline($serverId)){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"exit\r\"`\";");
