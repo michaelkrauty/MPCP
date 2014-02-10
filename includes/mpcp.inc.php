@@ -39,7 +39,7 @@
       	#do onthing, wait until the screen is online
       }
     }
-    if(!serverOnline){
+    if(!serverOnline($serverId)){
       $command = "cd /var/mpcp/servers/" . $serverId;
       $out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
       $command = "java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar;
