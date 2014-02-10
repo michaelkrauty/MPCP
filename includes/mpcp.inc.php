@@ -8,6 +8,19 @@
 #reloadServer($serverId) execute command "reload" in screen $serverId
 #executeCommand($serverId, $command) execute command $command in screen $serverId
 
+#TEMP STUFF {
+$serverIp = "dominationvps.com";
+$serverPort = "6070";
+$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
+$serverId = "mpcp_0";
+$memory = "1024";
+
+
+
+
+#}
+
+
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
     if(strpos($out, $serverId) == true){
@@ -18,9 +31,6 @@
   }
   
   function serverOnline($serverId){
-    #temp
-    $serverIp = "dominationvps.com";
-    $serverPort = "6070";
     
 	  include_once 'status.class.php';
 	  $status = new MinecraftServerStatus();
@@ -51,7 +61,7 @@
   			while(screenOnline($serverId)){
   				sleep(.25);
   			}
-  			startServer($serverId);
+  			startServer($serverId, $memory, $jar);
   		}	
   	}
   }
