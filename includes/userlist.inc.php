@@ -4,7 +4,22 @@
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
 
-var_dump listUsers();
+echo $result;
+
+while($row = mysqli_fetch_array($result))
+  {
+  echo $row['userid']
+  echo "<br>";
+  echo $row['email']
+  echo "<br>";
+  echo $row['password']
+  echo "<br>";
+  echo $row['mcusername']
+  echo "<br>";
+  echo $row['salt']
+  echo "<br>";
+  echo "<br>";
+  }
 
 
 ?>

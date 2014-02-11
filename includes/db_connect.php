@@ -98,9 +98,7 @@ function modifyUser($userid, $field, $value) {
 */
 function listUsers() {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $prep_stmt = "SELECT * FROM users";
-        $stmt = $mysqli->prepare($prep_stmt);
-        $result = $stmt->execute();;
+	$result = mysqli_query($mysqli, "SELECT * FROM users");
 	return $result;
 }
 /*
