@@ -53,11 +53,11 @@
             <div class="col-xs-2">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
               </div>
-              <?php/*
+              <?php
                 if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
                   executeCommand($serverId, $cmd);
-                }*/
+                }
               ?>
             </form>
           </div>
