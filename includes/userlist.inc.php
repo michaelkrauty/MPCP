@@ -4,7 +4,7 @@
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
 
-echo $result;
+$result =  listUsers();
 
 while($row = mysqli_fetch_array($result))
   {
