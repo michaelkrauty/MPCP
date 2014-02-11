@@ -19,7 +19,7 @@ if (isset($_POST['email'], $_POST['password'], $_POST['mcusername']))
 	}
 ?>
 
-<form action="<?php echo esc_url($_SERVER['PHP_SELF']);?>" method="post" name="createuser_form">
+<form action="./includes/createuser.inc.php" method="post" name="createuser_form">
 	Minecraft Username:
         <br><input type="text" name = "mcusername" class="form-control" placeholder="Minecraft Username" autofocus>
         Email:
