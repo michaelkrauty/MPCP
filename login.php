@@ -32,7 +32,7 @@
   <body>
     	<div class="container">
 	  	  <div class="well">
-	  	    <form action="includes/process_login.php" class="form-signin" role="form" method="post" name="login_form">
+	  	    <form action="includes/login.inc.php" class="form-signin" role="form" method="post" name="login_form">
 	  	    	<center><logintitle>Sign In</logintitle></center>
 		      	<?php
 	  	    	  if (isset($_GET['error'])) {
