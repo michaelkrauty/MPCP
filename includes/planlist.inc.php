@@ -1,5 +1,5 @@
 <div class="well">
-<h2> Plans List </h2>
+<h2> Plan List </h2>
 
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
@@ -22,7 +22,7 @@ while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
   echo "<td>" . $row['planid'] . "</td>";
-  echo "<td> <img src=" . $row['icon'] . " height='64' width='64'> </td>";
+  echo "<td> <img src=" . $row['icon'] . " height='48' width='48'> </td>";
   echo "<td>" . $row['name'] . "</td>";
   echo "<td>" . $row['slots'] . "</td>";
   echo "<td>" . $row['storage'] . "</td>";
