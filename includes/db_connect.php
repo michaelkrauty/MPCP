@@ -97,12 +97,21 @@ function modifyUser($userid, $field, $value) {
 * 6) List Users
 */
 function listUsers() {
+	/*
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM users";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->execute();
 	$out = mysql_result($result);
 	return $out;
+	*/
+	$rValue = "";
+	$query = ("SELECT * FROM users");
+	$result = mysql_query($query);
+	if ($row = mysql_fetch_array($result)){
+		$rValue = $row['email'];
+	}
+	return $rValue;
 }
 /*
 * --------------------------
