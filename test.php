@@ -1,6 +1,6 @@
 <?php
 
-echo shell_exec("pwd");
+echo shell_exec("screen -list");
 
 
 ?>
