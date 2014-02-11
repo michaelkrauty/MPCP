@@ -6,11 +6,11 @@
 <tr>
 <th width="3%">User ID</th>
 <th width="5%">Avatar</th>
-<th width="20%">Email</th>
-<th width="10%">Password</th>
-<th width="10%">Minecraft Name</th>
-<th width="10%">Salt</th>
-<th width="20%">Controls</th>
+<th width="27%">Email</th>
+<th width="20%">Password</th>
+<th width="20%">Minecraft Name</th>
+<th width="15%">Salt</th>
+<th width="10%">Controls</th>
 </tr>
 <?php
 include_once 'includes/db_connect.php';
