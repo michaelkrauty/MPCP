@@ -10,6 +10,7 @@
 <th width="1%">Password</th>
 <th width="1%">Minecraft Name</th>
 <th width="1%">Salt</th>
+<th width="1%">Emeralds</th>
 <th width="10%">Controls</th>
 </tr>
 <?php
@@ -28,6 +29,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['password'] . "</td>";
   echo "<td>" . $row['mcusername'] . "</td>";
   echo "<td>" . $row['salt'] . "</td>";
+  echo "<td>" . $row['emeralds'] . "</td>";
   echo "<td>" . "<button type=\"button\" class=\"btn btn-warning\">Edit</button> <button type=\"button\" class=\"btn btn-danger\">Delete</button> " . "</td>";
   echo "</tr>";
   }
