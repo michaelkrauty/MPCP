@@ -3,7 +3,7 @@
 		$error_msg = "";
 
 		if (isset($_POST['planname'], $_POST['maxslots'], $_POST['storage'], $_POST['memory'])){
-			createUser($_POST['email'], $_POST['password'], $_POST['mcusername'], $salt);
+			createplan($_POST['planname'], $_POST['maxslots'], $_POST['storage'], $_POST['memory']);
 			header("Location: ../index.php");
 			die();
 		}
