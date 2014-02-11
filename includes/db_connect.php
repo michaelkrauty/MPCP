@@ -55,6 +55,7 @@ $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
 * 3) Create User
 */
 function createUser($email, $password, $mcusername, $salt) {
+	$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
 	$prep_stmt = "INSERT INTO users (email, password, mcusername, salt) VALUES (?, ?, ?, ?)";
         $stmt = $mysqli->prepare($prep_stmt);
 	$stmt->bind_param("ssss", $email, $password, $mcusername, $salt);
