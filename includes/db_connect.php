@@ -69,6 +69,7 @@ function createUser($email, $password, $mcusername, $salt) {
 * 4) Delete User
 */
 function deleteUser($userid) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "DELETE FROM users WHERE userid = ? LIMIT 1";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("s", $userid);
@@ -82,6 +83,7 @@ function deleteUser($userid) {
 * 5) Modify User
 */
 function modifyUser($userid, $field, $value) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "UPDATE users SET ? = ? WHERE userid = ?";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("sss", $field, $value, $userid);
@@ -95,6 +97,7 @@ function modifyUser($userid, $field, $value) {
 * 6) List Users
 */
 function listUsers() {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM users";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->execute();
@@ -107,6 +110,7 @@ function listUsers() {
 * 7) Get Users Servers
 */
 function getUsersServers($userid) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM servers WHERE owner = ?";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("s", $userid);
@@ -120,6 +124,7 @@ function getUsersServers($userid) {
 * 8) Create Server
 */
 function createServer($servername, $serverowner, $serverjar, $serverip, $serverport, $serverplan) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "INSERT INTO servers (name, owner, jar, ip, port, plan) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("ssssss", $servername, $serverowner, $serverjar, $serverip, $serverport, $serverplan);
@@ -133,6 +138,7 @@ function createServer($servername, $serverowner, $serverjar, $serverip, $serverp
 * 9) Delete Server
 */
 function deleteServer($serverid){
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "DELETE FROM servers WHERE serverid = ? LIMIT 1";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("s", $serverid);
@@ -146,6 +152,7 @@ function deleteServer($serverid){
 * 10)  Modify Server
 */
 function modifyServer($serverid, $field, $value) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "UPDATE servers SET ? = ? WHERE serverid = ?";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("sss", $field, $value, $serverid);
@@ -159,6 +166,7 @@ function modifyServer($serverid, $field, $value) {
 * 11) List Servers
 */
 function listServers() {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM servers";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->execute();
@@ -171,6 +179,7 @@ function listServers() {
 * 12) User Authentication
 */
 function userAuthentication($email, $password) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM users WHERE email = ? LIMIT 1";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("s", $email);
@@ -184,6 +193,7 @@ function userAuthentication($email, $password) {
 * 13) Create Plan
 */
 function createPlan($planname, $maxslots, $storage, $memory) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "INSERT INTO plans (name, maxslots, storage, memory) VALUES (?, ?, ?, ?)";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("ssss", $planname, $maxslots, $storage, $memory);
@@ -197,6 +207,7 @@ function createPlan($planname, $maxslots, $storage, $memory) {
 * 14) Delete Plan
 */
 function deletePlan($planid) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "DELETE FROM plans WHERE planid = ?";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("s", $planid);
@@ -210,6 +221,7 @@ function deletePlan($planid) {
 * 15) Modify Plan
 */
 function modifyPlan($planid, $field, $value) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "UPDATE plans SET ? = ? WHERE $planid = ?";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("sss", $field, $value, $planid);
