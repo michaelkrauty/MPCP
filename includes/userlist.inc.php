@@ -28,7 +28,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['password'] . "</td>";
   echo "<td>" . $row['mcusername'] . "</td>";
   echo "<td>" . $row['salt'] . "</td>";
-  echo "<td>" . " " . "</td>";
+  echo "<td>" . "<button type="button" class="btn btn-warning">Edit</button> <button type="button" class="btn btn-danger">Delete</button> " . "</td>";
   echo "</tr>";
   }
 ?>

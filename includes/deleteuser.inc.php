@@ -13,6 +13,6 @@
 	<form action="./includes/deleteuser.inc.php" method="post" name="deleteuser_form">
 		User ID:
 	        <br><input type="text" name = "userid" class="form-control">
-		<br><input class="btn btn-lg btn-success btn-block" type="submit" value="Delete User"/>
+		<br><input class="btn btn-lg btn-danger btn-block" type="submit" value="Delete User"/>
 	</form>
 	</div>
