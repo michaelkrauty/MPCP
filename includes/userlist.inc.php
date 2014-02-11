@@ -4,13 +4,13 @@
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="10%">User ID</th>
-<th width="10%">Avatar</th>
-<th width="20%">Email</th>
-<th width="10%">Password</th>
-<th width="10%">Minecraft Name</th>
-<th width="10%">Salt</th>
-<th width="20%">Controls</th>
+<th width="1%">UID</th>
+<th width="1%">Avatar</th>
+<th width="1%">Email</th>
+<th width="1%">Password</th>
+<th width="1%">Minecraft Name</th>
+<th width="1%">Salt</th>
+<th width="50px">Controls</th>
 </tr>
 <?php
 include_once 'includes/db_connect.php';
