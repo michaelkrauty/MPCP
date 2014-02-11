@@ -51,6 +51,11 @@ $stat2 = GetCoreInformation();
 $data = GetCpuPercentages($stat1, $stat2);
 $c = 1;
 ?>
+<!--
+<table align="center"valign="center"class="table table-striped table-boardered table-condensed">
+	<th width="80%">Average processor usage</th>
+	<?php?>
+-->
 <table align="center"valign="center"class="table table-striped table-bordered table-condensed">
 	<th width= "20%">Processor Number</th>
 	<th width= "80%"> Usage % </th>
