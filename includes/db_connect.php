@@ -247,9 +247,9 @@ function listPlans() {
 /*
 * 16) Get Emeralds  //Vulrnrable to SQLI
 */
-function getEmeralds($userid) {
+function getEmeralds($username) {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $result = mysqli_query($mysqli, "SELECT emeralds FROM users WHERE userid = $userid LIMIT 1");
+        $result = mysqli_query($mysqli, "SELECT emeralds FROM users WHERE username = $username LIMIT 1");
         return $result;
 }
 /*

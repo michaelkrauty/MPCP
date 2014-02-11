@@ -15,7 +15,7 @@
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <div><img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Emerald.png" height='48' width='48'> <?php include_once 'includes/db_connect.php'; $result = getEmeralds($userid); echo $result; ?></div>
+          <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Emerald.png" height='48' width='48'> <?php include_once 'includes/db_connect.php'; $result = getEmeralds($userName); echo $result; ?>
 	  <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php  include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
