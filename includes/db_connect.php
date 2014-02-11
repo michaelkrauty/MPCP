@@ -100,8 +100,7 @@ function listUsers() {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
         $prep_stmt = "SELECT * FROM users";
         $stmt = $mysqli->prepare($prep_stmt);
-        $stmt->execute();
-	$out = mysql_result($result);
+	$out = mysql_result($stmt->execute());
 	return $out;
 }
 /*
