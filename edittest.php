@@ -5,8 +5,7 @@ $url = 'http://dominationvps.com/mpcp/edittest.php';
 $file = '/var/mpcp/servers/mpcp_0/server.properties';
 
 // check if form has been submitted
-if (isset($_POST['text']))
-{
+if (isset($_POST['text'])){
     // save the text contents
     file_put_contents($file, $_POST['text']);
 
@@ -22,7 +21,7 @@ $text = file_get_contents($file);
 ?>
 <!-- HTML form -->
 <form action="" method="post">
-<textarea name="text"><?php echo htmlspecialchars($text) ?></textarea>
+<textarea name="text" width="80%" height="100%"><?php echo htmlspecialchars($text) ?></textarea>
 <input type="submit" />
 <input type="reset" />
 </form>
