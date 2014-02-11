@@ -50,7 +50,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
 	echo "<td> $entry </td>";
 	if (is_dir($entry)){
-	echo "<td>" . "Directory" . "</td>";
+	echo "<td>" . "dir" . "</td>";
 	} else {
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
         }
