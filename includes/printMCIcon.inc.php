@@ -9,7 +9,7 @@ function MCIcon($mcusername) {
   if($md5image1 == $md5image2){
   echo "<img src='http://signaturecraft.us/avatars/30/face/Herobrine.png' height='32' width='32'>";
   }else{
-  echo "<img src='http://signaturecraft.us/avatars/30/face/" . $userName . ".png' height='32' width='32'>";
+  echo "<img src='http://signaturecraft.us/avatars/30/face/" . $mcusername . ".png' height='32' width='32'>";
   }
 }
 ?>
