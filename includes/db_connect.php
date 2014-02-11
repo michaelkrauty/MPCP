@@ -171,8 +171,6 @@ function listServers() {
         $result = mysqli_query($mysqli, "SELECT * FROM servers");
         return $result;
 }
-
-}
 /*
 * --------------------------
 */
