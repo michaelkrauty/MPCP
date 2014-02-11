@@ -37,10 +37,10 @@
         <center>
 	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
           <div id="serverinformation"></div>
-	  <div id="serverlist"><?php include_once "./includes/serverlist.inc.php";?></div>
-	  <div id="userlist"><?php include_once "./includes/userlist.inc.php";?></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
+	  <div id="serverlist"><?php include_once "./includes/serverlist.inc.php";?></div>
+	  <div id="userlist"><?php include_once "./includes/userlist.inc.php";?></div>
 	  <div id="fileexplorer"><?php include_once "./includes/fileexplorer.inc.php";?></div>
 	  <div id="console"></div>
 	  <div id="createuser"><?php include_once "./includes/createuser.inc.php";?></div>
