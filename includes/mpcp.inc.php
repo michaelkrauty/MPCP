@@ -1,16 +1,5 @@
 <?php
 
-#functions:
-#online($serverId) returns true if screen is running with name that matches $serverId, else return false
-#startServer($serverId) start a screen with the name $serverId
-#stopServer($serverId) execute command "exit" in screen $serverId
-#restartServer($serverId) does nothing yet
-#reloadServer($serverId) execute command "reload" in screen $serverId
-#executeCommand($serverId, $command) execute command $command in screen $serverId
-
-#TEMP STUFF {
-#}
-
 
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
@@ -87,8 +76,8 @@
   
   function backupServer($serverId){
   	$command = "ls /var/mpcp/backups/" . $serverId;
-  	if(!strpos(shell_exec($command), date("j-n-Y_G:i"))){
+#  	if(!strpos(shell_exec($command), date("j-n-Y_G:i"))){
   		shell_exec("zip -r /var/mpcp/servers/" . $serverId . "/* /var/mpcp/backups/" . $serverId . "/" . date("j-n-Y_G:i"));
-  	}
+#  	}
   }
 ?>
