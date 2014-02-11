@@ -1,6 +1,6 @@
-<?php include_once "includes/db_connect.php";
+<?php
 
-echo listUsers();
+echo shell_exec("pwd");
 
 
 ?>
