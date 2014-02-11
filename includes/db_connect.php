@@ -168,9 +168,10 @@ function modifyServer($serverid, $field, $value) {
 */
 function listServers() {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $prep_stmt = "SELECT * FROM servers";
-        $stmt = $mysqli->prepare($prep_stmt);
-        $stmt->execute();
+        $result = mysqli_query($mysqli, "SELECT * FROM servers");
+        return $result;
+}
+
 }
 /*
 * --------------------------
