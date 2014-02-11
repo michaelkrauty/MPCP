@@ -8,15 +8,15 @@ echo $result;
 
 while($row = mysqli_fetch_array($result))
   {
-  echo $row['userid']
+  echo $row['userid'];
   echo "<br>";
-  echo $row['email']
+  echo $row['email'];
   echo "<br>";
-  echo $row['password']
+  echo $row['password'];
   echo "<br>";
-  echo $row['mcusername']
+  echo $row['mcusername'];
   echo "<br>";
-  echo $row['salt']
+  echo $row['salt'];
   echo "<br>";
   echo "<br>";
   }
