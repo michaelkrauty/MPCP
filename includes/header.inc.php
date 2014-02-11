@@ -16,8 +16,8 @@
       <ul class="nav navbar-nav navbar-right">
       <li><img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Emerald.png" height='32' width='32'>
 	<?php include_once 'includes/db_connect.php';
-	 $result =  getEmeralds($userName);
-	 while($row = mysqli_fetch($result))
+	 $result =  getEmeralds("1");
+	 while($row = mysqli_fetch_array($result))
 	 { echo $row['emeralds']; } ;
 	?></li>
         <li class="dropdown">
