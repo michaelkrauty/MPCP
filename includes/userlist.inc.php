@@ -4,8 +4,8 @@
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="10%">User ID</th>
-<th width="10%">Avatar</th>
+<th width="3%">User ID</th>
+<th width="5%">Avatar</th>
 <th width="20%">Email</th>
 <th width="10%">Password</th>
 <th width="10%">Minecraft Name</th>
