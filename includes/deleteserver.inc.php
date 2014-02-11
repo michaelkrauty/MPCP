@@ -15,4 +15,4 @@
 	        <br><input type="text" name = "serverid" class="form-control">
 		<br><input class="btn btn-lg btn-success btn-block" type="submit" value="Delete Server"/>
 	</form>
-</div>
+	</div>

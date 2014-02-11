@@ -10,8 +10,8 @@ while (($line = fgets($file)) !== false) {
 	echo "<br>";
 }
 echo "</div>";
-
 ?>
+</div>
 <script>
   var objDiv = document.getElementById("consoleview");
 objDiv.scrollTop = objDiv.scrollHeight;
