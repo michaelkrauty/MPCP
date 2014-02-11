@@ -1,4 +1,3 @@
-<div class="well">
 <h2> Plan List </h2>
 
 <div id='userlist' style='background:white;'>
@@ -34,5 +33,4 @@ while($row = mysqli_fetch_array($result))
   }
 ?>
 </table>
-</div>
 </div>
