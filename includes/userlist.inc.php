@@ -23,7 +23,7 @@ while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
   echo "<td>" . $row['userid'] . "</td>";
-  echo "<td> <img src='http://signaturecraft.us/avatars/30/face/ " . $row['mcusername'] . ".png' height='32' width='32'> </td>";
+  echo "<td> <img src='http://signaturecraft.us/avatars/30/face/" . $row['mcusername'] . ".png' height='32' width='32'> </td>";
   echo "<td>" . $row['email'] . "</td>";
   echo "<td>" . $row['password'] . "</td>";
   echo "<td>" . $row['mcusername'] . "</td>";
