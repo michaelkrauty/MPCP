@@ -15,7 +15,7 @@
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once "/var/www/html/mpcp/includes/minecrafticonsmall.inc.php" ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php  include_once 'printMCIcon.inc.php'; MCIcon($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
             <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>

@@ -4,7 +4,7 @@
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="20%"></th>
+<th width="10%"></th>
 <th width="10%">User ID</th>
 <th width="20%">Email</th>
 <th width="10%">Password</th>
@@ -15,13 +15,14 @@
 <?php
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
+include_once 'printMCIcon.inc.php';
 
 $result =  listUsers();
 
 while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
-  echo "<td>" . " " . "</td>";
+  echo "<td>" . MCIcon($row['mcusername']); . "</td>";
   echo "<td>" . $row['userid'] . "</td>";
   echo "<td>" . $row['email'] . "</td>";
   echo "<td>" . $row['password'] . "</td>";
