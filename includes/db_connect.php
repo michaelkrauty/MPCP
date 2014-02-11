@@ -27,6 +27,7 @@
  * 14) Delete Plan
  * 15) Modify Plan
  * 16) List Plans
+ * 17) GetEmeralds
  *
  * @ Copyright (c) MPCP
  * @ Version
@@ -243,3 +244,14 @@ function listPlans() {
 * --------------------------
 */
 
+/*
+* 16) Get Emeralds  //Vulrnrable to SQLI
+*/
+function getEmeralds($userid) {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
+        $result = mysqli_query($mysqli, "SELECT emeralds FROM users WHERE userid = $userid LIMIT 1");
+        return $result;
+}
+/*
+* --------------------------
+*/
