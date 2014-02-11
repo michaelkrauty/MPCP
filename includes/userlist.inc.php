@@ -10,7 +10,7 @@
 <th width="1%">Password</th>
 <th width="1%">Minecraft Name</th>
 <th width="1%">Salt</th>
-<th width="100px">Controls</th>
+<th width="10px">Controls</th>
 </tr>
 <?php
 include_once 'includes/db_connect.php';
