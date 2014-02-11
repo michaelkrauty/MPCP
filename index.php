@@ -45,6 +45,7 @@
 	  <div id="console"></div>
 	  <div id="createuser"></div><?php include_once "./includes/createuser.inc.php";?></div>
 	  <div id="createserver"></div><?php include_once "./includes/createserver.inc.php";?></div>
+	  <div id="createplan"></div><?php include_once "./includes/createplan.inc.php";?></div>
 	</center>
       </div>
     </div>
