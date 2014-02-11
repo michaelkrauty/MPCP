@@ -78,10 +78,17 @@
   
   function serverExists($serverId){
     $command = "ls /var/mpcp/servers";
-    if(strpos(shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";"), $serverId)){
+    if(strpos(shell_exec($command), $serverId)){
       return true;
     }else{
       return false;
     }
+  }
+  
+  function backupServer($serverId){
+  	$command = "ls /var/mpcp/backups/" . $serverId;
+  	if(!strpos(shell_exec($command), date("j-n-Y_G:i"))){
+  		shell_exec("zip -r /var/mpcp/servers/" . $serverId . "/* /var/mpcp/backups/" . $serverid . "/" . date("j-n-Y_G:i"));
+  	}
   }
 ?>
