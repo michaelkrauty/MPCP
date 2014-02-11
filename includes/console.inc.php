@@ -76,7 +76,7 @@
           e.prevetDefault();
           $.ajax( {
             type: "POST",
-            url: form.attr( 'console.inc.php' ),
+            url: form.attr(),
             data: form.serialize(),
           } );
         }
