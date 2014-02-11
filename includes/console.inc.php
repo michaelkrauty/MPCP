@@ -53,18 +53,6 @@
             <div class="col-xs-2">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Run</button>
               </div>
-              <script>
-                var form = $('#commandbox');
-
-                form.find('input[type=submit]').on( 'click', function(e) {
-                  e.prevetDefault();
-                  $.ajax( {
-                    type: "POST",
-                    url: form.attr( 'console.inc.php' ),
-                    data: form.serialize(),
-                  } );
-                }
-              </script>
               <?php/*
                 if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
@@ -82,6 +70,17 @@
       <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="./bootstrap/assets/js/docs.min.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+      <script>
+        var form = $('#commandbox');
+        form.find('input[type=submit]').on( 'click', function(e) {
+          e.prevetDefault();
+          $.ajax( {
+            type: "POST",
+            url: form.attr( 'console.inc.php' ),
+            data: form.serialize(),
+          } );
+        }
+      </script>
     <script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#consoleviewer').load('consoleviewer.inc.php');
