@@ -30,7 +30,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['salt'] . "</td>";
   echo "<td>" . " " . "</td>";
   echo "</tr>";
-}
+  }
 ?>
 </table>
 </div>
