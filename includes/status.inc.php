@@ -1,5 +1,4 @@
-<?php include "mpcp.inc.php";
-  $serverId = "mpcp_0";
+<?php include_once "mpcp.inc.php";
   if(screenOnline($serverId)){
     if(serverOnline($serverId)){
       echo '
