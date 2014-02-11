@@ -45,7 +45,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
 
     /* This is the correct way to loop over the directory. */
     while (false !== ($entry = readdir($handle))) {
-        echo "<form action=\"fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
+        echo "<form action=\"./includes/fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
 	echo "<tr>";
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
 	echo "<td> <a href=\"#\" onclick=\"fileexplore.submit($entry)\">$entry</a>  </td>";
