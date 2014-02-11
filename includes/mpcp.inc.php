@@ -1,6 +1,5 @@
 <?php
 
-
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
     if(strpos($out, $serverId) == true){
@@ -11,7 +10,7 @@
   }
   
   function serverOnline($serverId){
-  	#temp
+  		#temp
 		$serverIp = "dominationvps.com";
 		$serverPort = "6070";
 		#/temp
@@ -38,7 +37,7 @@
   }
   
   function restartServer($serverId){
-  	#temp
+  		#temp
 		$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
 		$memory = "1024";
 		#/temp
@@ -50,9 +49,9 @@
   }
   
   function reloadServer($serverId){
-    if(screenOnline($serverId)){
-    	if(serverOnline($serverId)){
-		  	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+		if(screenOnline($serverId)){
+			if(serverOnline($serverId)){
+				$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
     	}
     }
   }
