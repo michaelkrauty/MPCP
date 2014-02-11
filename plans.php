@@ -48,10 +48,9 @@
         </div>
       </div>
     </center>
-    <center>
-    <?php include_once "includes/planlist.inc.php"; ?>
-    </center>
-    
+    <div class="planlist">
+      <?php include_once "includes/planlist.inc.php"; ?>
+    </div>
     
     
   </body>
