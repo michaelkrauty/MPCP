@@ -4,8 +4,8 @@
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="10%"></th>
 <th width="10%">User ID</th>
+<th width="10%">Avatar</th>
 <th width="20%">Email</th>
 <th width="10%">Password</th>
 <th width="10%">Minecraft Name</th>
@@ -22,8 +22,8 @@ $result =  listUsers();
 while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
-  echo "<td>" . MCIcon($row['mcusername']) . "</td>";
   echo "<td>" . $row['userid'] . "</td>";
+  echo "<td>" . MCIcon($row['mcusername']) . "</td>";
   echo "<td>" . $row['email'] . "</td>";
   echo "<td>" . $row['password'] . "</td>";
   echo "<td>" . $row['mcusername'] . "</td>";
