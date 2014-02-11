@@ -65,11 +65,11 @@
                   } );
                 }
               </script>
-              <?php
+              <?php/*
                 if(isset($_GET['cmd'])){
                   $cmd = $_GET['cmd'];
                   executeCommand($serverId, $cmd);
-                }
+                }*/
               ?>
             </form>
           </div>
