@@ -26,6 +26,7 @@
  * 13) Create Plan
  * 14) Delete Plan
  * 15) Modify Plan
+ * 16) List Plans
  *
  * @ Copyright (c) MPCP
  * @ Version
@@ -229,3 +230,16 @@ function modifyPlan($planid, $field, $value) {
 /*
 * --------------------------
 */
+
+/*
+* 16) List Plans
+*/
+function listPlans() {
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
+        $result = mysqli_query($mysqli, "SELECT * FROM plans");
+        return $result;
+}
+/*
+* --------------------------
+*/
+
