@@ -13,6 +13,6 @@
 	<form action="./includes/deleteplan.inc.php" method="post" name="deleteplan_form">
 		Plan ID:
 	        <br><input type="text" name = "planid" class="form-control">
-		<br><input class="btn btn-lg btn-danger btn-block" type="submit" value="Delete plan"/>
+		<br><input class="btn btn-lg btn-danger btn-block" type="submit" value="Delete Plan"/>
 	</form>
 	</div>
