@@ -14,9 +14,9 @@
         <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
      </ul>
       <ul class="nav navbar-nav navbar-right">
-      <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Emerald.png" height='32' width='32'> <?php include_once 'includes/db_connect.php'; $result =  getEmeralds($userName); while($row = mysqli_fetch_array($result)) { echo $row['emeralds']; } ; ?>
+      <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Emerald.png" height='32' width='32'> <?php// include_once 'includes/db_connect.php'; $result =  getEmeralds($userName); while($row = mysqli_fetch_array($result)) { echo $row['emeralds']; } ; ?>
         <li class="dropdown">
-	  <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php  include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
+	  <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
             <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>
