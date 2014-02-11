@@ -75,9 +75,10 @@
   }
   
   function backupServer($serverId){
-  	$command = "ls /var/mpcp/backups/" . $serverId;
-#  	if(!strpos(shell_exec($command), date("j-n-Y_G:i"))){
-  		shell_exec("zip -r /var/mpcp/servers/" . $serverId . "/* /var/mpcp/backups/" . $serverId . "/" . date("j-n-Y_G:i"));
-#  	}
+  	$date = date("j-n-Y_G:i");
+	if(!file_exists("/var/mpcp/backups/" . $serverId)){
+		shell_exec("mkdir /var/mpcp/backups" . $serverId);
+	}
+  		shell_exec("cd /var/mpcp/servers/" . $serverId . " && zip " . $date . " * && mv " . $date . ".zip /var/mpcp/backups/" . $serverId . "/");
   }
 ?>
