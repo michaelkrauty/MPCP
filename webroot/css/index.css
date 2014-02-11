@@ -35,5 +35,5 @@ td{
    color:black;
 }
 .navbar {
-min-height: 20px;
+min-height: 20px !important;
 }
