@@ -194,7 +194,7 @@ function userAuthentication($email, $password) {
 */
 function createPlan($planname, $maxslots, $storage, $memory) {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $prep_stmt = "INSERT INTO plans (name, maxslots, storage, memory) VALUES (?, ?, ?, ?)";
+        $prep_stmt = "INSERT INTO plans (name, slots, storage, memory) VALUES (?, ?, ?, ?)";
         $stmt = $mysqli->prepare($prep_stmt);
         $stmt->bind_param("ssss", $planname, $maxslots, $storage, $memory);
         $stmt->execute();
