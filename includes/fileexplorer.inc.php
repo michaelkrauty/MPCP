@@ -48,9 +48,13 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<form action=\"./includes/fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
 	echo "<tr>";
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
-	echo "<td> <a href=\"#\" onclick=\"fileexplore.submit($entry)\">$entry</a>  </td>";
+	echo "<td> type = submit">$entry</a>  </td>";
+	if is null (pathinfo($entry, PATHINFO_EXTENSION){
+	echo "<td>" . "Directory" . "</td>";
+	} else {
 	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
-        echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
+        }
+	echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
         echo "<td>"; try { echo filemtime($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
 	echo "<td>"; try { echo md5_file($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
 	echo "<td><span class=\"glyphicon glyphicon-minus\"> <span class=\"glyphicon glyphicon-wrench\"> <span class=\"glyphicon glyphicon-font\"> <span class=\"glyphicon glyphicon-search\"></td>";
