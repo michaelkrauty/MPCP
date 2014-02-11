@@ -3,14 +3,14 @@
 <div id='userlist' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
-<th width="10%">Plan ID</th>
-<th width="10%">Plan Icon</th>
-<th width="20%">Plan Name</th>
-<th width="10%">Slots</th>
-<th width="10%">Storage</th>
-<th width="10%">Memory</th>
-<th width="10%">Price</th>
-<th width="10%">Purchase</th>
+<th width="1%">Plan ID</th>
+<th width="1%">Plan Icon</th>
+<th width="1%">Plan Name</th>
+<th width="1%">Slots</th>
+<th width="1%">Storage</th>
+<th width="1%">Memory</th>
+<th width="1%">Price</th>
+<th width="1%">Purchase</th>
 </tr>
 <?php
 include_once 'includes/db_connect.php';
