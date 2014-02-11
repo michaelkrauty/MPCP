@@ -15,7 +15,7 @@ $salt = "bFUt4WUp";
 
 if (isset($_POST['email'], $_POST['password'], $_POST['mcusername']))
 	{
-	createUser($_POST['email'], $_POST['password'], $_POST[mcusername], $salt);
+	createUser($_POST['email'], $_POST['password'], $_POST['mcusername'], $salt);
 	}
 ?>
 
