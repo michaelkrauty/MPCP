@@ -48,7 +48,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
         echo "<form action=\"./includes/fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
 	echo "<tr>";
         $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
-	echo "<td> type = submit>"$entry</a>  </td>";
+	echo "<td> type = submit> $entry </a> </td>";
 	if is_null(pathinfo($entry, PATHINFO_EXTENSION){
 	echo "<td>" . "Directory" . "</td>";
 	} else {
