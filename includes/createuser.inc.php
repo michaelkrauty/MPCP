@@ -28,6 +28,6 @@ if (isset($_POST['email'], $_POST['password'], $_POST['mcusername']))
         <br><input type="password" name="password" class="form-control" placeholder="Password" required>
         Password Confirmation:
         <br><input type="password" name="confirmpwd" class="form-control" placeholder="Confirmation Password" required>
-	<br><input class="btn btn-lg btn-success btn-block" type="button" value="Create User" />
+	<br><input class="btn btn-lg btn-success btn-block" type="submit" value="Create User" onclick="formhash(this.form, this.form.password);"/>
         </form>
 </div>
