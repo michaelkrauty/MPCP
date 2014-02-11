@@ -57,7 +57,7 @@ if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
 	echo "</tr>";
     }
     closedir($handle);
-    </form>
+    echo "</form>";
 }
 
 ?>
