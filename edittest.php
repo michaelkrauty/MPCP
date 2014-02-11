@@ -21,7 +21,7 @@ $text = file_get_contents($file);
 ?>
 <!-- HTML form -->
 <form action="" method="post">
-<textarea name="text" width="80%" height="100%"><?php echo htmlspecialchars($text) ?></textarea>
+<textarea name="text" style="width:80%;height:100%;"><?php echo htmlspecialchars($text) ?></textarea>
 <input type="submit" />
 <input type="reset" />
 </form>
