@@ -28,6 +28,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['password'] . "</td>";
   echo "<td>" . $row['mcusername'] . "</td>";
   echo "<td>" . $row['salt'] . "</td>";
+  echo "<td>" . " " . "</td>";
   echo "</tr>";
 }
 ?>
