@@ -26,8 +26,8 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['owner'] . "</td>";
   echo "<td>" . $row['ip'] . "</td>";
   echo "<td>" . $row['port'] . "</td>";
-  echo "<td><form><button name=\"start\" type=\"submit\" class='btn btn-small btn-success'>Start</button> <button name=\"stop\" type=\"submit\" class='btn btn-small btn-danger'>Stop</button>
-                <button name=\"restart\" type=\"submit\" class='btn btn-small btn-warning'>Restart</button> <button name=\"reload\" type=\"submit\" class='btn btn-small btn-info'>Reload</button></form></td>";
+  echo "<td><form><button name=\"start\" class='btn btn-small btn-success'>Start</button> <button name=\"stop\" class='btn btn-small btn-danger'>Stop</button>
+                <button name=\"restart\" class='btn btn-small btn-warning'>Restart</button> <button name=\"reload\" class='btn btn-small btn-info'>Reload</button></form></td>";
   echo "</tr>";
   }
 ?>
