@@ -22,7 +22,7 @@ while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
   echo "<td>" . $row['planid'] . "</td>";
-  echo "<td> <img src=" . $row['icon'] . " height='32' width='32 > </td>";
+  echo "<td> <img src=" . $row['icon'] . " height='32' width='32'> </td>";
   echo "<td>" . $row['name'] . "</td>";
   echo "<td>" . $row['slots'] . "</td>";
   echo "<td>" . $row['storage'] . "</td>";
