@@ -1,5 +1,6 @@
-                  <?php
+                  <?php include_once "mpcp.inc.php";
                     if(count($_POST) > 0 && isset($_POST['backup'])) {
+                      $serverId = "mpcp_0";
                       backupServer($serverId);
                     }
                   ?>
