@@ -22,11 +22,11 @@ while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
   echo "<td>" . " " . "</td>";
-  echo "<td>" . $row['userid'] . </td>;
-  echo "<td>" . $row['email'] . </td>;
-  echo "<td>" . $row['password'] . </td>;
-  echo "<td>" . $row['mcusername'] . </td>;
-  echo "<td>" . $row['salt'] . "</td>;
+  echo "<td>" . $row['userid'] . "</td>";
+  echo "<td>" . $row['email'] . "</td>";
+  echo "<td>" . $row['password'] . "</td>";
+  echo "<td>" . $row['mcusername'] . "</td>";
+  echo "<td>" . $row['salt'] . "</td>";
   echo "</tr>";
 }
 ?>
