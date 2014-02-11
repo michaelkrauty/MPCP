@@ -1,6 +1,6 @@
 <?php
 
-echo shell_exec('screen -S mpcp_0 -X  print "list\r"');
+echo shell_exec("screen -x mpcp_0 -p 0 -X stuff \"`printf \"list\r\"`\";");
 
 
 ?>
