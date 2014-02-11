@@ -24,8 +24,6 @@
     <?php
       $userEmail = $_SESSION['email'];
       $userName = $_SESSION['username'];
-    ?>
-    <?php
       $pageName = "index";
     ?>
 </head>
