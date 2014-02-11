@@ -27,7 +27,7 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['slots'] . "</td>";
   echo "<td>" . $row['storage'] . "</td>";
   echo "<td>" . $row['memory'] . "</td>";
-  echo "<td>" . <button type=\"button\" class=\"btn btn-primary\">Buy Now</button> . "</td>";
+  echo "<td>" . "<button type=\"button\" class=\"btn btn-primary\">Buy Now</button>" . "</td>";
   echo "</tr>";
   }
 ?>
