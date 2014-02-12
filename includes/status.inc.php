@@ -1,4 +1,4 @@
-<?php include_once "mpcp.inc.php";
+<?php include_once "/var/www/html/mpcp/includes/mpcp.inc.php";
   if(screenOnline($serverId)){
     if(serverOnline($serverId)){
       echo '
