@@ -8,7 +8,7 @@
       if(login_check($mysqli) == true){
       ?>
       <?php
-        include "/var/www/html/mpcp/includes/mpcp.inc.php";
+        include_once "/var/www/html/mpcp/includes/mpcp.inc.php";
         $serverId = "mpcp_0";
         $userEmail = $_SESSION['email'];
         $userName = $_SESSION['username'];
