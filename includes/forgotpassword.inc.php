@@ -3,9 +3,9 @@
 include_once 'generatepassword.inc.php';
 include_once 'db_connect.php';
 $useremail = "test@test.com";
-if (!isset($_POST["useremail"]))
+if (!isset($_POST['useremail']))
   {
-    $email = $_POST["useremail"];
+    $email = $_POST['useremail'];
     $message = randomPassword();
     modifyUser("password", $message, "email", $email);
     mail("$email","Your new Password", $message, "From: MRBILLGATES@dominationvps.com\n");
