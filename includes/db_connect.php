@@ -84,11 +84,11 @@ function deleteUser($userid) {
 /*
 * 5) Modify User
 */
-function modifyUser($userid, $field, $value) {
+function modifyUser($field, $data, $searchby, $value) {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $prep_stmt = "UPDATE users SET ? = ? WHERE userid = ?";
+        $prep_stmt = "UPDATE users SET ? = ? WHERE ? = ?";
         $stmt = $mysqli->prepare($prep_stmt);
-        $stmt->bind_param("sss", $field, $value, $userid);
+        $stmt->bind_param("ssss", $field, $data, $searchby, $value);
         $stmt->execute();
 }
 /*
