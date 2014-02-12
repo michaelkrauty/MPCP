@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php include_once "includes/db_connect.php"; include_once "includes/functions.php";
+    <?php include_once "db_connect.php"; include_once "functions.php";
       sec_session_start();
       if(login_check($mysqli) == true){
       ?>
       <?php
-        include "includes/mpcp.inc.php";
+        include "mpcp.inc.php";
         $serverId = "mpcp_0";
         $userEmail = $_SESSION['email'];
         $userName = $_SESSION['username'];
@@ -29,10 +29,10 @@
       <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-      <?php include_once "includes/header.inc.php"; ?>
+      <?php include_once "header.inc.php"; ?>
         <div class="container-fluid">
           <div class="row">
-          <?php include_once "includes/sidebar.inc.php"; ?>
+          <?php include_once "sidebar.inc.php"; ?>
             <div class="col-sm-9 col-sm-offset-4 col-md-8 col-md-offset-0 main">
               <div class="bar1">
                 <div class="well">
@@ -63,7 +63,7 @@
         <script src="bootstrap/assets/js/docs.min.js"></script>
         <script type="text/javascript">
           var auto_refresh = setInterval( function () {
-          $('#status').load('includes/status.inc.php');
+          $('#status').load('status.inc.php');
           }, 1000);
         </script>
       </body>
