@@ -2,7 +2,6 @@
 
 include_once 'generatepassword.inc.php';
 include_once 'db_connect.php';
-$useremail = "test@test.com";
 if (isset($_POST['useremail']))
   {
     $email = $_POST['useremail'];
