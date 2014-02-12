@@ -19,7 +19,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.ico">
+      <link rel="shortcut icon" href="/var/www/html/mpcp/bootstrap/assets/ico/favicon.ico">
       <!-- Custom styles for this template -->
       <link href="/var/www/html/mpcp/webroot/css/manage.backup.css" rel="stylesheet">
       <title>MPCP Backup</title>
