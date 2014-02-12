@@ -1,7 +1,7 @@
 <?php
 
-include generatepassword.inc.php;
-include db_connect.php;
+include_once 'generatepassword.inc.php';
+include_once 'db_connect.php';
 
 if (!isset($_POST["submit"]))
   {
