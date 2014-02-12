@@ -22,3 +22,5 @@ if (isset($_POST['useremail']))
 Account Email Address:
 <br><input type="text" name = "useremail" class="form-control" placeholder="Account Email">
 <br><input class="btn btn-lg btn-warning btn-block" type="submit" value="Send Password"/>
+
+echo randomPassword();
