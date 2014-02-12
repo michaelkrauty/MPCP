@@ -1,3 +1,4 @@
+<?php
 function randomPassword() {
     $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
     $pass = array(); //remember to declare $pass as an array
@@ -8,4 +9,4 @@ function randomPassword() {
     }
     return implode($pass); //turn the array into a string
 }
-
+?>
