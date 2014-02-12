@@ -19,14 +19,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.ico">
+      <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.ico">
       <!-- Custom styles for this template -->
-      <link href="webroot/css/manage.backup.css" rel="stylesheet">
+      <link href="../webroot/css/manage.backup.css" rel="stylesheet">
       <title>MPCP Backup</title>
       <!-- Bootstrap theme -->
-      <link href='bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
+      <link href='../bootstrap/dist/css/bootstrap-theme.min.css' rel='stylesheet'>
       <!-- Bootstrap core CSS -->
-      <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
       <?php include_once "header.inc.php"; ?>
@@ -59,8 +59,8 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="bootstrap/assets/js/docs.min.js"></script>
+        <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bootstrap/assets/js/docs.min.js"></script>
         <script type="text/javascript">
           var auto_refresh = setInterval( function () {
           $('#status').load('status.inc.php');
