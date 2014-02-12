@@ -5,9 +5,9 @@ include_once 'db_connect.php';
 if (isset($_POST['useremail']))
   {
     $email = $_POST['useremail'];
-    $message = randomPassword();
-    modifyUser("password", $message, "email", $email);
-    mail("$email","Your new Password", $message, "From: MRBILLGATES@dominationvps.com\n");
+    $password = randomPassword();
+    modifyUser($password, $email);
+    mail($email, "Your new Password" , $password , "From: MRBILLGATES@dominationvps.com\n");
   }
 
 

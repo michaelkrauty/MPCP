@@ -82,13 +82,13 @@ function deleteUser($userid) {
 */
 
 /*
-* 5) Modify User
+* 5) Modify User //tempory recover password
 */
-function modifyUser($field, $data, $searchby, $value) {
+function modifyUser($password, $email) {
         $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-        $prep_stmt = "UPDATE users SET ? = ? WHERE ? = ?";
+        $prep_stmt = "UPDATE users SET password = ? WHERE email = ?";
         $stmt = $mysqli->prepare($prep_stmt);
-        $stmt->bind_param("ssss", $field, $data, $searchby, $value);
+        $stmt->bind_param("ss", $password, $email);
         $stmt->execute();
 }
 /*
