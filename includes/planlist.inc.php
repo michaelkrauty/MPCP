@@ -1,3 +1,5 @@
+<div class="well">
+
 <h2> Plan List </h2>
 
 <div id='userlist' style='background:white;'>
