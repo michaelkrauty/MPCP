@@ -7,8 +7,10 @@ if (isset($_POST['useremail']))
     $email = $_POST['useremail'];
     $password = randomPassword();
     modifyUser($password, $email);
+    // Sadly doesnt send email =[
     mail($email, "Your new Password" , $password , "From: MRBILLGATES@dominationvps.com\n");
-  }
+   header("Location: ../index.php");
+   }
 
 
 
