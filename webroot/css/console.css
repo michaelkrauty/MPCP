@@ -11,6 +11,13 @@ body{
   background-size: cover;
 }
 
+.consoleviewer{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .sidebar{
   margin-top: 0.65%;
 }
