@@ -75,6 +75,7 @@
 
 	function restoreBackup($serverId, $backupName){
 		if(file_exists("/var/mpcp/backups/" . $serverId . "/" . $backupName)){
+			createBackup($serverId);
 			shell_exec("rm -rf /var/mpcp/servers/" . $serverId . "/* && mv /var/mpcp/backups/" . $serverId . "/" . $backupName . " /var/mpcp/servers/" . $serverId . "/ && cd /var/mpcp/servers/" . $serverId . " && unzip " . $backupName . " && rm -f " . $backupName);
 		}
 	}
