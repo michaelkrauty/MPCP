@@ -24,7 +24,7 @@
   	}
   }
   
-  function startServer($serverId, $memory, $jar, $port){
+  function startServer($serverId, $memory, $jar, $port, $mcVersion){
     if(!screenOnline($serverId)){
     	if(!serverOnline($serverId)){
       	shell_exec("cd /var/mpcp/servers/" . $serverId . " && screen -dmS " . $serverId . " java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar . " --port " . $port);
@@ -46,7 +46,7 @@
   	while(screenOnline($serverId)){
   		sleep(0);
   	}
-  	startServer($serverId, $memory, $jar, $port);
+  	startServer($serverId, $memory, $jar, $port, 1.7);
   }
   
   function reloadServer($serverId){
