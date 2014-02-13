@@ -49,7 +49,8 @@
                     if(count($_POST) > 0 && isset($_POST['start'])) {
                       $memory = 1024;
                       $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-                      startServer($serverId, $memory, $jar);
+                      $port = "6070";
+                      startServer($serverId, $memory, $jar, $port);
                     }
                     if(count($_POST) > 0 && isset($_POST['stop'])) {
                       stopServer($serverId);
