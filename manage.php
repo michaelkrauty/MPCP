@@ -47,10 +47,12 @@
                   <div id="buttons">
                   <?php
                     if(count($_POST) > 0 && isset($_POST['start'])) {
-                      $memory = 1024;
-                      $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
-                      $port = "6070";
-                      $mcVersion = 1.7;
+                        #temp
+                        $memory = 1024;
+                        $jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
+                        $port = "6070";
+                        $mcVersion = 1.7;
+                        #/temp
                       startServer($serverId, $memory, $jar, $port, $mcVersion);
                     }
                     if(count($_POST) > 0 && isset($_POST['stop'])) {
