@@ -42,6 +42,10 @@
                       createBackup($serverId);
                     }
                     if(count($_POST) > 0 && isset($_POST['restore'])){
+                      stopServer($serverId);
+                      while(screenOnline($serverId)){
+                        sleep(0);
+                      }
                       restoreBackup($serverId, "testbackup.zip");
                     }
                   ?>
