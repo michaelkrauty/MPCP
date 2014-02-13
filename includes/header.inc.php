@@ -9,13 +9,13 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-	<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp' title="Home"><span class="glyphicon glyphicon-home" style="font-size:28px;"></span></a></li>
+				<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/var/www/html/mpcp/index.php' title="Home"><span class="glyphicon glyphicon-home" style="font-size:28px;"></span></a></li>
         <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage.php' title="Manage"><span class="glyphicon glyphicon-cog" style="font-size:28px;"></span><br></a></li>
         <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-	  <a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
+	  			<a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
             <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>
