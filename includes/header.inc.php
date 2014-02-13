@@ -10,21 +10,21 @@
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
 				<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/index.php' title="Home"><span class="glyphicon glyphicon-home" style="font-size:28px;"></span></a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/manage.php' title="Manage"><span class="glyphicon glyphicon-cog" style="font-size:28px;"></span><br></a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='http://dominationvps.com/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
+        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/manage.php' title="Manage"><span class="glyphicon glyphicon-cog" style="font-size:28px;"></span><br></a></li>
+        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
 	  			<a href="" class="dropdown-toggle" data-toggle="dropdown"></span> <?php include_once 'printMCIcon.inc.php'; MCIconSmall($userName); ?><?php echo " " . $userName; ?> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="http://dominationvps.com/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
+            <li><a href="/mpcp/settings/"><span class="glyphicon glyphicon-dashboard"></span> Settings</a></li>
             <li><a href=""><span class="glyphicon glyphicon-plus-sign"></span> Sub Users</a></li>
-            <li><a href="http://dominationvps.com/mpcp/forum/"><span class="glyphicon glyphicon-question-sign"></span> Support</a></li>
-            <li><a href="http://dominationvps.com/mpcp/knowledgebase/"><span class="glyphicon glyphicon-info-sign"></span> Knowledgebase</a></li>
-            <li><a href="http://dominationvps.com/mpcp/forum/"><span class="glyphicon glyphicon-comment"></span> Forum</a></li>
+            <li><a href="/mpcp/forum/"><span class="glyphicon glyphicon-question-sign"></span> Support</a></li>
+            <li><a href="/mpcp/knowledgebase/"><span class="glyphicon glyphicon-info-sign"></span> Knowledgebase</a></li>
+            <li><a href="/mpcp/forum/"><span class="glyphicon glyphicon-comment"></span> Forum</a></li>
             <li><a href=""><span class="glyphicon glyphicon-exclamation-sign"></span> Access Log</a></li>
             <li class="divider"></li>
-            <li><a href="http://dominationvps.com/mpcp/includes/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+            <li><a href="/mpcp/includes/logout.php"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
           </ul>
         </li>
       </ul>
