@@ -2,11 +2,7 @@
 
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
-    if(strpos($out, $serverId) == true){
-      return true;
-    }else{
-      return false;
-    }
+    return strpos($out, $serverId));
   }
   
   function serverOnline($serverId){
@@ -67,11 +63,7 @@
   
   function serverExists($serverId){
     $command = "ls /var/mpcp/servers";
-    if(strpos(shell_exec($command), $serverId)){
-      return true;
-    }else{
-      return false;
-    }
+    return strpos(shell_exec($command), $serverId));
   }
   
   function createBackup($serverId){
