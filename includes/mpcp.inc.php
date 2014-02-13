@@ -55,7 +55,7 @@
   
   function executeCommand($serverId, $command){
     if(screenOnline($serverId)){
-    	if(serverOnline($serverId)){
+    	if(serverOnline($serverId){
       	shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"" . $command . "\r\"`\";");
     	}
     }
