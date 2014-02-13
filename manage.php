@@ -6,7 +6,7 @@
       if(login_check($mysqli) == true){
       ?>
       <?php
-        include "includes/mpcp.inc.php";
+        include_once "includes/mpcp.inc.php";
         $serverId = "mpcp_0";
         $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
         $userEmail = $_SESSION['email'];
