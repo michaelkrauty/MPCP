@@ -63,7 +63,7 @@
   
   function serverExists($serverId){
     $command = "ls /var/mpcp/servers";
-    return strpos(shell_exec($command), $serverId));
+    return strpos(shell_exec($command), $serverId);
   }
   
   function createBackup($serverId){
