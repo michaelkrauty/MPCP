@@ -2,7 +2,7 @@
 
 // configuration
 $url = 'http://dominationvps.com/mpcp/edittest.php';
-$file = '/var/mpcp/servers/mpcp_0/server.properties';
+$file = '/var/mpcp/servers/mpcp_0/logs/latest.log';
 
 // check if form has been submitted
 if (isset($_POST['text'])){
