@@ -40,12 +40,13 @@
   		#temp
 		$jar = "craftbukkit-1.7.2-R0.3-20131225.043511-4.jar";
 		$memory = "1024";
+		$port = "6070";
 		#/temp
   	stopServer($serverId);
   	while(screenOnline($serverId)){
   		sleep(0);
   	}
-  	startServer($serverId, $memory, $jar);
+  	startServer($serverId, $memory, $jar, $port);
   }
   
   function reloadServer($serverId){
