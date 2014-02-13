@@ -2,7 +2,7 @@
 
   function screenOnline($serverId){
     $out = shell_exec("screen -list");
-    return strpos($out, $serverId));
+    return strpos($out, $serverId);
   }
   
   function serverOnline($serverId){
