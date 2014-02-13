@@ -1,32 +1,32 @@
 <?php
 
-  function screenOnline($serverId){
-    $out = shell_exec("screen -list");
-    return strpos($out, $serverId);
-  }
+	function screenOnline($serverId){
+		$out = shell_exec("screen -list");
+		return strpos($out, $serverId);
+	}
+
+	function serverOnline($serverId){
+			#temp
+			$serverIp = "dominationvps.com";
+			$serverPort = "6070";
+			#/temp
+		include_once 'status.class.php';
+		$status = new MinecraftServerStatus();
+		$response = $status->getStatus($serverIp, $serverPort);
+		if($response){
+			return true;
+		}else{
+			return false;
+		}
+	}
   
-  function serverOnline($serverId){
-  		#temp
-		$serverIp = "dominationvps.com";
-		$serverPort = "6070";
-		#/temp
-	  include_once 'status.class.php';
-	  $status = new MinecraftServerStatus();
-	  $response = $status->getStatus($serverIp, $serverPort);
-	  if($response){
-  	  return true;
-	  }else{
-      return false;
-  	}
-  }
-  
-  function startServer($serverId, $memory, $jar, $port, $mcVersion){
-    if(!screenOnline($serverId)){
-    	if(!serverOnline($serverId)){
-      	shell_exec("cd /var/mpcp/servers/" . $serverId . " && screen -dmS " . $serverId . " java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar . " --port " . $port);
-    	}
-    }
-  }
+	function startServer($serverId, $memory, $jar, $port, $mcVersion){
+		if(!screenOnline($serverId)){
+			if(!serverOnline($serverId)){
+				shell_exec("cd /var/mpcp/servers/" . $serverId . " && screen -dmS " . $serverId . " java -Xmx" . $memory . "M -jar /var/mpcp/jar/" . $jar . " --port " . $port);
+			}
+		}
+	}
   
   function stopServer($serverId){
     	$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"stop\r\"`\";");
@@ -46,11 +46,11 @@
   }
   
   function reloadServer($serverId){
-		if(screenOnline($serverId)){
-			if(serverOnline($serverId)){
-				$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
-    	}
-    }
+	if(screenOnline($serverId)){
+		if(serverOnline($serverId)){
+			$out = shell_exec("screen -x " . $serverId . " -p 0 -X stuff \"`printf \"reload\r\"`\";");
+    		}
+  	}
   }
   
   function executeCommand($serverId, $command){
