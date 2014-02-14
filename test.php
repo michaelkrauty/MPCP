@@ -7,7 +7,7 @@
 			return substr($jar, 7, 5);
 		}
 		if("minecraft_server." == substr($jar, 0, 17)){
-			return substr($jar, 12, 5);
+			return substr($jar, 17, 5);
 		}
 	}
 	
