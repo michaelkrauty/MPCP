@@ -10,7 +10,7 @@
 			return substr($jar, 17, 5);
 		}
 		else{
-			return "ERROR IN\"getJarVersion($jar)\"";
+			return "ERROR in \"getJarVersion($jar)\"";
 		}
 	}
 	
