@@ -23,6 +23,11 @@
 	echo getJarVersion("minecraftasdfjadsfd.1.7.2.jar");
 	echo "<br>";
 	echo getJarVersion("minecraft_server.145344.jar");
+	
+	function emailMike(){
+		mail("michaelkrauty@gmail.com", "testmail", "lol,\nThis was sent from a PHP function :D","From: GeorgeLucas@starwars.co.austria");
+	}
+	emailMike();
 
 
 ?>
