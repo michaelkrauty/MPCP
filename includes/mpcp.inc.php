@@ -82,7 +82,7 @@
 	
 	function deleteBackup($serverId, $backupName){
 		if(file_exists("/var/mpcp/backups/$serverId/$backupName")){
-			#delete backup
+			shell_exec("rm -f /var/mpcp/servers/$serverId/$backupName");
 		}
 	}
 	
