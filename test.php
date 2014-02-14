@@ -9,6 +9,9 @@
 		if("minecraft_server." == substr($jar, 0, 17)){
 			return substr($jar, 17, 5);
 		}
+		else{
+			return "ERROR IN\"getJarVersion($jar)\"";
+		}
 	}
 	
 	echo getJarVersion("craftbukkit-1.6.4-R2.0.jar");
