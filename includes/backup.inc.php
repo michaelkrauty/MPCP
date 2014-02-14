@@ -57,7 +57,7 @@
                     <button name="restore" type="submit" class="btn btn-lg btn-warning" >Restore</button>
                     <br>
                     <input name="backupname" type="text"></input>
-                    <button name="delete" type="submit" class="btn btn-lg btn-danger">Delete Backup</button>
+                    <button name="delete" type="submit" class="btn btn btn-danger">Delete Backup</button>
                   </form>
                   </div>
                 </div>
