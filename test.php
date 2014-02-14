@@ -20,7 +20,7 @@
 	echo "<br>";
 	echo getJarVersion("spigot-1.7.2-R0.3-SNAPSHOT.jar");
 	echo "<br>";
-	echo getJarVersion("minecraftasdfjadsfd1.7.2");
+	echo getJarVersion("minecraftasdfjadsfd.1.7.2.jar");
 	echo "<br>";
 	echo getJarVersion("minecraft_server.145344.jar");
 
