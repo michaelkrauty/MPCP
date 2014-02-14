@@ -6,7 +6,8 @@ if("craftbukkit-" == substr($jar, 0, 12)){
 }
 if("spigot-" == substr($jar, 0, 7)){
   echo substr($jar, 7, 5);
-}else{
+}
+else{
   echo "nope";
 }
 
