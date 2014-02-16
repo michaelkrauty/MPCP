@@ -1,4 +1,5 @@
 <div class="well">
+  <h2>Backup</h2>
   <?php
     if(isset($_POST['backupname'])){
       $backupName = $_POST['backupname'].".zip";
