@@ -50,6 +50,7 @@
 	  <div id="deleteplan"><?php include_once "./includes/deleteplan.inc.php";?></div>
 	  <div id="forgotpassword"><?php include_once "./includes/forgotpassword.inc.php";?></div>
 	  <div id="backup"><?php include_once "./includes/backup.inc.php";?></div>
+	  <div id="edittest"><?php include_once "./includes/edittest.inc.php";?></div>
 	</center>
       </div>
     </div>
@@ -91,6 +92,10 @@
 
     var auto_refresh = setInterval( function () {
     $('#serverinformation').load('./includes/serverinformation.inc.php');
+    }, 1000);
+    
+    var auto_refresh = setInterval( function () {
+    $('#edittest').load('.includes/edittest.inc.php');
     }, 1000);
 
 
