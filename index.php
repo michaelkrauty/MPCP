@@ -49,6 +49,7 @@
 	  <div id="createplan"><?php include_once "./includes/createplan.inc.php";?></div>
 	  <div id="deleteplan"><?php include_once "./includes/deleteplan.inc.php";?></div>
 	  <div id="forgotpassword"><?php include_once "./includes/forgotpassword.inc.php";?></div>
+	  <div id="backup"><?php include_once "./includes/backup.inc.php";?></div>
 	</center>
       </div>
     </div>
