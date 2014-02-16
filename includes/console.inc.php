@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php include_once "../includes/db_connect.php"; include_once "../includes/functions.php";
+    <?php include_once "db_connect.php"; include_once "functions.php";
       sec_session_start();
       if(login_check($mysqli) == true){
       ?>
       <?php
-        include "../includes/mpcp.inc.php";
+        include "mpcp.inc.php";
         $serverId = "mpcp_0";
         $logFile = "/var/mpcp/servers/" . $serverId . "/logs/latest.log";
         $userEmail = $_SESSION['email'];
@@ -35,10 +35,10 @@
       <![endif]-->
     </head>
     <body>
-      <?php include_once "../includes/header.inc.php"; ?>
+      <?php include_once "header.inc.php"; ?>
       <div class="container-fluid">
         <div class="row">
-          <?php include_once "../includes/sidebar.inc.php"; ?>
+          <?php include_once "sidebar.inc.php"; ?>
           <div class="status-header" id="status"></div>
           <div id="console">
             <div class="wellconsole">
@@ -75,7 +75,7 @@
     $('#consoleviewer').load('consoleviewer.inc.php');
     }, 1000);
     var auto_refresh = setInterval( function () {
-    $('#status').load('../includes/status.inc.php');
+    $('#status').load('status.inc.php');
     }, 1000);
     </script>
     </body>
