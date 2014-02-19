@@ -93,8 +93,11 @@
 		if("spigot-" == substr($jar, 0, 7)){
 			return substr($jar, 7, 5);
 		}
-		if("minecraft_server." == substr($jar, 0, 17)){
-			return substr($jar, 17, 5);
+		if("vanilla-" == substr($jar, 0, 8)){
+			return substr($jar, 8, 5);
+		}
+		if("BungeeCord-" == substr($jar, 0, 11)){
+			return substr($jar, 11, 5);
 		}
 		else{
 			return "ERROR in \"getJarVersion($jar)\" (jar not found!)";
