@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Quando);
+
+pagetitle{
+  font-family: 'Quando', serif;
+  font-size: 40px;
+}
+body{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  background-image:url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:bottom;
+  background-size: cover;
+}
+.page-header {
+   margin: 0px 0 20px;
+}
+td{
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px;
+}
+.table th {
+   text-align: center;   
+}
+.progress{
+   margin-bottom:0  !important ;
+   color:black;
+}
+
+.progress-bar {
+   margin-bottom:0  !important ; 
+   color:black;
+}
+.navbar {
+min-height: 20px !important;
+}
