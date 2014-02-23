@@ -25,16 +25,6 @@
 **/
 ?>
 <br>
-<div id='fileexplorer' style='background:white;'>
-<table class="table table-hover table-bordered">
-<tr>
-<th width="30%">Filename</th>
-<th width="10%">Type</th>
-<th width="10%">Size</th>
-<th width="10%">Modified</th>
-<th width="20%">MD5</th>
-<th width="20%">Controls</th>
-</tr>
 <?php
 
 $serverId = "mpcp_0";
@@ -43,5 +33,3 @@ $ls = shell_exec("ls /var/mpcp/servers/$serverId");
 echo $ls;
 
 ?>
-</table>
-</div>
