@@ -35,6 +35,7 @@
         <center>
 	  <div id="userwelcome"><?php include_once "./includes/userwelcome.inc.php";?></div>
           <div id="serverinformation"></div>
+          <div id="fileexplorermike"><?php include_once "includes/fileexplorermike.inc.php";?></div>
 	  <div id="procinfo"></div>
 	  <div id="meminfo"></div>
 	  <div id="serverlist"><?php include_once "./includes/serverlist.inc.php";?></div>
