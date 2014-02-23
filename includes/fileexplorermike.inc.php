@@ -39,7 +39,8 @@
 
 $serverId = "mpcp_0";
 
-
+$ls = shell_exec("ls /var/mpcp/servers/$serverId");
+echo $ls;
 
 ?>
 </table>
