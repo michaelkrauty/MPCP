@@ -24,7 +24,7 @@
 </div>
 **/
 ?>
-<br></br>
+<br>
 <div id='fileexplorer' style='background:white;'>
 <table class="table table-hover table-bordered">
 <tr>
@@ -41,34 +41,6 @@ $serverId = "mpcp_0";
 
 
 
-if ($handle = opendir('/var/mpcp/servers/' . $serverId)) {
-
-    /* This is the correct way to loop over the directory. */
-    while (false !== ($entry = readdir($handle))) {
-        echo "<form action=\"./includes/fileexplorer.inc.php\" method=\"POST\" name=\"fileexplore\">";
-	echo "<tr>";
-        $fullpath = ('/var/mpcp/servers/' . $serverId . "/" . $entry);
-	echo "<td> $entry </td>";
-	if (is_dir($fullpath)){
-	echo "<td>" . "dir" . "</td>";
-	} else {
-	echo "<td>" . pathinfo($entry, PATHINFO_EXTENSION) . "</td>";
-        }
-	echo "<td>"; try { echo filesize($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
-        echo "<td>"; try { echo filemtime($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
-	echo "<td>"; try { echo md5_file($fullpath); } catch (Exception $e) {echo "";} echo "</td>";
-	echo "<td><span class=\"glyphicon glyphicon-minus\"> <span class=\"glyphicon glyphicon-wrench\"> <span class=\"glyphicon glyphicon-font\"> <span class=\"glyphicon glyphicon-search\"></td>";
-	echo "</tr>";
-    }
-    closedir($handle);
-    echo "</form>";
-}
-
 ?>
 </table>
 </div>
-<script language="javascript"> 
-    function DoPost($fullpath){
-    $.post("fileexplorer.inc.php", {$fullpath;} );  //Your values here..
-    }
-    </script>
