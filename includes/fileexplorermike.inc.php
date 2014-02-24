@@ -4,12 +4,11 @@
 <?php
 
 $serverId = "mpcp_0";
-explode();
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
+echo count("Total items: ".explode("\n", $ls) - 1 . "<br>");
+
 echo nl2br($ls);
-echo count(explode("\n", $ls));
-echo "<br>";
-var_dump(explode("\n", $ls));
+
 
 ?>
 </div>
