@@ -7,10 +7,7 @@ $serverId = "mpcp_0";
 explode();
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
 echo nl2br($ls);
-
-$array = explode("\n", $ls);
-echo "<br>";
-echo count($array);
+echo count(explode("\n", $ls));
 
 ?>
 </div>
