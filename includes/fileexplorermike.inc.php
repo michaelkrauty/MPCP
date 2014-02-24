@@ -8,7 +8,7 @@ explode();
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
 echo nl2br($ls);
 
-$array = explode($ls, "\n");
+$array = explode("\n", $ls);
 
 echo count($array);
 
