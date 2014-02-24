@@ -6,7 +6,7 @@
 $serverId = "mpcp_0";
 
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
-$out = str_replace("\n", "<br/>", $ls);
+$out = nl2br($ls);
 echo $out;
 
 ?>
