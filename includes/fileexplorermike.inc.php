@@ -5,7 +5,7 @@
 
 $serverId = "mpcp_0";
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
-echo "Total items: ".count(explode("\n", $ls)) - 1."<br>";
+echo "Total items: ".(count(explode("\n", $ls))-1)."<br>";
 
 echo nl2br($ls);
 
