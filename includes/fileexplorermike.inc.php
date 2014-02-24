@@ -8,6 +8,8 @@ explode();
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
 echo nl2br($ls);
 echo count(explode("\n", $ls));
+echo "<br>";
+var_dump(explode("\n", $ls));
 
 ?>
 </div>
