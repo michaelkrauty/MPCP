@@ -4,9 +4,13 @@
 <?php
 
 $serverId = "mpcp_0";
-
+explode();
 $ls = shell_exec("ls /var/mpcp/servers/$serverId");
 echo nl2br($ls);
+
+$array = explode($ls, "\n");
+
+echo count($array));
 
 ?>
 </div>
