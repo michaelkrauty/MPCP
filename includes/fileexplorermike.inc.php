@@ -10,7 +10,7 @@ echo nl2br($ls);
 
 $array = explode($ls, "\n");
 
-echo count($array));
+echo count($array);
 
 ?>
 </div>
