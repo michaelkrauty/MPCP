@@ -9,9 +9,9 @@
     </div>
     <div class='navbar-collapse'>
       <ul class='nav navbar-nav'>
-				<?php if($pageName == "index"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/index.php' title="Home"><span class="glyphicon glyphicon-home" style="font-size:28px;"></span></a></li>
-        <?php if($pageName == "manage"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/manage.php' title="Manage"><span class="glyphicon glyphicon-cog" style="font-size:28px;"></span><br></a></li>
-        <?php if($pageName == "plans"){echo "<li class='active'>";}else{echo "<li>";}?><a href='/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
+      	<?php echo "<li"; if($pageName == "index"){echo" class='active'";} echo">";?><a href='/mpcp/index.php' title="Home"><span class="glyphicon glyphicon-home" style="font-size:28px;"></span></a></li>
+        <?php echo "<li"; if($pageName == "manage"){echo" class='active'";} echo">";?><a href='/mpcp/manage.php' title="Manage"><span class="glyphicon glyphicon-cog" style="font-size:28px;"></span><br></a></li>
+        <?php echo "<li"; if($pageName == "plans"){echo" class='active'";} echo">";?><a href='/mpcp/plans.php' title="Price Plans"><span class="glyphicon glyphicon-tag" style="font-size:28px;"></span><br></a></li>
      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
