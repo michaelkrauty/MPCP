@@ -1,14 +1,9 @@
 <div class="well">
   <h2> File Explorer Mike</h2>
-
-<?php
-
-$serverId = "mpcp_0";
-$ls = shell_exec("ls /var/mpcp/servers/$serverId");
-echo "Total items: ".(count(explode("\n", $ls))-1)."<br>";
-
-echo nl2br($ls);
-
-
-?>
+  <?php
+    $serverId = "mpcp_0";
+    $ls = shell_exec("ls /var/mpcp/servers/$serverId");
+    echo "Total items: ".(count(explode("\n", $ls))-1)."<br>";
+    echo nl2br($ls);
+  ?>
 </div>
