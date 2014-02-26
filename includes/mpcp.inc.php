@@ -1,8 +1,7 @@
 <?php
 
 	function screenOnline($serverId){
-		$out = shell_exec("screen -list");
-		return strpos($out, $serverId);
+		return strpos(shell_exec("screen -list"), $serverId);
 	}
 
 	function serverOnline($serverId){
@@ -47,7 +46,7 @@
 	function reloadServer($serverId){
 		if(screenOnline($serverId)){
 			if(serverOnline($serverId)){
-				$out = shell_exec("screen -x $serverId -p 0 -X stuff \"`printf \"reload\r\"`\";");
+				shell_exec("screen -x $serverId -p 0 -X stuff \"`printf \"reload\r\"`\";");
 			}
 		}
 	}
@@ -61,8 +60,7 @@
 	}
 
 	function serverExists($serverId){
-		$command = "ls /var/mpcp/servers";
-		return strpos(shell_exec($command), $serverId);
+		return file_exists("/var/mpcp/servers/$serverId");
 	}
 
 	function createBackup($serverId){
@@ -103,4 +101,6 @@
 			return "ERROR in \"getJarVersion($jar)\" (jar not found!)";
 		}
 	}
+	
+	
 ?>
