@@ -6,7 +6,7 @@ $serverId = "mpcp_0";
 $filepath = "/var/mpcp/servers/$serverId/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line) {
-    echo $line."\n";
+    echo $line;
 }
 ?>
 </pre></body>
