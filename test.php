@@ -3,7 +3,7 @@
 <body><pre>
 <?php
 $serverId = "mpcp_0";
-$filepath = "/var/mpcp/$serverId/logs/latest.log";
+$filepath = "/var/mpcp/servers/$serverId/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line) {
     echo $line."<br/>\n";
