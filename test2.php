@@ -39,7 +39,7 @@ else {
 
 $serverId = "mpcp_0";
 
-$filepath = "/var/craftsrv/servers/x0009/proxy.log.0";
+$filepath = "/var/mpcp/servers/mpcp_0/logs/latest.log";
 $file = file($filepath);
 $dates = array();
 $last = "";
