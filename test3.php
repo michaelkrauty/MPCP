@@ -6,9 +6,7 @@ $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line){
     
-$letters = array('a', 'p');
-$fruit   = array('apple', 'pear');
-$output  = str_replace($letters, $fruit, $line);
+$output  = str_replace("[m", "", $line);
 
     echo MineToWeb($output);
     
