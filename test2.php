@@ -29,13 +29,7 @@
 </script>
 </head>
 <?php
-$pass = htmlspecialchars($_POST["date"]);
-if (!$pass){
     echo "<body onLoad='scroll()'>";
-}
-else {
-    echo "<body>";
-}
 
 $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
