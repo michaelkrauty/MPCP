@@ -6,6 +6,7 @@ $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line) {
     echo MineToWeb($line);
+    echo MineToWeb("§atest");
 }
 ?>
 </pre></body>
