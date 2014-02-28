@@ -10,7 +10,7 @@
     </div>
   </div>
 </div>
-<script>
+<script type="text/javascript">
     var auto_refresh = setInterval( function () {
     $('#echo').load("echo.inc.php");
     }, 2000);
