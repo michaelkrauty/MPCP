@@ -37,12 +37,8 @@ else {
     echo "<body>";
 }
 
-$serverId = "mpcp_0";
-
 $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
-$last = "";
-
 
 /* Output Log For Required Date */
 echo "<div id='log'>";
@@ -65,7 +61,7 @@ foreach($file as $line) {
             $segarray[$i] = preg_replace("/;32/","<span class='green",$segarray[$i]);
             $segarray[$i] = preg_replace("/;33/","<span class='gold",$segarray[$i]);
             $segarray[$i] = preg_replace("/;34/","<span class='blue",$segarray[$i]);
-        $segarray[$i] = preg_replace("/;35/","<span class='purple",$segarray[$i]);
+            $segarray[$i] = preg_replace("/;35/","<span class='purple",$segarray[$i]);
             $segarray[$i] = preg_replace("/;36/","<span class='aqua",$segarray[$i]);
             $segarray[$i] = preg_replace("/;37/","<span class='gray",$segarray[$i]);
             $segarray[$i] = preg_replace("/;22m/","'>",$segarray[$i]);
@@ -95,7 +91,7 @@ foreach($file as $line) {
         $segarray[$i] = preg_replace("/^e/","<span class='gold'>",$segarray[$i]);
         $segarray[$i] = preg_replace("/^f/","<span class='black'>",$segarray[$i]);
         $segarray[$i] = preg_replace("/^r/","<span class='black'>",$segarray[$i]);
-        $segarray[$i] = $segarray[$i]."</span>";
+    $segarray[$i] = $segarray[$i]."</span>";
     }
     /* Rejoin and Output to Webpage */
     $line = join("",$segarray);
