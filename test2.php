@@ -17,11 +17,4 @@
     $('#echo').load("echo.inc.php");
     }, 1000);
 </script>
-<script>
-    function scroll(){
-    //scroll div to bottom
-    var objDiv = document.getElementById("echo");
-    objDiv.scrollTop = objDiv.scrollHeight;
-    }
-</script>
 </body>
