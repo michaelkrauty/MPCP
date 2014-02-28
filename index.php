@@ -1,6 +1,6 @@
 <?php include_once "includes/db_connect.php"; include_once "includes/functions.php";
-  sec_session_start();
-  if(login_check($mysqli) == true){
+	sec_session_start();
+	if(login_check($mysqli) == true){
 ?>
 
 <!DOCTYPE html>
@@ -22,10 +22,10 @@
     <!-- Custom styles for this template -->
     <link href="webroot/css/index.css" rel="stylesheet">
     <?php
-      $userEmail = $_SESSION['email'];
-      $userName = $_SESSION['username'];
-      $pageName = "index";
-    ?>
+    	$userEmail = $_SESSION['email'];
+    	$userName = $_SESSION['username'];
+    	$pageName = "index";
+	?>
 </head>
   <?php include_once "./includes/header.inc.php"; ?>
   <body role='document'> <body role='document'>
@@ -52,7 +52,7 @@
 	  <div id="forgotpassword"><?php include_once "./includes/forgotpassword.inc.php";?></div>
 	  <div id="backup"><?php include_once "./includes/backup.inc.php";?></div>
 	  <div id="edittest"><?php include_once "./includes/edittest.inc.php";?></div>
-	</center>
+		</center>
       </div>
     </div>
   </div>
