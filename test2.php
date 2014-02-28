@@ -39,7 +39,7 @@ else {
 
 $serverId = "mpcp_0";
 
-$filepath = "/var/mpcp/servers/mpcp_0/logs/latest.log";
+$filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
 $last = "";
 
