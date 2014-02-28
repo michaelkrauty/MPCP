@@ -22,7 +22,7 @@ $output = str_replace("[0;31;1m", "§c", $output);
 $output = str_replace("[0;35;1m", "§d", $output);
 $output = str_replace("[0;33;1m", "§e", $output);
 $output = str_replace("[0;37;1m", "§f", $output);
-$output = str_replace("[m\n", "\n", $output);
+$output = str_replace("[m", "", $output);
 
     echo MineToWeb($output);
     
