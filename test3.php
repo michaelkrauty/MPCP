@@ -7,6 +7,7 @@ $file = file($filepath);
 foreach($file as $line){
     
 #$output  = str_replace("[m", "", $line);
+$output = $line;
 
     echo MineToWeb($output);
     
