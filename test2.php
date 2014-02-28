@@ -11,11 +11,6 @@
   </div>
 </div>
 <script>
-    function scroll(){
-    //scroll div to bottom
-    var objDiv = document.getElementById("consoleviewerwindow");
-    objDiv.scrollTop = objDiv.scrollHeight;
-    }
     var auto_refresh = setInterval( function () {
     $('#echo').load("echo.inc.php");
     }, 2000);
