@@ -154,6 +154,7 @@ $returnstring = $returnstring.$individual;
 return $returnstring;
 }
 ?>
+</body>
 <script>
     function scroll(){
     //scroll div to bottom
