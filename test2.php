@@ -9,7 +9,9 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+<script>
     var auto_refresh = setInterval( function () {
     $('#echo').load("echo.inc.php");
     }, 1000);
