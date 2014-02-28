@@ -25,7 +25,7 @@
         $output = str_replace("[0;37;1m", "§f", $output);
         $output = str_replace("[m", "", $output);
         
-            echo MineToWeb($output);
+            echo MineToWeb($output)."\n";
             
         }
         ?>
