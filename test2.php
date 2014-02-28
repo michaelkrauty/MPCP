@@ -153,3 +153,10 @@ $returnstring = $returnstring.$individual;
 return $returnstring;
 }
 ?>
+<script>
+    function scroll(){
+    //scroll div to bottom
+    var objDiv = document.getElementById("consoleviewerwindow");
+    objDiv.scrollTop = objDiv.scrollHeight;
+    }
+</script>
