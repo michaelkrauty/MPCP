@@ -6,7 +6,7 @@ $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line){
     
-$output  = str_replace("[m", "", $line);
+#$output  = str_replace("[m", "", $line);
 
     echo MineToWeb($output);
     
