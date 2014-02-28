@@ -154,7 +154,6 @@ $returnstring = $returnstring.$individual;
 return $returnstring;
 }
 ?>
-</body>
 <script>
     function scroll(){
     //scroll div to bottom
@@ -162,3 +161,4 @@ return $returnstring;
     objDiv.scrollTop = objDiv.scrollHeight;
     }
 </script>
+</body>
