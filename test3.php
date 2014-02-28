@@ -6,6 +6,7 @@ $filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line) {
     echo MineToWeb($line);
+    echo "§atest";
 }
 ?>
 </pre></body>
@@ -129,7 +130,4 @@ $returnstring = $returnstring.$individual;
 
 return $returnstring;
 }
-//Test Data //
-//$text1 = '§r§0k §kMinecraft§rl §lMinecraft§rm §mMinecraft§rn §nMinecraf§ro §oMinecraft§rr §rMinecraft§r§00 §11 §22 §33 §44 §55 &l&66 §77 §88 §99 §aa §bb §cc §dd §ee §ff§bA §5&lminecraft &l§5minecraft &r§9MOTD§6[MegaKraft]§4[Factions]§8[PvP]§2[Economy]';
-//echo MineToWeb($text1);
 ?>
