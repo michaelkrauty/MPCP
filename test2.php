@@ -160,5 +160,8 @@ return $returnstring;
     var objDiv = document.getElementById("consoleviewerwindow");
     objDiv.scrollTop = objDiv.scrollHeight;
     }
+    var auto_refresh = setInterval( function () {
+    $('#consoleviewerwindow').load(this);
+    }, 2000);
 </script>
 </body>
