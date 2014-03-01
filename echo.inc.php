@@ -1,5 +1,5 @@
 <?php
-$filepath = "/var/craftsrv/servers/x0008/logs/latest.log";
+$filepath = "/var/craftsrv/servers/x0019/logs/latest.log";
 $file = file($filepath);
 foreach($file as $line){
 	$output = str_replace("[0;30;22m", "§0", $line);
